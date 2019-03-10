@@ -4,7 +4,13 @@ steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'export']
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'cp', '-r', 'out/**', 'gs://sthlm.io']
+    args: ['-m', 'cp', '-r', 'out/_next', 'gs://sthlm.io']
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', 'out/static', 'gs://sthlm.io']
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', 'out/404.html', 'gs://sthlm.io']
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', 'out/index.html', 'gs://sthlm.io']
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=600, s-maxage=31536000', 'gs://sthlm.io/**']
   - name: 'gcr.io/cloud-builders/gsutil'
