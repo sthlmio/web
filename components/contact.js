@@ -4,12 +4,29 @@ export function Contact() {
       <div>
         <h2>Get in touch</h2>
         <p>If you need help, get in touch with us so we can have a chat.</p>
-        <input type="text" name="aasd" placeholder="Name" autoComplete="off" />
-        <input type="text" name="aasdadsd" placeholder="E-mail" autoComplete="off" />
-        <textarea placeholder="Message" autoComplete="off"></textarea>
+        {/*<input type="text" name="aasd" placeholder="Name" autoComplete="off" />*/}
+        {/*<input type="text" name="aasdadsd" placeholder="E-mail" autoComplete="off" />*/}
+        {/*<textarea placeholder="Message" autoComplete="off"></textarea>*/}
+        <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a><br/>
+        <a href="mailto:johan@sthlm.io">johan@sthlm.io</a><br/>
+        <a href="mailto:viktor@sthlm.io">viktor@sthlm.io</a>
       </div>
       { /*language=CSS*/ }
       <style jsx>{`
+        a {
+          font-family: 'Overpass Mono', sans-serif;
+          font-weight: 300;
+          font-size: 22px;
+          color: #ffc107;
+          text-decoration: none;
+        }
+
+        @media screen and (min-width: 500px) {
+          a {
+            font-size: 28px;
+          }
+        }
+        
         section {
           width: 100%;
           padding: 100px 0;
