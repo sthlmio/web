@@ -6,12 +6,6 @@ steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'cp', '-r', 'out/**', 'gs://sthlm.io']
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=600, s-maxage=31536000', 'gs://sthlm.io/index.html']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=600, s-maxage=31536000', 'gs://sthlm.io/404.html']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=600, s-maxage=31536000', 'gs://sthlm.io/static/*']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=600, s-maxage=31536000', 'gs://sthlm.io/_next/static/**']
+    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=600, s-maxage=31536000', 'gs://sthlm.io/**']
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['web', 'set', '-m', 'index.html', '-e', '404.html', 'gs://sthlm.io']
