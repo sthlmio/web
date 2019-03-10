@@ -1,0 +1,36 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "sthlm.io web",
+  "main": "index.js",
+  "dependencies": {
+    "next": "8.0.3",
+    "react": "16.8.4",
+    "react-dom": "16.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "author": {
+    "name": "Fredrik Lack",
+    "email": "fredrik@sthlm.io",
+    "url": "https://sthlm.io"
+  },
+  "contributors": [
+    {
+      "name": "Viktor Kalajo",
+      "email": "viktor@sthlm.io",
+      "url": "https://sthlm.io"
+    },
+    {
+      "name": "Johan Bååth",
+      "email": "johan@sthlm.io",
+      "url": "https://sthlm.io"
+    }
+  ],
+  "license": "MIT"
+}
