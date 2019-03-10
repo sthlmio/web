@@ -20,7 +20,7 @@ export function About () {
             <img src={require('../static/nodejs.png')}/>
           </div>
           <div>
-            <img src={require('../static/terraform.png')}/>
+            <img src={require('../static/terraform-400x400.png')}/>
           </div>
           <div>
             <img src={require('../static/react.png')}/>
