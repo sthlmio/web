@@ -11,8 +11,8 @@ function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link href="https://fonts.googleapis.com/css?family=Overpass:900" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300" rel="stylesheet" />
-        <link rel="icon" type="image/png" href="static/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="static/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href={require('../static/favicon-32x32.png')} sizes="32x32" />
+        <link rel="icon" type="image/png" href={require('../static/favicon-16x16.png')} sizes="16x16" />
       </Head>
       <Header/>
       <About/>

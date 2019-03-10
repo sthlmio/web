@@ -8,40 +8,40 @@ export function About () {
       <div className="logos">
         <div>
           <div>
-            <img src="static/go.png"/>
+            <img src={require('../static/go.png')}/>
           </div>
           <div>
-            <img src="static/kubernetes.png"/>
+            <img src={require('../static/kubernetes.png')}/>
           </div>
           <div>
-            <img src="static/gcp.png"/>
+            <img src={require('../static/gcp.png')}/>
           </div>
           <div>
-            <img src="static/nodejs.png"/>
+            <img src={require('../static/nodejs.png')}/>
           </div>
           <div>
-            <img src="static/terraform.png"/>
+            <img src={require('../static/terraform.png')}/>
           </div>
           <div>
-            <img src="static/react.png"/>
+            <img src={require('../static/react.png')}/>
           </div>
           <div>
-            <img src="static/redis.png"/>
+            <img src={require('../static/redis.png')}/>
           </div>
           <div>
-            <img src="static/docker.png"/>
+            <img src={require('../static/docker.png')}/>
           </div>
           <div>
-            <img src="static/NGINX-logo-rgb-large.png"/>
+            <img src={require('../static/NGINX-logo-rgb-large.png')}/>
           </div>
           <div>
-            <img src="static/le-logo-wide.png"/>
+            <img src={require('../static/le-logo-wide.png')}/>
           </div>
           <div>
-            <img src="static/grafana-logo.png"/>
+            <img src={require('../static/grafana-logo.png')}/>
           </div>
           <div>
-            <img src="static/logo_prom.png"/>
+            <img src={require('../static/logo_prom.png')}/>
           </div>
         </div>
       </div>

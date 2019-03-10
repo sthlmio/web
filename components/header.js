@@ -2,7 +2,7 @@ export function Header() {
   return (
     <section>
       <div>
-        <img src="static/logo.svg" />
+        <img src={require('../static/logo.svg')} />
         <p>sthlm.io is a by reference network with self-employed developers helping clients
           build web apps and infrastructure using Cloud Native technologies.</p>
         <span/>
