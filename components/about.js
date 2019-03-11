@@ -8,7 +8,7 @@ export function About () {
       <div className="logos">
         <div>
           <div>
-            <img src={require('../static/go.png')}/>
+            <img src={require('../static/golang.png')}/>
           </div>
           <div>
             <img src={require('../static/kubernetes.png')}/>
@@ -20,7 +20,7 @@ export function About () {
             <img src={require('../static/nodejs.png')}/>
           </div>
           <div>
-            <img src={require('../static/terraform-400x400.png')}/>
+            <img src={require('../static/terraform.png')}/>
           </div>
           <div>
             <img src={require('../static/react.png')}/>
@@ -32,16 +32,16 @@ export function About () {
             <img src={require('../static/docker.png')}/>
           </div>
           <div>
-            <img src={require('../static/NGINX-logo-rgb-large.png')}/>
+            <img src={require('../static/nginx.png')}/>
           </div>
           <div>
-            <img src={require('../static/le-logo-wide.png')}/>
+            <img src={require('../static/letsencrypt.png')}/>
           </div>
           <div>
-            <img src={require('../static/grafana-logo.png')}/>
+            <img src={require('../static/grafana.png')}/>
           </div>
           <div>
-            <img src={require('../static/logo_prom.png')}/>
+            <img src={require('../static/prometheus.png')}/>
           </div>
         </div>
       </div>
