@@ -49,7 +49,7 @@ export function About () {
       <style jsx>{`
         section {
           width: 100%;
-          padding: 20px 0 0;
+          padding: 0;
           background: #f5f5f5;
           z-index: 0;
           position: relative;
@@ -63,8 +63,8 @@ export function About () {
           z-index: -1;
           right: 0;
           left: -5px;
-          top: -100px;
-          height: 150px;
+          top: -50px;
+          height: 100px;
           width: calc(100% + 5px);
           transform: rotate(3deg);
           content: "";
@@ -80,7 +80,7 @@ export function About () {
         }
 
         .logos {
-          padding: 0 0 250px;
+          padding: 0 0 200px;
         }
 
         .logos > div {

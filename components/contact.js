@@ -95,7 +95,7 @@ export class Contact extends Component {
 
         section {
           width: 100%;
-          padding: 100px 0;
+          padding: 0 0 100px;
           background: #3E46CF;
           display: flex;
           justify-content: center;
