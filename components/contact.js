@@ -52,7 +52,7 @@ export class Contact extends Component {
   renderTitle () {
     if (this.state.submitted) {
       if (this.state.error) {
-        return <Typist cursor={{blink: true}} key="error">Oops, try agin.<Typist.Backspace count={3} delay={100} />ain...</Typist>
+        return <Typist cursor={{blink: true}} key="error">Oops, try agin<Typist.Backspace count={2} delay={100} />ain</Typist>
       } else {
         return <Typist cursor={{blink: true}} key="success">Thank you</Typist>
       }
@@ -133,6 +133,8 @@ export class Contact extends Component {
           display: block;
           background: #3E46CF;
           border: 0;
+          padding: 0;
+          text-indent: 0;
           font-family: 'Overpass Mono', sans-serif;
           font-weight: 300;
           -webkit-appearance: none;

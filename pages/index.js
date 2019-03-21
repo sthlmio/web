@@ -39,7 +39,7 @@ function Home() {
         }
 
         h2 {
-          font-size: 47px;
+          font-size: 43px;
         }
 
         p {
