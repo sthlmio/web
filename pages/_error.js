@@ -1,38 +1,21 @@
-import React from 'react'
 import { Header } from '../components/header'
 
-class Error extends React.Component {
-  static getInitialProps({ res, err }) {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : null
-    return { statusCode }
-  }
-
-  render() {
-    let description = ''
-
-    if (this.props.statusCode === 404) {
-      description = 'HTTP 404 Not found'
-    }
-
-    if (this.props.statusCode === 500) {
-      description = 'HTTP 500 Internal server error'
-    }
-
-    return (
-      <>
-        <Header title={`sthlm.io -  ${this.props.statusCode}`}/>
-        <section>
-          <div className="content">
-            <a href="/">
-              <img src={require('../static/logo_small.svg')} width="150"/>
-            </a>
-            <div>
-              <h1>{this.props.statusCode}</h1>
-              {description ? <p>{description}</p> : ''}
-            </div>
+export default function Error () {
+  return (
+    <>
+      <Header title="sthlm.io -  404"/>
+      <section>
+        <div className="content">
+          <a href="/">
+            <img src={require('../static/logo_small.svg')} width="150"/>
+          </a>
+          <div>
+            <h1>404</h1>
+            <p>HTTP 404 Not found</p>
           </div>
-          { /*language=SCSS*/}
-          <style jsx>{`
+        </div>
+        { /*language=SCSS*/}
+        <style jsx>{`
           section {
             width: 100%;
             padding: 0;
@@ -88,10 +71,7 @@ class Error extends React.Component {
             }
           }
         `}</style>
-        </section>
-      </>
-    )
-  }
+      </section>
+    </>
+  )
 }
-
-export default Error
