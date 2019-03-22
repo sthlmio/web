@@ -85,7 +85,7 @@ export class Contact extends Component {
             <input type="text" name="name" placeholder="Name" autoComplete="off" ref={n => (this.inputNameNode = n)} />
             <input type="text" name="email" placeholder="E-mail" autoComplete="off" ref={n => (this.inputEmailNode = n)} />
             <textarea name="message" rows="3" placeholder="Message" autoComplete="off" ref={n => (this.inputMessageNode = n)} />
-            <label className="checkbox">I agree to the <a href="/terms" target="_blank">terms</a>
+            <label className="checkbox">I agree to the <a href="/terms/" target="_blank">terms</a>
               <input type="checkbox" name="terms" ref={n => (this.inputTermsNode = n)}/>
               <span className="checkmark"></span>
             </label>
