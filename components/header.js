@@ -5,7 +5,7 @@ export function Header() {
         <img src={require('../static/logo.svg')} />
         <p>sthlm.io is a by reference network with self-employed developers helping clients
           build web apps and infrastructure using Cloud Native technologies.</p>
-        <span/>
+        <hr/>
       </div>
       { /*language=CSS*/ }
       <style jsx>{`
@@ -21,13 +21,6 @@ export function Header() {
         img {
           width: 100%;
           margin-bottom: 20px;
-        }
-
-        span {
-          width: 100px;
-          height: 20px;
-          background: #ffc107;
-          display: inline-block;
         }
 
         div {

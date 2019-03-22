@@ -141,7 +141,7 @@ export class Contact extends Component {
           -webkit-border-radius: 0px;
           font-size: 28px;
           resize: none;
-          color: #ffc107;
+          color: #fff;
           margin-bottom: 20px;
         }
 
@@ -150,11 +150,12 @@ export class Contact extends Component {
         input:-webkit-autofill:focus,
         input:-webkit-autofill:active  {
           -webkit-box-shadow: 0 0 0 100px #3E46CF inset !important;
-          -webkit-text-fill-color: #ffc107 !important;
+          -webkit-text-fill-color: #fff !important;
         }
 
         button[type="submit"] {
-          background: #F7C244;
+          text-transform: uppercase;
+          background: #fff;
           color: #000;
           border: 0;
           outline: none;
