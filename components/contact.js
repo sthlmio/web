@@ -87,7 +87,7 @@ export class Contact extends Component {
             <textarea name="message" rows="3" placeholder="Message" autoComplete="off" ref={n => (this.inputMessageNode = n)} />
             <label className="checkbox">I agree to the <a href="/terms/" target="_blank">terms</a>
               <input type="checkbox" name="terms" ref={n => (this.inputTermsNode = n)}/>
-              <span className="checkmark"></span>
+              <span className="checkmark"/>
             </label>
             <button type="submit">Send</button>
           </form>
@@ -124,29 +124,24 @@ export class Contact extends Component {
             background-color: #fff;
           }
 
-          /* On mouse-over, add a grey background color */
           .checkbox:hover input ~ .checkmark {
             background-color: #ccc;
           }
 
-          /* When the checkbox is checked, add a blue background */
           .checkbox input:checked ~ .checkmark {
             background-color: #2196F3;
           }
 
-          /* Create the checkmark/indicator (hidden when not checked) */
           .checkmark:after {
             content: "";
             position: absolute;
             display: none;
           }
 
-          /* Show the checkmark when checked */
           .checkbox input:checked ~ .checkmark:after {
             display: block;
           }
 
-          /* Style the checkmark/indicator */
           .checkbox .checkmark:after {
             left: 9px;
             top: 5px;
