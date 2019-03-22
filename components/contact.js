@@ -66,7 +66,7 @@ export class Contact extends Component {
       <section>
         <div>
           <h2>{this.renderTitle()}</h2>
-          <p>If you need help, get in touch with us so we can have a chat.</p>
+          <p>If you need help, get in touch with us so we can have a chat. By contacting us you agree that we collect and store your personal data for communication purpose only.</p>
           <form ref={n => (this.formNode = n)} onSubmit={e => {
             e.preventDefault()
             this.handleSubmit()
