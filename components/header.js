@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export function Header({ title = 'sthlm.io - by reference developer network' }) {
+export function Header({ title = 'sthlm.io - by reference developer network', canonical = '' }) {
   return (
     <Head>
       <title>{title}</title>
@@ -9,6 +9,7 @@ export function Header({ title = 'sthlm.io - by reference developer network' }) 
       <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,700" rel="stylesheet" />
       <link rel="icon" type="image/png" href={require('../static/favicon-32x32.png')} sizes="32x32" />
       <link rel="icon" type="image/png" href={require('../static/favicon-16x16.png')} sizes="16x16" />
+      <link rel="canonical" href={`https://sthlm.io${canonical}`} />
       { /*language=CSS*/ }
       <style global jsx>{`
         body {

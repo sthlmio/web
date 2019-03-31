@@ -3,7 +3,7 @@ import { Header } from '../components/header'
 export default function Terms () {
   return (
     <>
-      <Header title={`sthlm.io - terms`}/>
+      <Header title={`sthlm.io - terms`} canonical="/terms/" />
       <section>
         <div className="content">
           <a href="/">
