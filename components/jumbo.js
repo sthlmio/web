@@ -2,7 +2,7 @@ export function Jumbo() {
   return (
     <section>
       <div>
-        <img src={require('../static/logo.svg')} />
+        <img src={require('../static/logo_small.svg')}/>
         <p>sthlm.io is a by reference network with self-employed developers helping clients
           build web apps and infrastructure using Cloud Native technologies.</p>
         <hr/>
@@ -20,6 +20,7 @@ export function Jumbo() {
 
         img {
           width: 100%;
+          max-width: 500px;
           margin-bottom: 20px;
         }
 
