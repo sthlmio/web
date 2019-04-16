@@ -63,20 +63,24 @@ export function About () {
           z-index: -1;
           right: 0;
           left: -5px;
-          top: -50px;
-          height: 100px;
+          top: -100px;
+          height: 150px;
           width: calc(100% + 5px);
-          transform: rotate(3deg);
+          transform: rotate(2deg);
           content: "";
           background: rgb(241,241,241);
           background: linear-gradient(180deg, rgba(241,241,241,1) 0%, rgba(245,245,245,1) 100%);
+        }
+
+        h2 {
+          margin-top: 0;
         }
 
         .content {
           margin: 0 auto;
           width: 1024px;
           max-width: calc(100% - 40px);
-          padding: 20px;
+          padding: 20px 0 0;
         }
 
         .logos {

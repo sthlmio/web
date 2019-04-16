@@ -14,7 +14,7 @@ export function Clients () {
       <style jsx>{`
         section {
           width: 100%;
-          padding: 50px 0 0;
+          padding: 0;
           background: #fff;
           z-index: 0;
           position: relative;
@@ -28,10 +28,10 @@ export function Clients () {
           z-index: -1;
           right: 0;
           left: -5px;
-          top: -50px;
-          height: 100px;
+          top: -100px;
+          height: 150px;
           width: calc(100% + 5px);
-          transform: rotate(3deg);
+          transform: rotate(2deg);
           content: "";
           background: #fff;
         }
