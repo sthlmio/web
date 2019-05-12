@@ -91,10 +91,13 @@ export default function Terms () {
           }
 
           a,
-          a:hover,
-          a:visited,
-          a:active {
-            font-weight: 700;
+          a:active,
+          a:visited {
+            font-weight: bold;
+            color: #000;
+          }
+          
+          a:hover {
             color: #3E46CF;
           }
         `}</style>
