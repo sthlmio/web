@@ -1,9 +1,14 @@
+import Link from 'next/link'
+
 export function About () {
   return (
     <section>
       <div className="content">
         <h2>What we do</h2>
-        <p>We help clients build web apps for the future and we like to do it with these technologies and tools.</p>
+        <p>
+          We help clients build web apps for the future and we like to do it with these technologies and tools.
+          Check out more at our <Link href="https://github.com/sthlmio"><a target="_blank">GitHub</a></Link> organization.
+        </p>
       </div>
       <div className="logos">
         <div>
@@ -70,6 +75,17 @@ export function About () {
           content: "";
           background: rgb(241,241,241);
           background: linear-gradient(180deg, rgba(241,241,241,1) 0%, rgba(245,245,245,1) 100%);
+        }
+        
+        a,
+        a:active,
+        a:visited {
+          font-weight: bold;
+          color: #000;
+        }
+        
+        a:hover {
+          color: #3E46CF;
         }
 
         h2 {
