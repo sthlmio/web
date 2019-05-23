@@ -12,9 +12,11 @@ steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'cp', '-r', 'out/terms', 'gs://sthlm.io']
   - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', 'out/fredrik-lack', 'gs://sthlm.io']
+  - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=60, must-revalidate', 'gs://sthlm.io/*.html']
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=60, must-revalidate', 'gs://sthlm.io/terms/*.html']
+    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=60, must-revalidate', 'gs://sthlm.io/*/*.html']
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=31536000, immutable', 'gs://sthlm.io/_next/**']
   - name: 'gcr.io/cloud-builders/gsutil'
