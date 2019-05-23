@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
@@ -85,7 +86,7 @@ export class Contact extends Component {
             <input type="text" name="name" placeholder="Name" autoComplete="off" ref={n => (this.inputNameNode = n)} />
             <input type="text" name="email" placeholder="E-mail" autoComplete="off" ref={n => (this.inputEmailNode = n)} />
             <textarea name="message" rows="3" placeholder="Message" autoComplete="off" ref={n => (this.inputMessageNode = n)} />
-            <label className="checkbox">I agree to the <a href="/terms/" target="_blank">terms</a>
+            <label className="checkbox">I agree to the <Link href="/terms"><a target="_blank">terms</a></Link>
               <input type="checkbox" name="terms" ref={n => (this.inputTermsNode = n)}/>
               <span className="checkmark"/>
             </label>

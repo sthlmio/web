@@ -49,8 +49,12 @@ export function Header ({title = 'sthlm.io - by reference developer network', ca
         h3 {
           font-size: 20px;
         }
+        
+        h4 {
+          font-size: 16px;
+        }
 
-        p, blockquote, label {
+        p, blockquote, label, small {
           font-family: 'Overpass Mono', sans-serif;
           font-weight: 300;
           font-size: 18px;
@@ -61,9 +65,9 @@ export function Header ({title = 'sthlm.io - by reference developer network', ca
         li {
           font-family: 'Overpass Mono', sans-serif;
         }
-
+        
         p.text, li {
-          font-weight: 400;
+          font-weight: 300;
           font-size: 18px;
         }
 
@@ -82,6 +86,10 @@ export function Header ({title = 'sthlm.io - by reference developer network', ca
 
           h3 {
             font-size: 30px;
+          }
+          
+          h4 {
+            font-size: 20px;
           }
         }
       `}</style>

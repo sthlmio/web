@@ -42,26 +42,11 @@ export function Clients () {
           font-weight: 700;
         }
 
-        .content {
-          margin: 0 auto;
-          width: 1024px;
-          max-width: calc(100% - 40px);
-          padding: 20px;
-        }
-
         .clients {
           padding: 0 0 200px;
-        }
-
-        .clients {
           margin: 0 auto;
           width: 1024px;
           max-width: calc(100% - 40px);
-        }
-
-        .item img {
-          max-width: 100%;
-          width: 25%;
         }
       `}</style>
     </section>

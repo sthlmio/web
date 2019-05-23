@@ -1,4 +1,5 @@
 import { Header } from '../components/header'
+import { InPageHeader } from '../components/inPageHeader'
 
 export default function Terms () {
   return (
@@ -6,9 +7,7 @@ export default function Terms () {
       <Header title={`sthlm.io - terms`} canonical="/terms/" />
       <section>
         <div className="content">
-          <a href="/">
-            <img src={require('../static/logo_small.svg')} width="150"/>
-          </a>
+          <InPageHeader />
           <h2>Our details</h2>
           <p className="text">
             The data controller in respect of our website is Fredrik Lack AB, registered in Stockholm, Sweden, company number 559127-4302.
