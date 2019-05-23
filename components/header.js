@@ -68,10 +68,14 @@ export function Header ({title = 'sthlm.io - by reference developer network', ca
         
         p.text, li {
           font-weight: 300;
-          font-size: 18px;
+          font-size: 16px;
         }
 
         @media screen and (min-width: 500px) {
+          p.text, li {
+            font-size: 18px;
+          }
+        
           p {
             font-size: 22px;
           }
