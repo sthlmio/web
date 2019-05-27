@@ -65,7 +65,7 @@ export default function FredrikLack () {
             <li>Bitbucket/Pipelines</li>
             <li>Helm / Helm Secrets</li>
           </ul>
-          <h4><a href="https://www.lexplore.com/">Lexplore</a> (via Nox Consulting AB)</h4>
+          <h4><a href="https://www.lexplore.com/">Lexplore</a> (via Fredrik Lack AB)</h4>
           <p className="text">JS/React developer, May 2017 - May 2018</p>
           <ul>
             <li>Built a portal GUI based on Node.js/React</li>
