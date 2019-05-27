@@ -20,6 +20,7 @@ export function Team () {
                 <img width="200" src={require('../static/johan-baath.png')}/>
               </div>
               <p>Johan Bååth</p>
+              <Link href="/johan-baath"><a>Profile</a></Link>
             </div>
           </li>
           <li>
@@ -56,18 +57,18 @@ export function Team () {
           content: "";
           background: #f5f5f5;
         }
-        
+
         p {
           margin-bottom: 0;
         }
-        
+
         a,
         a:active,
         a:visited {
           font-weight: bold;
           color: #000;
         }
-        
+
         a:hover {
           color: #3E46CF;
         }
@@ -86,13 +87,13 @@ export function Team () {
           justify-content: center;
           margin-bottom: 60px;
         }
-        
+
         @media screen and (min-width: 450px) {
           li {
             padding: 0 40px;
           }
         }
-        
+
         .item {
           text-align: center;
           width: 220px;
@@ -104,7 +105,7 @@ export function Team () {
           align-items: center;
           justify-content: center;
         }
-        
+
         img {
           border-radius: 50%;
           filter: grayscale(100%);
