@@ -10,7 +10,7 @@ export default function FredrikLack () {
           <InPageHeader/>
           <h2>Fredrik Lack</h2>
           <p>Textilgatan 25, 120 30 Stockholm</p>
-          <small>+46 733 730 941 / fredrik@sthlm.io</small>
+          <small>+46 733 730 941 / <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a></small>
           <p className="text">
             I’ve been working as a developer for +7 years and I enjoy working fullstack/devops. Last couple of years
             I’ve been working mainly with Kubernetes, Google Cloud, Node.js and React. In my spare time I've been
@@ -95,24 +95,6 @@ export default function FredrikLack () {
             <li>RESTful(ish) API</li>
             <li>Let's Encrypt automation</li>
             <li>Prometheus/Grafana dashboards for supervision</li>
-          </ul>
-
-          <h3>Technical Profile</h3>
-          <h4>Programming Languages:</h4>
-          <p className="text">JavaScript (ES6/ES7/ES8, Node.js), Golang, PHP, HTML5, CSS, Bash</p>
-          <h4>Frameworks / Libraries:</h4>
-          <p className="text">React, Redux, Flow, Fluxible, Koa, Express.js, Next.js, SASS/LESS/Stylus, Jekyll,
-            Handlebars, Nunjucks, KeystoneJS, WordPress, jQuery</p>
-          <h4>Software / Tools:</h4>
-          <p className="text">Git, Google Cloud, Heroku, DigitalOcean, Kubernetes (k8s), Docker, Nginx,
-            MongoDB, ElasticSearch, PostgreSQL, Let's Encrypt, Travis, Redis, Jenkins,
-            Webpack, Babel, Terraform</p>
-
-          <h3>Educations</h3>
-          <ul>
-            <li>Bachelor of Arts in Informatics, Linnaeus University, Kalmar (2009-2012)</li>
-            <li>JavaScript programming course, Linnaeus University, Kalmar (2011)</li>
-            <li>Ruby programming course, Gotland University (2011)</li>
           </ul>
         </div>
         { /*language=SCSS*/}
