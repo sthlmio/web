@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export function Header ({title = 'sthlm.io - by reference developer network', canonical = ''}) {
+export function Header ({title = 'sthlm.io - developers in stockholm', canonical = ''}) {
   return (
     <>
       <Head>
@@ -49,7 +49,7 @@ export function Header ({title = 'sthlm.io - by reference developer network', ca
         h3 {
           font-size: 20px;
         }
-        
+
         h4 {
           font-size: 16px;
         }
@@ -65,7 +65,7 @@ export function Header ({title = 'sthlm.io - by reference developer network', ca
         li {
           font-family: 'Overpass Mono', sans-serif;
         }
-        
+
         p.text, li {
           font-weight: 300;
           font-size: 16px;
@@ -75,7 +75,7 @@ export function Header ({title = 'sthlm.io - by reference developer network', ca
           p.text, li {
             font-size: 18px;
           }
-        
+
           p {
             font-size: 22px;
           }
@@ -91,7 +91,7 @@ export function Header ({title = 'sthlm.io - by reference developer network', ca
           h3 {
             font-size: 30px;
           }
-          
+
           h4 {
             font-size: 20px;
           }
