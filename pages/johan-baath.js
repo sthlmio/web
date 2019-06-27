@@ -50,11 +50,15 @@ export default function JohanBaath () {
 
           <h3>Latest Projects</h3>
           <h4><a href="https://cabonline.com/">Cabonline Technologies AB</a> (via Johan Bååth AB)</h4>
-          <p className="text">Lead Frontend, March 2017 - May 2019</p>
+          <p className="text">The largest taxi network in the Nordics.<br/>Lead Frontend, March 2017 - May 2019</p>
           <h4><a href="https://inspireme.se/">Inspireme i Sverige AB</a> (via Johan Bååth AB)</h4>
-          <p className="text">Lead Fullstack/DevOps, January 2017 - March 2017</p>
+          <p className="text">Online courses by leading experts.<br/>Lead Fullstack/DevOps, January 2017 - March 2017</p>
           <h4><a href="https://www.svt.se/sport/">SVT Sport</a> (via Johan Bååth AB)</h4>
-          <p className="text">Fullstack/DevOps, September 2015 - Jan 2017</p>
+          <p className="text">One of Sweden's top sports site.<br /> Fullstack/DevOps, September 2015 - Jan 2017</p>
+          <h4><a href="https://iveo.se/">IVEO AB</a></h4>
+          <p className="text">Digital Agency in Stockholm.<br />CTO/Developer, 2014 - 2015</p>
+          <h4><a href="#">Revibe AB</a></h4>
+          <p className="text">Electronic music streaming service & DJ tools.<br/>Fullstack/DevOps/Architect/Co-Founder, 2010 - 2014</p>
         </div>
         { /*language=SCSS*/}
         <style jsx>{`
