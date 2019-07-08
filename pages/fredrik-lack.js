@@ -12,7 +12,7 @@ export default function FredrikLack () {
           <p>Textilgatan 25, 120 30 Stockholm</p>
           <small>+46 733 730 941 / <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a></small>
           <p className="text">
-            I’ve been working as a developer for +7 years and I enjoy working fullstack/devops. Last couple of years
+            I’ve been working as a developer for 8+ years and I enjoy working fullstack/devops. Last couple of years
             I’ve been working mainly with Kubernetes, Google Cloud, Node.js and React. In my spare time I've been
             looking a little bit extra on Go.
             <br/><br/>
