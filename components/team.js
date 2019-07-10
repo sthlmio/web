@@ -31,6 +31,14 @@ export function Team () {
               <p>Viktor Kalajo</p>
             </div>
           </li>
+          <li>
+            <div className="item">
+              <div className="item__img">
+                <img width="200" src={require('../static/viktor-bergehall.jpg')}/>
+              </div>
+              <p>Viktor Bergehall</p>
+            </div>
+          </li>
         </ul>
       </div>
       { /*language=SCSS*/}
@@ -91,6 +99,12 @@ export function Team () {
         @media screen and (min-width: 450px) {
           li {
             padding: 0 40px;
+          }
+        }
+        
+        @media screen and (min-width: 900px) {
+          li {
+            max-width: calc(33.33% - 80px);
           }
         }
 
