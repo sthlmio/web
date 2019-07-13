@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "sthlm.io web",
   "main": "index.js",
+  "engines": {
+    "node": ">=12.4.0"
+  },
   "dependencies": {
     "@zeit/next-css": "1.0.1",
     "imagemin-mozjpeg": "8.0.0",
