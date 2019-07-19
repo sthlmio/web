@@ -29,6 +29,7 @@ export function Team () {
                 <img width="200" src={require('../static/viktor-kalajo.jpg')}/>
               </div>
               <p>Viktor Kalajo</p>
+              <Link href="/viktor-kalajo"><a>Profile</a></Link>
             </div>
           </li>
           <li>
