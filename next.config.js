@@ -2,4 +2,6 @@
 const withOptimizedImages = require('next-optimized-images');
 const withCSS = require('@zeit/next-css');
 
-module.exports = withCSS(withOptimizedImages({}));
+module.exports = withCSS(withOptimizedImages({
+  exportTrailingSlash: true
+}));
