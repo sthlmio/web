@@ -3,7 +3,7 @@ export function Jumbo() {
     <section>
       <div>
         <img src={require('../static/logo_small.svg')}/>
-        <p>sthlm.io is a team of developers helping clients
+        <p>sthlm.io is a developer network helping clients
           build web apps and infrastructure using Cloud Native technologies.</p>
         <hr/>
       </div>
