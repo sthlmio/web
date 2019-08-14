@@ -4,7 +4,7 @@ export function Header ({title = 'sthlm.io - Consulting company and developer ne
   return (
     <>
       <Head>
-        <title>{title.toLowerCase()}</title>
+        <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
         <link href="https://fonts.googleapis.com/css?family=Overpass:900" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,700" rel="stylesheet"/>
