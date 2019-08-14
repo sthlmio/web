@@ -12,16 +12,16 @@ export default function FredrikLack () {
           <p>Textilgatan 25, 120 30 Stockholm</p>
           <small>+46 733 730 941 / <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a></small>
           <p className="text">
-            I’ve been working as a developer for 8+ years and I enjoy working fullstack/devops. Last couple of years
-            I’ve been working mainly with Kubernetes, Google Cloud, Node.js and React. In my spare time I've been
-            looking a little bit extra on Go.
+            I’ve been working as a developer for 8+ years and I enjoy working with
+            devops stuff and also pure development. Last couple of years I’ve been
+            working mainly with Kubernetes, Google Cloud, Node.js and Go.
             <br/><br/>
-            I'm also a big advocate for Docker and Kubernetes, running all my own projects on Kubernetes on GKE (Google
-            Cloud).
+            Last year and project I was spearheading the development of a brand new
+            cloud native platform running with Kubernetes on Google Cloud (GKE).
           </p>
 
           <h3>Next dream gig</h3>
-          <p className="text">Cloud Native, Kubernetes and DevOps</p>
+          <p className="text">Cloud Native, Kubernetes, DevOps, Node.js and Go</p>
 
           <h3>Summary of Qualifications</h3>
           <ul>
