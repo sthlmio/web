@@ -4,7 +4,7 @@ import { InPageHeader } from '../components/inPageHeader'
 export default function Terms () {
   return (
     <>
-      <Header title={`sthlm.io - terms`} canonical="/terms/" />
+      <Header title={`sthlm.io - Terms`} canonical="/terms/" />
       <section>
         <div className="content">
           <InPageHeader />
