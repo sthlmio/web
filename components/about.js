@@ -7,7 +7,7 @@ export function About () {
         <h2>What we do</h2>
         <p>
           We help clients build web apps for the future and we like to do it with these technologies and tools.
-          Check out more at our <Link href="https://github.com/sthlmio"><a target="_blank">GitHub</a></Link> organization.
+          Check out more at our <a href="https://github.com/sthlmio" target="_blank">GitHub</a> organization.
         </p>
       </div>
       <div className="logos">
