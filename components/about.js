@@ -13,40 +13,40 @@ export function About () {
       <div className="logos">
         <div>
           <div>
-            <img src={require('../static/golang.png')}/>
+            <img alt="golang" src={require('../static/golang.png')}/>
           </div>
           <div>
-            <img src={require('../static/kubernetes.png')}/>
+            <img alt="kubernetes" src={require('../static/kubernetes.png')}/>
           </div>
           <div>
-            <img src={require('../static/gcp.png')}/>
+            <img alt="google cloud platform" src={require('../static/gcp.png')}/>
           </div>
           <div>
-            <img src={require('../static/nodejs.png')}/>
+            <img alt="node.js" src={require('../static/nodejs.png')}/>
           </div>
           <div>
-            <img src={require('../static/terraform.png')}/>
+            <img alt="terraform" src={require('../static/terraform.png')}/>
           </div>
           <div>
-            <img src={require('../static/react.png')}/>
+            <img alt="react" src={require('../static/react.png')}/>
           </div>
           <div>
-            <img src={require('../static/redis.png')}/>
+            <img alt="redis" src={require('../static/redis.png')}/>
           </div>
           <div>
-            <img src={require('../static/docker.png')}/>
+            <img alt="docker" src={require('../static/docker.png')}/>
           </div>
           <div>
-            <img src={require('../static/nginx.png')}/>
+            <img alt="nginx" src={require('../static/nginx.png')}/>
           </div>
           <div>
-            <img src={require('../static/letsencrypt.png')}/>
+            <img alt="lets encrypt" src={require('../static/letsencrypt.png')}/>
           </div>
           <div>
-            <img src={require('../static/grafana.png')}/>
+            <img alt="grafana" src={require('../static/grafana.png')}/>
           </div>
           <div>
-            <img src={require('../static/prometheus.png')}/>
+            <img alt="prometheus" src={require('../static/prometheus.png')}/>
           </div>
         </div>
       </div>

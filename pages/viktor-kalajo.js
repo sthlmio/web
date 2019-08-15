@@ -13,7 +13,7 @@ const ViktorKalajo = () => (
         <small>
           <a href="mailto:viktor@sthlm.io">viktor@sthlm.io</a>
         </small>
-        <p>
+        <p className="text">
           I have been working professionally with web development 7+ years. The
           last couple of years my primary focus has been with technologies and
           frameworks such as <strong>JavaScript</strong>, <strong>React</strong>
