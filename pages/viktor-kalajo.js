@@ -21,7 +21,7 @@ const ViktorKalajo = () => (
           well-versed in general front end stuff such as HTML, CSS, build tools,
           accessibility, SEO and performance.
         </p>
-        <p>Clients I've worked with include Spotify, SVT and MTG.</p>
+        <p className="text">Clients I've worked with include Spotify, SVT and MTG.</p>
 
         <h3>Next dream gig</h3>
         <p className="text">
