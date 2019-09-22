@@ -1,12 +1,10 @@
-import Link from 'next/link'
-
 export function About () {
   return (
     <section>
       <div className="content">
         <h2>What we do</h2>
         <p>
-          We help clients build web apps for the future and we like to do it with these technologies and tools.
+          We are a network of self-employed developers helping clients build web apps for the future, and we like to do it with these technologies and tools.
           Check out more at our <a href="https://github.com/sthlmio" target="_blank">GitHub</a> organization.
         </p>
       </div>

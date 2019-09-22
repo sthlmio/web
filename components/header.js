@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export function Header ({title = 'sthlm.io - Consulting company and developer network in Stockholm', canonical = ''}) {
+export function Header ({title = 'sthlm.io - Developer network in Stockholm', canonical = ''}) {
   return (
     <>
       <Head>
