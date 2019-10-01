@@ -20,9 +20,15 @@ export function Jumbo() {
         }
 
         img {
-          width: 100%;
-          max-width: 500px;
-          margin-bottom: 20px;
+          width: 75%;
+          max-width: 400px;
+        }
+        
+        @media screen and (min-width: 700px) {
+          img {
+            width: 100%;
+            max-width: 500px;
+          }
         }
 
         div {
