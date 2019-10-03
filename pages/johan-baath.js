@@ -10,7 +10,7 @@ export default function JohanBaath () {
           <InPageHeader/>
           <h2>Johan Bååth</h2>
           <p>Dalagatan 55, 113 31 Stockholm</p>
-          <small><a href="mailto:johan@sthlm.io">johan@sthlm.io</a></small>
+          <small><a href="mailto:info@johanbaath.com">info@johanbaath.com</a></small>
           <p className="text">
             I’ve been working as a developer professionally for 10+ years and I enjoy developing complete
             products from ground up, including the full tech stack and design.
@@ -23,7 +23,7 @@ export default function JohanBaath () {
             <br /><br />
             We secured music licensing from several major music labels such as Sony Music and raised over 5MSEK in funding.
             <br/><br/>
-            Want to know more about me? <a href="mailto:johan@sthlm.io?subject=Let's meet over coffee!">Let's meet over coffee in Stockholm!</a>
+            Want to know more about me? <a href="mailto:info@johanbaath.com?subject=Let's meet over coffee!">Let's meet over coffee in Stockholm!</a>
           </p>
 
           <h3>Next dream gig</h3>
