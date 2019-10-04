@@ -18,7 +18,9 @@
     "react-dom": "16.10.1",
     "react-typist": "2.0.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "1.18.2"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
