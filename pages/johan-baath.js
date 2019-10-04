@@ -10,7 +10,10 @@ export default function JohanBaath () {
           <InPageHeader/>
           <h2>Johan Bååth</h2>
           <p>Dalagatan 55, 113 31 Stockholm</p>
-          <small><a href="mailto:info@johanbaath.com">info@johanbaath.com</a></small>
+          <small>+46 760 062 560 / <a href="mailto:info@johanbaath.com">info@johanbaath.com</a>
+          <br/>
+          <a href="https://www.linkedin.com/in/johanbaath/">LinkedIn</a> / <a href="https://github.com/johanbaath">GitHub</a>
+          </small>
           <p className="text">
             I’ve been working as a developer professionally for 10+ years and I enjoy developing complete
             products from ground up, including the full tech stack and design.
