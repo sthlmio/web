@@ -10,7 +10,24 @@ export default function FredrikLack () {
           <InPageHeader/>
           <h2>Fredrik Lack</h2>
           <p>Textilgatan 25, 120 30 Stockholm</p>
-          <small>+46 733 730 941 / <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a></small>
+          <small>
+            +46 733 730 941 / <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a>
+            <br />
+            <a
+              href="https://www.linkedin.com/in/fredriklack/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a> /{' '}
+            <a
+              href="https://github.com/larsha"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </small>
           <p className="text">
             I’ve been working as a developer for 8+ years and I enjoy working with
             devops stuff and also pure development. Last couple of years I’ve been
