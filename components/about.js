@@ -58,7 +58,7 @@ export function About() {
             />
           </div>
           <div>
-            <img alt="grafana" src={require('../public/static/grafana.png')} />
+            <img alt="vault" src={require('../public/static/vault.png')} />
           </div>
           <div>
             <img
