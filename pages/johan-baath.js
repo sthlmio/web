@@ -11,7 +11,6 @@ export default function JohanBaath() {
           <h2>Johan Bååth</h2>
           <p>Dalagatan 55, 113 31 Stockholm</p>
           <small>
-            +46 760 062 560 /{' '}
             <a href="mailto:info@johanbaath.com">info@johanbaath.com</a>
             <br />
             <a
