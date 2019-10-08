@@ -2,13 +2,14 @@ export function Jumbo() {
   return (
     <section>
       <div>
-        <img src={require('../static/logo_small.svg')}/>
+        <img src={require('../public/static/logo_small.svg')} />
         <p>
-          Developer network helping clients build web apps and infrastructure using Cloud Native technologies.
+          Developer network helping clients build web apps and infrastructure
+          using Cloud Native technologies.
         </p>
-        <hr/>
+        <hr />
       </div>
-      { /*language=CSS*/ }
+      {/*language=CSS*/}
       <style jsx>{`
         section {
           width: 100%;
@@ -23,7 +24,7 @@ export function Jumbo() {
           width: 75%;
           max-width: 400px;
         }
-        
+
         @media screen and (min-width: 700px) {
           img {
             width: 100%;

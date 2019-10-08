@@ -1,20 +1,20 @@
 import { Header } from '../components/header'
 
-export default function Error () {
+export default function Error() {
   return (
     <>
-      <Header title="sthlm.io -  404"/>
+      <Header title="sthlm.io -  404" />
       <section>
         <div className="content">
           <a href="/">
-            <img src={require('../static/logo_small.svg')} width="150"/>
+            <img src={require('../public/static/logo_small.svg')} width="150" />
           </a>
           <div>
             <h1>404</h1>
             <p>HTTP 404 Not found</p>
           </div>
         </div>
-        { /*language=SCSS*/}
+        {/*language=SCSS*/}
         <style jsx>{`
           section {
             width: 100%;

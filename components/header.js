@@ -1,18 +1,37 @@
 import Head from 'next/head'
 
-export function Header ({title = 'sthlm.io - Developer network in Stockholm', canonical = ''}) {
+export function Header({
+  title = 'sthlm.io - Developer network in Stockholm',
+  canonical = ''
+}) {
   return (
     <>
       <Head>
         <title>{title}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-        <link href="https://fonts.googleapis.com/css?family=Overpass:900" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,700" rel="stylesheet"/>
-        <link rel="icon" type="image/png" href={require('../static/favicon-32x32.png')} sizes="32x32"/>
-        <link rel="icon" type="image/png" href={require('../static/favicon-16x16.png')} sizes="16x16"/>
-        <link rel="canonical" href={`https://sthlm.io${canonical}`}/>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Overpass:900"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,700"
+          rel="stylesheet"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href={require('../public/static/favicon-32x32.png')}
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href={require('../public/static/favicon-16x16.png')}
+          sizes="16x16"
+        />
+        <link rel="canonical" href={`https://sthlm.io${canonical}`} />
       </Head>
-      { /*language=CSS*/}
+      {/*language=CSS*/}
       <style jsx global>{`
         body {
           padding: 0;
@@ -33,7 +52,11 @@ export function Header ({title = 'sthlm.io - Developer network in Stockholm', ca
           display: inline-block;
         }
 
-        h1, h2, h3, h4, h5 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
           font-family: 'Overpass', sans-serif;
           margin-bottom: 0;
         }
@@ -54,7 +77,10 @@ export function Header ({title = 'sthlm.io - Developer network in Stockholm', ca
           font-size: 16px;
         }
 
-        p, blockquote, label, small {
+        p,
+        blockquote,
+        label,
+        small {
           font-family: 'Overpass Mono', sans-serif;
           font-weight: 300;
           font-size: 18px;
@@ -66,13 +92,15 @@ export function Header ({title = 'sthlm.io - Developer network in Stockholm', ca
           font-family: 'Overpass Mono', sans-serif;
         }
 
-        p.text, li {
+        p.text,
+        li {
           font-weight: 300;
           font-size: 16px;
         }
 
         @media screen and (min-width: 500px) {
-          p.text, li {
+          p.text,
+          li {
             font-size: 18px;
           }
 

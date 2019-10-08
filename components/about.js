@@ -1,54 +1,74 @@
-export function About () {
+export function About() {
   return (
     <section>
       <div className="content">
         <h2>What we do</h2>
         <p>
-          We are a network of self-employed developers helping clients build web apps for the future, and we like to do it with these technologies and tools.
-          Check out more at our <a href="https://github.com/sthlmio" target="_blank">GitHub</a> organization.
+          We are a network of self-employed developers helping clients build web
+          apps for the future, and we like to do it with these technologies and
+          tools. Check out more at our{' '}
+          <a href="https://github.com/sthlmio" target="_blank">
+            GitHub
+          </a>{' '}
+          organization.
         </p>
       </div>
       <div className="logos">
         <div>
           <div>
-            <img alt="golang" src={require('../static/golang.png')}/>
+            <img alt="golang" src={require('../public/static/golang.png')} />
           </div>
           <div>
-            <img alt="kubernetes" src={require('../static/kubernetes.png')}/>
+            <img
+              alt="kubernetes"
+              src={require('../public/static/kubernetes.png')}
+            />
           </div>
           <div>
-            <img alt="google cloud platform" src={require('../static/gcp.png')}/>
+            <img
+              alt="google cloud platform"
+              src={require('../public/static/gcp.png')}
+            />
           </div>
           <div>
-            <img alt="node.js" src={require('../static/nodejs.png')}/>
+            <img alt="node.js" src={require('../public/static/nodejs.png')} />
           </div>
           <div>
-            <img alt="terraform" src={require('../static/terraform.png')}/>
+            <img
+              alt="terraform"
+              src={require('../public/static/terraform.png')}
+            />
           </div>
           <div>
-            <img alt="react" src={require('../static/react.png')}/>
+            <img alt="react" src={require('../public/static/react.png')} />
           </div>
           <div>
-            <img alt="redis" src={require('../static/redis.png')}/>
+            <img alt="redis" src={require('../public/static/redis.png')} />
           </div>
           <div>
-            <img alt="docker" src={require('../static/docker.png')}/>
+            <img alt="docker" src={require('../public/static/docker.png')} />
           </div>
           <div>
-            <img alt="nginx" src={require('../static/nginx.png')}/>
+            <img alt="nginx" src={require('../public/static/nginx.png')} />
           </div>
           <div>
-            <img alt="lets encrypt" src={require('../static/letsencrypt.png')}/>
+            <img
+              alt="lets encrypt"
+              src={require('../public/static/letsencrypt.png')}
+            />
           </div>
           <div>
-            <img alt="grafana" src={require('../static/grafana.png')}/>
+            <img alt="grafana" src={require('../public/static/grafana.png')} />
           </div>
           <div>
-            <img alt="prometheus" src={require('../static/prometheus.png')}/>
+            <img
+              alt="prometheus"
+              src={require('../public/static/prometheus.png')}
+            />
           </div>
         </div>
       </div>
-      { /*language=SCSS*/}
+      {/*language=SCSS*/}
       <style jsx>{`
         section {
           width: 100%;
@@ -70,20 +90,24 @@ export function About () {
           height: 150px;
           width: calc(100% + 5px);
           transform: rotate(2deg);
-          content: "";
-          background: rgb(241,241,241);
-          background: linear-gradient(180deg, rgba(241,241,241,1) 0%, rgba(245,245,245,1) 100%);
+          content: '';
+          background: rgb(241, 241, 241);
+          background: linear-gradient(
+            180deg,
+            rgba(241, 241, 241, 1) 0%,
+            rgba(245, 245, 245, 1) 100%
+          );
         }
-        
+
         a,
         a:active,
         a:visited {
           font-weight: bold;
           color: #000;
         }
-        
+
         a:hover {
-          color: #3E46CF;
+          color: #3e46cf;
         }
 
         h2 {
@@ -117,7 +141,7 @@ export function About () {
           align-items: center;
           padding: 15px;
           height: 100px;
-          transition: background-color .2s ease-in-out;
+          transition: background-color 0.2s ease-in-out;
           width: calc(50% - 30px);
         }
 

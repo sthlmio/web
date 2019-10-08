@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export function Team () {
+export function Team() {
   return (
     <section>
       <div className="content">
@@ -8,41 +8,59 @@ export function Team () {
           <li>
             <div className="item">
               <div className="item__img">
-                <img width="200" src={require('../static/fredrik-lack.jpg')}/>
+                <img
+                  width="200"
+                  src={require('../public/static/fredrik-lack.jpg')}
+                />
               </div>
               <p>Fredrik Lack</p>
-              <Link href="/fredrik-lack"><a>Profile</a></Link>
+              <Link href="/fredrik-lack">
+                <a>Profile</a>
+              </Link>
             </div>
           </li>
           <li>
             <div className="item">
               <div className="item__img">
-                <img width="200" src={require('../static/johan-baath.png')}/>
+                <img
+                  width="200"
+                  src={require('../public/static/johan-baath.png')}
+                />
               </div>
               <p>Johan Bååth</p>
-              <Link href="/johan-baath"><a>Profile</a></Link>
+              <Link href="/johan-baath">
+                <a>Profile</a>
+              </Link>
             </div>
           </li>
           <li>
             <div className="item">
               <div className="item__img">
-                <img width="200" src={require('../static/viktor-kalajo.jpg')}/>
+                <img
+                  width="200"
+                  src={require('../public/static/viktor-kalajo.jpg')}
+                />
               </div>
               <p>Viktor Kalajo</p>
-              <Link href="/viktor-kalajo"><a>Profile</a></Link>
+              <Link href="/viktor-kalajo">
+                <a>Profile</a>
+              </Link>
             </div>
           </li>
           <li>
             <div className="item">
               <div className="item__img">
-                <img width="200" src={require('../static/viktor-bergehall.jpg')}/>
+                <img
+                  width="200"
+                  src={require('../public/static/viktor-bergehall.jpg')}
+                />
               </div>
               <p>Viktor Bergehall</p>
             </div>
           </li>
         </ul>
       </div>
-      { /*language=SCSS*/}
+      {/*language=SCSS*/}
       <style jsx>{`
         section {
           width: 100%;
@@ -63,7 +81,7 @@ export function Team () {
           height: 150px;
           width: calc(100% + 5px);
           transform: rotate(-2deg);
-          content: "";
+          content: '';
           background: #f5f5f5;
         }
 
@@ -79,7 +97,7 @@ export function Team () {
         }
 
         a:hover {
-          color: #3E46CF;
+          color: #3e46cf;
         }
 
         ul {
@@ -102,7 +120,7 @@ export function Team () {
             padding: 0 40px;
           }
         }
-        
+
         @media screen and (min-width: 900px) {
           li {
             max-width: calc(33.33% - 80px);
