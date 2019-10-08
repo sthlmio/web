@@ -67,23 +67,24 @@ export default function JohanBaath() {
             <li>Highly experienced in Node.js</li>
             <li>
               Highly experienced in modern JavaScript, including TypeScript and
-              Flow
+              Flow.
             </li>
-            <li>Working professionally with React for 4+ years</li>
-            <li>GraphQL and running it in production</li>
+            <li>Working professionally with React for 4+ years.</li>
+            <li>GraphQL and running it in production.</li>
             <li>
               Databases and search indexes such as PostgreSQL, MongoDB,
-              RethinkDB, Elasticsearch, Solr, Redis
+              RethinkDB, Elasticsearch, Solr, Redis.
             </li>
             <li>
-              Several years of experience running large scale apps in production
+              Several years of experience running large scale apps in
+              production.
             </li>
             <li>
               Running services on Docker, both for development and production
               environments.
             </li>
             <li>
-              DevOps: CI/CD, cloud, physical infrastructure, scaling, automation
+              DevOps: CI/CD, AWS, physical infrastructure, scaling, automation.
             </li>
           </ul>
 
