@@ -31,7 +31,7 @@ export default function JohanBaath() {
           </small>
           <p className="text">
             I’ve been working as a developer professionally for 10+ years and I
-            enjoy developing complete products from ground up, including the
+            enjoy developing complete products from the ground up, including the
             full tech stack and design.
             <br />
             <br />
@@ -63,7 +63,7 @@ export default function JohanBaath() {
 
           <h3>Summary of Qualifications</h3>
           <ul>
-            <li>Highly experienced in Node.js</li>
+            <li>Highly experienced in Node.js.</li>
             <li>
               Highly experienced in modern JavaScript, including TypeScript and
               Flow.
