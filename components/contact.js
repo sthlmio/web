@@ -10,8 +10,15 @@ export class Contact extends Component {
     this.state = {
       submitting: false,
       submitted: false,
+      success: false,
       error: false
     }
+  }
+
+  resetError () {
+    this.setState({
+      error: false
+    })
   }
 
   handleSubmit () {
@@ -41,6 +48,7 @@ export class Contact extends Component {
       if (res.status === 200) {
         this.setState({
           submitted: true,
+          success: true,
           submitting: false
         })
 
@@ -62,15 +70,23 @@ export class Contact extends Component {
   }
 
   renderTitle () {
-    if (this.state.submitted) {
-      if (this.state.error) {
-        return <Typist cursor={{blink: true}} key="error">Oops, try agin<Typist.Backspace count={2} delay={100} />ain</Typist>
-      } else {
-        return <Typist cursor={{blink: true}} key="success">Thank you</Typist>
-      }
+    const { submitted, error, success, submitting } = this.state
+
+    if (submitting) {
+      return <Typist cursor={{blink: true}} key="sending">Hang on</Typist>
     }
 
-    return <Typist cursor={{blink: true}} key="form">Get in touch</Typist>
+    if (submitted) {
+      if (error) {
+        return <Typist cursor={{blink: true}} key="error">Oops, try agin<Typist.Backspace count={2} delay={100} />ain</Typist>
+      } else if (success) {
+        return <Typist cursor={{blink: true}} key="success">Thank you</Typist>
+      }
+
+      return <Typist cursor={{blink: true}} key="retry">Ok, lets try again</Typist>
+    }
+
+    return <Typist cursor={{blink: true}} key="default">Get in touch</Typist>
   }
 
   render () {
@@ -83,11 +99,37 @@ export class Contact extends Component {
             e.preventDefault()
             this.handleSubmit()
           }}>
-            <input type="text" name="name" placeholder="Name" autoComplete="off" ref={n => (this.inputNameNode = n)} />
-            <input type="text" name="email" placeholder="E-mail" autoComplete="off" ref={n => (this.inputEmailNode = n)} />
-            <textarea name="message" rows="3" placeholder="Message" autoComplete="off" ref={n => (this.inputMessageNode = n)} />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              autoComplete="off"
+              ref={n => (this.inputNameNode = n)}
+              onFocus={() => this.resetError()}
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="E-mail"
+              autoComplete="off"
+              ref={n => (this.inputEmailNode = n)}
+              onFocus={() => this.resetError()}
+            />
+            <textarea
+              name="message"
+              rows="3"
+              placeholder="Message"
+              autoComplete="off"
+              ref={n => (this.inputMessageNode = n)}
+              onFocus={() => this.resetError()}
+            />
             <label className="checkbox">I agree to the <Link href="/terms"><a target="_blank">terms</a></Link>
-              <input type="checkbox" name="terms" ref={n => (this.inputTermsNode = n)}/>
+              <input
+                type="checkbox"
+                name="terms"
+                ref={n => (this.inputTermsNode = n)}
+                onFocus={() => this.resetError()}
+              />
               <span className="checkmark"/>
             </label>
             <button type="submit">Send</button>
@@ -130,7 +172,7 @@ export class Contact extends Component {
           }
 
           .checkbox input:checked ~ .checkmark {
-            background-color: #2196F3;
+            background-color: ${this.state.error ? '#b71c1c' : '#283193'};
           }
 
           .checkmark:after {
@@ -166,7 +208,7 @@ export class Contact extends Component {
           section {
             width: 100%;
             padding: 0 0 100px;
-            background: #3E46CF;
+            background: ${this.state.error ? '#f44336' : '#3E46CF'};
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -183,7 +225,7 @@ export class Contact extends Component {
             width: calc(100% + 5px);
             transform: rotate(-2deg);
             content: "";
-            background: #3E46CF;
+            background: ${this.state.error ? '#f44336' : '#3E46CF'};
           }
 
           div {
@@ -202,7 +244,7 @@ export class Contact extends Component {
           input {
             width: 100%;
             display: block;
-            background: #3E46CF;
+            background: ${this.state.error ? '#f44336' : '#3E46CF'};
             border: 0;
             padding: 0;
             text-indent: 0;
@@ -220,7 +262,7 @@ export class Contact extends Component {
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus,
           input:-webkit-autofill:active  {
-            -webkit-box-shadow: 0 0 0 100px #3E46CF inset !important;
+            -webkit-box-shadow: 0 0 0 100px ${this.state.error ? '#f44336' : '#3E46CF'} inset !important;
             -webkit-text-fill-color: #fff !important;
           }
 
@@ -260,7 +302,7 @@ export class Contact extends Component {
 
           textarea::placeholder,
           input::placeholder {
-            color: #283193;
+            color: ${this.state.error ? '#b71c1c' : '#283193'}
           }
         `}</style>
       </section>
