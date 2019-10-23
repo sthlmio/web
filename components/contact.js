@@ -4,21 +4,21 @@ import fetch from 'isomorphic-unfetch'
 import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
 
+const INITIAL_STATE = {
+  submitting: false,
+  submitted: false,
+  success: false,
+  error: false
+}
+
 export class Contact extends Component {
   constructor (props) {
     super(props)
-    this.state = {
-      submitting: false,
-      submitted: false,
-      success: false,
-      error: false
-    }
+    this.state = INITIAL_STATE
   }
 
-  resetError () {
-    this.setState({
-      error: false
-    })
+  reset () {
+    this.setState(INITIAL_STATE)
   }
 
   handleSubmit () {
@@ -90,6 +90,9 @@ export class Contact extends Component {
   }
 
   render () {
+    const { submitting, submitted, error, success } = this.state
+    const disableButton = submitting || error || submitted || success
+
     return (
       <section>
         <div>
@@ -105,7 +108,7 @@ export class Contact extends Component {
               placeholder="Name"
               autoComplete="off"
               ref={n => (this.inputNameNode = n)}
-              onFocus={() => this.resetError()}
+              onFocus={() => this.reset()}
             />
             <input
               type="text"
@@ -113,7 +116,7 @@ export class Contact extends Component {
               placeholder="E-mail"
               autoComplete="off"
               ref={n => (this.inputEmailNode = n)}
-              onFocus={() => this.resetError()}
+              onFocus={() => this.reset()}
             />
             <textarea
               name="message"
@@ -121,18 +124,18 @@ export class Contact extends Component {
               placeholder="Message"
               autoComplete="off"
               ref={n => (this.inputMessageNode = n)}
-              onFocus={() => this.resetError()}
+              onFocus={() => this.reset()}
             />
             <label className="checkbox">I agree to the <Link href="/terms"><a target="_blank">terms</a></Link>
               <input
                 type="checkbox"
                 name="terms"
                 ref={n => (this.inputTermsNode = n)}
-                onFocus={() => this.resetError()}
+                onFocus={() => this.reset()}
               />
               <span className="checkmark"/>
             </label>
-            <button type="submit">Send</button>
+            <button type="submit" disabled={disableButton}>Send</button>
           </form>
         </div>
         { /*language=CSS*/ }
@@ -279,6 +282,11 @@ export class Contact extends Component {
             font-weight: 300;
             -webkit-appearance: none;
             -webkit-border-radius: 0px;
+          }
+          
+          button[type="submit"]:disabled {
+            pointer-events: none;
+            opacity: .3;
           }
 
           @media screen and (min-width: 500px) {
