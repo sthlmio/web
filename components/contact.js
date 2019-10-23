@@ -18,7 +18,10 @@ export class Contact extends Component {
   }
 
   reset () {
-    this.setState(INITIAL_STATE)
+    this.setState({
+      ...INITIAL_STATE,
+      submitted: this.state.submitted,
+    })
   }
 
   handleSubmit () {
@@ -90,8 +93,8 @@ export class Contact extends Component {
   }
 
   render () {
-    const { submitting, submitted, error, success } = this.state
-    const disableButton = submitting || error || submitted || success
+    const { submitting, error, success } = this.state
+    const disableButton = submitting || error || success
 
     return (
       <section>
