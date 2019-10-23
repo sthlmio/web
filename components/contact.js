@@ -4,23 +4,22 @@ import fetch from 'isomorphic-unfetch'
 import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
 
-const INITIAL_STATE = {
-  submitting: false,
-  submitted: false,
-  success: false,
-  error: false
-}
-
 export class Contact extends Component {
   constructor (props) {
     super(props)
-    this.state = INITIAL_STATE
+    this.state = {
+      submitting: false,
+      submitted: false,
+      success: false,
+      error: false
+    }
   }
 
   reset () {
     this.setState({
-      ...INITIAL_STATE,
-      submitted: this.state.submitted,
+      submitting: false,
+      success: false,
+      error: false
     })
   }
 
