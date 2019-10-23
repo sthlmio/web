@@ -28,6 +28,7 @@ export class Contact extends Component {
       this.setState({
         submitted: true,
         error: true,
+        success: false,
         submitting: false
       })
 
@@ -49,7 +50,8 @@ export class Contact extends Component {
     }).then(res => {
       if (res.status === 200) {
         this.setState({
-          submitted: true,
+          submitted: false,
+          error: false,
           success: true,
           submitting: false
         })
@@ -59,6 +61,7 @@ export class Contact extends Component {
         this.setState({
           submitted: true,
           error: true,
+          success: false,
           submitting: false
         })
       }
@@ -66,6 +69,7 @@ export class Contact extends Component {
       this.setState({
         submitted: true,
         error: true,
+        success: false,
         submitting: false
       })
     })
@@ -78,11 +82,13 @@ export class Contact extends Component {
       return <Typist cursor={{blink: true}} key="sending">Hang on</Typist>
     }
 
+    if (success) {
+      return <Typist cursor={{blink: true}} key="success">Thank you</Typist>
+    }
+
     if (submitted) {
       if (error) {
         return <Typist cursor={{blink: true}} key="error">Oops, try agin<Typist.Backspace count={2} delay={100} />ain</Typist>
-      } else if (success) {
-        return <Typist cursor={{blink: true}} key="success">Thank you</Typist>
       }
 
       return <Typist cursor={{blink: true}} key="retry">Ok, lets try again</Typist>
