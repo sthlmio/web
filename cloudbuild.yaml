@@ -14,6 +14,6 @@ steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=31536000, immutable', 'gs://sthlm.io/_next/**']
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:no-cache', 'gs://sthlm.io/404/index.html']
+    args: ['-m', 'setmeta', '-h', 'Cache-Control:no-cache', 'gs://sthlm.io/404.html']
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['web', 'set', '-m', 'index.html', '-e', '404/index.html', 'gs://sthlm.io']
+    args: ['web', 'set', '-m', 'index.html', '-e', '404.html', 'gs://sthlm.io']
