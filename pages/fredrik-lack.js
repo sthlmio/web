@@ -50,7 +50,7 @@ export default function FredrikLack () {
             <li>Consider myself as a generalist, but with special interest in Cloud Native, Docker, Kubernetes and
               Node.js.
             </li>
-            <li>Great DevOps knowledge, e.g. TLS/SSL, Scaling <a target="_blank" href="https://12factor.net/">12 factor apps</a>, Hosting, DNS,
+            <li>Great DevOps knowledge, e.g. TLS/SSL, Scaling, <a target="_blank" href="https://12factor.net/">12 factor apps</a>, Hosting, DNS,
               Test/Build pipelines.
             </li>
             <li>Great general frontend knowledge</li>
@@ -58,8 +58,8 @@ export default function FredrikLack () {
 
           <h3>Wants to learn more about</h3>
           <ul>
-            <li>Databases (document and relational) in depth</li>
-            <li>ML</li>
+            <li>Kubernetes on Bare-Metal</li>
+            <li>AI/ML</li>
             <li>GraphQL</li>
           </ul>
 
