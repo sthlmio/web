@@ -56,6 +56,9 @@ export function Team() {
                 />
               </div>
               <p>Viktor Bergehall</p>
+              <Link href="/viktor-bergehall">
+                <a>Profile</a>
+              </Link>
             </div>
           </li>
         </ul>
