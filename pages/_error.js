@@ -3,7 +3,7 @@ import { Header } from '../components/header'
 export default function Error() {
   return (
     <>
-      <Header title="sthlm.io -  404" />
+      <Header title="sthlm.io -  404" error />
       <section>
         <div className="content">
           <a href="/">

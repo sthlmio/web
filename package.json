@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "sthlm.io web",
   "main": "index.js",
+  "license": "MIT",
   "engines": {
     "node": ">=12.4.0"
   },
@@ -42,7 +43,11 @@
       "name": "Johan Bååth",
       "email": "johan@sthlm.io",
       "url": "https://sthlm.io"
+    },
+    {
+      "name": "Viktor Bergehall",
+      "email": "viktor.bergehall@sthlm.io",
+      "url": "https://sthlm.io"
     }
-  ],
-  "license": "MIT"
+  ]
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 export function Header({
   title = 'sthlm.io - Developer network in Stockholm',
+  error = false,
   canonical = ''
 }) {
   return (
@@ -29,7 +30,8 @@ export function Header({
           href={require('../public/static/favicon-16x16.png')}
           sizes="16x16"
         />
-        <link rel="canonical" href={`https://sthlm.io${canonical}`} />
+        {!error && <link rel="canonical" href={`https://sthlm.io${canonical}`} />}
+        {error && <meta name="robots" content="noindex" />}
       </Head>
       {/*language=CSS*/}
       <style jsx global>{`
