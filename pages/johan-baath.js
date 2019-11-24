@@ -4,7 +4,10 @@ import { InPageHeader } from '../components/inPageHeader'
 export default function JohanBaath() {
   return (
     <>
-      <Header title={`sthlm.io - Johan Bååth`} canonical="/johan-baath/" />
+      <Header>
+        <title>sthlm.io - Johan Bååth</title>
+        <link rel="canonical" href="/johan-baath/" />
+      </Header>
       <section>
         <div className="content">
           <InPageHeader />

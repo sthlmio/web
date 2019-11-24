@@ -8,7 +8,10 @@ import { Team } from '../components/team'
 export default function Home() {
   return (
     <>
-      <Header/>
+      <Header>
+        <title>sthlm.io - Developer network in Stockholm</title>
+        <link rel="canonical" href="https://sthlm.io" />
+      </Header>
       <Jumbo/>
       <About/>
       <Clients/>

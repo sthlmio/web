@@ -4,7 +4,10 @@ import { Project } from '../components/project';
 
 const ViktorKalajo = () => (
   <>
-    <Header title={`sthlm.io - Viktor Kalajo`} canonical="/viktor-kalajo/" />
+    <Header>
+      <title>sthlm.io - Viktor Kalajo</title>
+      <link rel="canonical" href="/viktor-kalajo/" />
+    </Header>
     <section>
       <div className="content">
         <InPageHeader />

@@ -1,14 +1,9 @@
 import Head from 'next/head'
 
-export function Header({
-  title = 'sthlm.io - Developer network in Stockholm',
-  error = false,
-  canonical = ''
-}) {
+export function Header({ children }) {
   return (
     <>
       <Head>
-        <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           href="https://fonts.googleapis.com/css?family=Overpass:900"
@@ -30,8 +25,7 @@ export function Header({
           href={require('../public/static/favicon-16x16.png')}
           sizes="16x16"
         />
-        {!error && <link rel="canonical" href={`https://sthlm.io${canonical}`} />}
-        {error && <meta name="robots" content="noindex" />}
+        {children}
       </Head>
       {/*language=CSS*/}
       <style jsx global>{`
