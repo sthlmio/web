@@ -7,10 +7,10 @@ export function Team() {
         <ul>
           <li>
             <div className="item">
-              <div className="item__img">
+              <div className="item__img item__img--available">
                 <img
                   width="200"
-                  src={require('../public/static/fredrik-lack.jpg')}
+                  src={require('../public/static/fredrik-lack.png')}
                 />
               </div>
               <p>Fredrik Lack</p>
@@ -140,6 +140,17 @@ export function Team() {
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+        
+        .item__img--available:after {
+          content: 'Available';
+          transform: rotate(-45deg);
+          left: -25px;
+          top: 25px;
+          padding: 0 15px;
+          position: absolute;
+          color: #ffffff;
+          background: #ff0266;
         }
 
         img {
