@@ -32,7 +32,7 @@ export default function FredrikLack () {
             </a>
           </small>
           <p className="text">
-            Developer for 9+ years and the last years i’ve been leaning more towards DevOps and working mainly with the ecosystem around Kubernetes, Google Cloud, Node.js and a little bit of Go.
+            Developer for 9+ years and the last years i’ve been leaning more towards DevOps and working mainly with the ecosystem around Kubernetes, Google Cloud, Node.js and React.
             <br /><br />
             In one of my recent projects I was spearheading the development of a brand new cloud native platform running with Kubernetes on Google Cloud (GKE) using tools like Terraform, Let’s Encrypt, Prometheus/Grafana and Helm.
           </p>
