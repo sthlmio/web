@@ -1,7 +1,9 @@
 steps:
-  - name: 'gcr.io/cloud-builders/npm'
+  - name: node:13.12.0
+    entrypoint: npm
     args: ['ci']
-  - name: 'gcr.io/cloud-builders/npm'
+  - name: node:13.12.0
+    entrypoint: npm
     args: ['run', 'export']
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'cp', '-r', 'out/*', 'gs://sthlm.io']
