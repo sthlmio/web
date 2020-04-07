@@ -53,7 +53,7 @@ export default function FredrikLack () {
             <li>Great frontend knowledge, e.g. ES standards, React, Webpack, Babel, E2E/GUI testing.</li>
           </ul>
 
-          <h3>Wants to learn more about</h3>
+          <h3>Want to learn more about</h3>
           <ul>
             <li>Kubernetes on-prem/bare-metal</li>
             <li>AI/ML</li>
