@@ -7,7 +7,7 @@ export function Team() {
         <ul>
           <li>
             <div className="item">
-              <div className="item__img item__img--available">
+              <div className="item__img">
                 <img
                   width="200"
                   src={require('../public/static/fredrik-lack.png')}
@@ -141,7 +141,7 @@ export function Team() {
           align-items: center;
           justify-content: center;
         }
-        
+
         .item__img--available:after {
           content: 'Available';
           transform: rotate(-45deg);
