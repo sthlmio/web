@@ -4,7 +4,7 @@ export default function Error() {
   return (
     <>
       <Header>
-        <title>sthlm.io -  404</title>
+        <title>sthlm.io - 404</title>
         <meta name="robots" content="noindex" />
       </Header>
       <section>

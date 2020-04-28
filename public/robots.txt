@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /lydmar-hotel/
-Disallow: /contact-us/
-Disallow: /hotel-skeppsholmen/doc/
-Disallow: /hotel-rival/doc/doc/doc/
