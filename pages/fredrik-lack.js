@@ -1,7 +1,7 @@
 import { Header } from '../components/header'
 import { InPageHeader } from '../components/inPageHeader'
 
-export default function FredrikLack () {
+export default function FredrikLack() {
   return (
     <>
       <Header>
@@ -10,11 +10,12 @@ export default function FredrikLack () {
       </Header>
       <section>
         <div className="content">
-          <InPageHeader/>
+          <InPageHeader />
           <h2>Fredrik Lack</h2>
           <p>Textilgatan 25, 120 30 Stockholm</p>
           <small>
-            +46 733 730 941 / <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a>
+            +46 733 730 941 /{' '}
+            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a>
             <br />
             <a
               href="https://www.linkedin.com/in/fredriklack/"
@@ -22,7 +23,8 @@ export default function FredrikLack () {
               target="_blank"
             >
               LinkedIn
-            </a> /{' '}
+            </a>{' '}
+            /{' '}
             <a
               href="https://github.com/larsha"
               rel="noopener noreferrer"
@@ -32,9 +34,15 @@ export default function FredrikLack () {
             </a>
           </small>
           <p className="text">
-            Developer for 9+ years and the last years i’ve been leaning more towards DevOps and working mainly with the ecosystem around Kubernetes, Google Cloud, Node.js and React.
-            <br /><br />
-            In one of my recent projects I was spearheading the development of a brand new cloud native platform running with Kubernetes on Google Cloud (GKE) using tools like Terraform, Let’s Encrypt, Prometheus/Grafana and Helm.
+            Developer for 9+ years and the last years i’ve been leaning more
+            towards DevOps and working mainly with the ecosystem around
+            Kubernetes, Google Cloud, Node.js and React.
+            <br />
+            <br />
+            In one of my recent projects I was spearheading the development of a
+            brand new cloud native platform running with Kubernetes on Google
+            Cloud (GKE) using tools like Terraform, Let’s Encrypt,
+            Prometheus/Grafana and Helm.
           </p>
 
           <h3>Summary of Qualifications</h3>
@@ -42,15 +50,29 @@ export default function FredrikLack () {
             <li>Several years of production experience with Node.js</li>
             <li>Kubernetes and Google Cloud user for +2 years</li>
             <li>Several years of experience running apps on Heroku.</li>
-            <li>Years of experience running React (Isomorphic/Universal) in production.</li>
-            <li>Experienced in running services with Docker, both for development and production environments.</li>
-            <li>Consider myself as a generalist, but with special interest in Cloud Native, Docker, Kubernetes and
-              Node.js.
+            <li>
+              Years of experience running React (Isomorphic/Universal) in
+              production.
             </li>
-            <li>Great DevOps knowledge, e.g. TLS/SSL, Scaling, <a target="_blank" href="https://12factor.net/">12 factor apps</a>, Hosting, DNS,
-              Test/Build pipelines.
+            <li>
+              Experienced in running services with Docker, both for development
+              and production environments.
             </li>
-            <li>Great frontend knowledge, e.g. ES standards, React, Webpack, Babel, E2E/GUI testing.</li>
+            <li>
+              Consider myself as a generalist, but with special interest in
+              Cloud Native, Docker, Kubernetes and Node.js.
+            </li>
+            <li>
+              Great DevOps knowledge, e.g. TLS/SSL, Scaling,{' '}
+              <a target="_blank" href="https://12factor.net/">
+                12 factor apps
+              </a>
+              , Hosting, DNS, Test/Build pipelines.
+            </li>
+            <li>
+              Great frontend knowledge, e.g. ES standards, React, Webpack,
+              Babel, E2E/GUI testing.
+            </li>
           </ul>
 
           <h3>Want to learn more about</h3>
@@ -60,10 +82,18 @@ export default function FredrikLack () {
           </ul>
 
           <h3>Highlighted Projects</h3>
-          <h4><a href="https://www.ving.se">Nordic Leisure Travel Group/Ving</a> (via Fredrik Lack AB)</h4>
-          <p className="text">Developer/Full-stack, Sep 2019 - Current</p>
+          <h4>
+            <a href="https://www.ving.se">Nordic Leisure Travel Group/Ving</a>{' '}
+            (via Fredrik Lack AB)
+          </h4>
+          <p className="text">Developer/Full-stack, Sep 2019 - Apr 2020</p>
           <p className="text">
-            Worked in one of the web teams at Ving with the SAFe methodology. Our team was responsible for multiple universal Node.js/React applications on ving.se, tjareborg.fi, ving.no and spies.dk. Worked both on-prem and in Azure, the team were responsible for everything from development and testing to CI/CD and monitoring the running applications.
+            Worked in one of the web teams at Ving with the SAFe methodology.
+            Our team was responsible for multiple universal Node.js/React
+            applications on ving.se, tjareborg.fi, ving.no and spies.dk. Worked
+            both on-prem and in Azure, the team were responsible for everything
+            from development and testing to CI/CD and monitoring the running
+            applications.
           </p>
           <ul>
             <li>React, Redux, Node.js</li>
@@ -73,10 +103,16 @@ export default function FredrikLack () {
             <li>Jest/Cypress for tests</li>
             <li>GraphQL/Apollo</li>
           </ul>
-          <h4><a href="http://egmontdigital.se/">Egmont Publishing AB</a> (via Fredrik Lack AB)</h4>
+          <h4>
+            <a href="http://egmontdigital.se/">Egmont Publishing AB</a> (via
+            Fredrik Lack AB)
+          </h4>
           <p className="text">Full-stack/DevOps, May 2018 - Current</p>
           <p className="text">
-            Spearheaded the development of a brand new cloud native publishing platform running Kubernetes on GKE (Google Cloud). Using some of Google Clouds other services too like Cloud SQL, Cloud Storage, Cloud Functions and Cloud KMS.
+            Spearheaded the development of a brand new cloud native publishing
+            platform running Kubernetes on GKE (Google Cloud). Using some of
+            Google Clouds other services too like Cloud SQL, Cloud Storage,
+            Cloud Functions and Cloud KMS.
           </p>
           <ul>
             <li>Kubernetes (k8s, GKE), Auto scaling, 12-factor app</li>
@@ -89,10 +125,17 @@ export default function FredrikLack () {
             <li>Bitbucket/Pipelines</li>
             <li>Helm/Helm Secrets</li>
           </ul>
-          <h4><a href="https://www.lexplore.com/">Lexplore</a> (via Fredrik Lack AB)</h4>
+          <h4>
+            <a href="https://www.lexplore.com/">Lexplore</a> (via Fredrik Lack
+            AB)
+          </h4>
           <p className="text">JS/React developer, May 2017 - May 2018</p>
           <p className="text">
-            Lexplore is doing rapid reading assessment, powered by eye tracking and artificial intelligence. My role was to develop the portal with all the results of the students for teachers and schools. A very complex React application with a lot of data manipulation and a lot of business logic in the front-end.
+            Lexplore is doing rapid reading assessment, powered by eye tracking
+            and artificial intelligence. My role was to develop the portal with
+            all the results of the students for teachers and schools. A very
+            complex React application with a lot of data manipulation and a lot
+            of business logic in the front-end.
           </p>
           <ul>
             <li>Node.js, React</li>
@@ -101,10 +144,17 @@ export default function FredrikLack () {
             <li>Mocha/Chai for tests</li>
             <li>Multilingual</li>
           </ul>
-          <h4><a href="https://www.svt.se/sport/">SVT Sport</a> (via Creuna AB)</h4>
+          <h4>
+            <a href="https://www.svt.se/sport/">SVT Sport</a> (via Creuna AB)
+          </h4>
           <p className="text">Full-stack/DevOps, 2015 - 2017</p>
           <p className="text">
-            Worked in the sports team with the Scrum methodology and developed a brand new sport concept for SVT. My primary role was as a full-stack developer of the universal Node.js/React application with high demands on performance serving a very large amount of users weekly. I learned a lot about Node.js in depth and how to tweak and adjust it to high demands.
+            Worked in the sports team with the Scrum methodology and developed a
+            brand new sport concept for SVT. My primary role was as a full-stack
+            developer of the universal Node.js/React application with high
+            demands on performance serving a very large amount of users weekly.
+            I learned a lot about Node.js in depth and how to tweak and adjust
+            it to high demands.
           </p>
           <ul>
             <li>Node.js, React, Express, Redis and MongoDB</li>
@@ -114,30 +164,43 @@ export default function FredrikLack () {
             <li>Jenkins test and build pipelines</li>
             <li>Mocha/Chai for tests</li>
           </ul>
-          <h4><a href="https://www.pointsharp.com/">Pointsharp</a> (via Creuna AB)</h4>
+          <h4>
+            <a href="https://www.pointsharp.com/">Pointsharp</a> (via Creuna AB)
+          </h4>
           <p className="text">Developer/Full-stack/DevOps, 2016 - 2017</p>
           <p className="text">
-            Pointsharp is a security software company that enable Enterprises to secure the login of their users to all their applications with simplified user experience.
-            We built a complete new public web concept for them, my role was as a full-stack developer.
+            Pointsharp is a security software company that enable Enterprises to
+            secure the login of their users to all their applications with
+            simplified user experience. We built a complete new public web
+            concept for them, my role was as a full-stack developer.
           </p>
           <ul>
             <li>Python/Django, PostgreSQL, Redis, React</li>
             <li>Heroku</li>
             <li>Docker development environment</li>
           </ul>
-          <h4><a href="https://www.akademibokhandeln.se/">Akademibokhandeln</a> (via Creuna AB)</h4>
+          <h4>
+            <a href="https://www.akademibokhandeln.se/">Akademibokhandeln</a>{' '}
+            (via Creuna AB)
+          </h4>
           <p className="text">Developer, 2016 - 2017</p>
           <p className="text">
-            Akademibokhandeln was about to release it’s e-commerce concept, so my primary role was to develop the checkout page. I learned a lot about Elasticsearch and Python.
+            Akademibokhandeln was about to release it’s e-commerce concept, so
+            my primary role was to develop the checkout page. I learned a lot
+            about Elasticsearch and Python.
           </p>
           <ul>
-            <li>React, Python/Django, PostgreSQL, React, Elasticsearch, Redis</li>
+            <li>
+              React, Python/Django, PostgreSQL, React, Elasticsearch, Redis
+            </li>
             <li>Heroku</li>
             <li>Docker development environment</li>
           </ul>
 
           <h3>Open Source Projects</h3>
-          <h4><a href="https://bolaget.io/">bolaget.io</a></h4>
+          <h4>
+            <a href="https://bolaget.io/">bolaget.io</a>
+          </h4>
           <p className="text">Full-stack/DevOps</p>
           <ul>
             <li>Node.js, Elasticsearch, HashiCorp Vault</li>
@@ -148,10 +211,16 @@ export default function FredrikLack () {
             <li>Let's Encrypt automation</li>
             <li>Prometheus/Grafana dashboards for supervision</li>
           </ul>
-          <h4><a href="https://github.com/sthlmio/preemptible-sentinel">Preemptible Sentinel</a></h4>
+          <h4>
+            <a href="https://github.com/sthlmio/preemptible-sentinel">
+              Preemptible Sentinel
+            </a>
+          </h4>
           <p className="text">Developer/Full-stack/DevOps</p>
           <p className="text">
-            Kubernetes controller that will drain and delete nodes (preemptibles) if they are created to close to each other to prevent GKE 24h deletion policy.
+            Kubernetes controller that will drain and delete nodes
+            (preemptibles) if they are created to close to each other to prevent
+            GKE 24h deletion policy.
           </p>
           <ul>
             <li>Go</li>
@@ -159,7 +228,7 @@ export default function FredrikLack () {
             <li>Travis test and build pipelines</li>
           </ul>
         </div>
-        { /*language=SCSS*/}
+        {/*language=SCSS*/}
         <style jsx>{`
           section {
             width: 100%;
@@ -197,7 +266,7 @@ export default function FredrikLack () {
           }
 
           a:hover {
-            color: #3E46CF;
+            color: #3e46cf;
           }
         `}</style>
       </section>
