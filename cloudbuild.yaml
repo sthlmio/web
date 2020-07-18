@@ -8,8 +8,6 @@ steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'cp', '-r', 'out/*', 'gs://sthlm.io']
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['rm', '-r', 'gs://sthlm.io/index']
-  - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=60, must-revalidate', 'gs://sthlm.io/*.html']
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=60, must-revalidate', 'gs://sthlm.io/*/*.html']
