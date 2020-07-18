@@ -15,8 +15,9 @@ export default function Terms() {
           <p className="text">
             The data controller in respect of our website is Fredrik Lack AB,
             registered in Stockholm, Sweden, company number 559127-4302. To
-            contact the data controller, please use our contact form or e-mail{' '}
-            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a>.
+            contact the data controller, please use our contact form, e-mail{' '}
+            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a> or by phone
+            <a href="tel:+46733730941">+46 733 73 09 41</a>.
           </p>
           <h2>Your personal data</h2>
           <p className="text">
@@ -102,8 +103,9 @@ export default function Terms() {
           </ul>
           <p className="text">
             Should you wish to exercise any of these rights, please contact us
-            using the contact form on this website or e-mail us at{' '}
-            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a>.
+            using the contact form, e-mail{' '}
+            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a> or by phone
+            <a href="tel:+46733730941">+46 733 73 09 41</a>.
           </p>
         </div>
         {/*language=SCSS*/}
