@@ -61,6 +61,10 @@ export default function Terms() {
             fingerprints, DNS log data, and website performance data derived
             from browser activity in logs to be able to provide their and our
             service.
+            <br />
+            <br />
+            The "__cfduid" cookie is a technical cookie that CloudFlare sets in
+            order to deliver their service.
           </p>
           <h3>Google, Inc</h3>
           <p className="text">
