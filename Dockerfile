@@ -16,8 +16,6 @@ COPY --chown=node:node . /home/node/web
 
 RUN npm run export
 
-COPY out /home/node/web/out
-
 FROM nginx:1.19.2-alpine
 COPY --from=builder /home/node/web/out /var/www
 COPY nginx.conf /etc/nginx/nginx.conf
