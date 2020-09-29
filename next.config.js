@@ -1,7 +1,9 @@
 // next.config.js
-const withOptimizedImages = require('next-optimized-images');
-const withCSS = require('@zeit/next-css');
+const withOptimizedImages = require('next-optimized-images')
+const withCSS = require('@zeit/next-css')
 
-module.exports = withCSS(withOptimizedImages({
-  exportTrailingSlash: true
-}));
+module.exports = withCSS(
+  withOptimizedImages({
+    trailingSlash: true,
+  })
+)

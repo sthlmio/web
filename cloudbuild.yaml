@@ -1,19 +1,7 @@
 steps:
-  - name: node:13.12.0
-    entrypoint: npm
-    args: ['ci']
-  - name: node:13.12.0
-    entrypoint: npm
-    args: ['run', 'export']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'cp', '-r', 'out/*', 'gs://sthlm.io']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=60, must-revalidate', 'gs://sthlm.io/*.html']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=60, must-revalidate', 'gs://sthlm.io/*/*.html']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:public, max-age=31536000, immutable', 'gs://sthlm.io/_next/**']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'setmeta', '-h', 'Cache-Control:no-cache', 'gs://sthlm.io/404.html']
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['web', 'set', '-m', 'index.html', '-e', '404.html', 'gs://sthlm.io']
+  - name: gcr.io/cloud-builders/docker
+    args:
+      ["build", "-t", "eu.gcr.io/$PROJECT_ID/web:${SHORT_SHA}", "."]
+
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "eu.gcr.io/$PROJECT_ID/web:${SHORT_SHA}"]
