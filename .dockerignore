@@ -1,3 +1,6 @@
 node_modules
 npm-debug.log
+
+# next.js build output
 .next
+out
