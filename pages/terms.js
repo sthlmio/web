@@ -54,25 +54,12 @@ export default function Terms() {
             with third parties for marketing purposes. All data is processed and
             stored in their EU region.
           </p>
-          <h3>Cloudflare, Inc</h3>
-          <p className="text">
-            We use Cloudflare, Inc who are based in the USA and are participants
-            in the EU-US Privacy Shield Framework. They provide us with DNS
-            routing and TLS security, they may save IP addresses, security
-            fingerprints, DNS log data, and website performance data derived
-            from browser activity in logs to be able to provide their and our
-            service.
-            <br />
-            <br />
-            The "__cfduid" cookie is a technical cookie that CloudFlare sets in
-            order to deliver their service.
-          </p>
           <h3>Google, Inc</h3>
           <p className="text">
             We use Google Cloud Platform (Google, Inc) who are based in the USA
             and are participants in the EU-US Privacy Shield Framework. They
-            provide us with storage (Google Cloud Storage) and data processing
-            (Google Cloud Functions). They may save logs and information about
+            provide us with compute (Google Kubernetes Engine) and data processing
+            (Google Cloud Functions). They may save request logs and information about
             data processed on their servers. All data is processed and stored in
             their EU regions and zones.
           </p>

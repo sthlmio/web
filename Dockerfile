@@ -1,4 +1,4 @@
-FROM node:14.11.0 AS builder
+FROM node:14.13.1 AS builder
 
 USER node
 
@@ -16,7 +16,7 @@ COPY --chown=node:node . /home/node/web
 
 RUN npm run export
 
-FROM nginx:1.19.2-alpine
+FROM nginx:1.19.3-alpine
 COPY --from=builder /home/node/web/out /var/www
 COPY nginx.conf /etc/nginx/nginx.conf
 
