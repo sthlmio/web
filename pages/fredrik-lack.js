@@ -199,7 +199,7 @@ export default function FredrikLack() {
 
           <h3>Open Source Projects</h3>
           <h4>
-            <a href="https://bolaget.io/">bolaget.io</a>
+            <a href="https://github.com/larsha/bolaget.io">bolaget.io</a>
           </h4>
           <p className="text">Full-stack/DevOps</p>
           <ul>
