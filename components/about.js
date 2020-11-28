@@ -16,55 +16,40 @@ export function About() {
       <div className="logos">
         <div>
           <div>
-            <img alt="golang" src={require('../public/static/golang.png')} />
+            <img alt="golang" src={'/static/golang.png'} />
           </div>
           <div>
-            <img
-              alt="kubernetes"
-              src={require('../public/static/kubernetes.png')}
-            />
+            <img alt="kubernetes" src={'/static/kubernetes.png'} />
           </div>
           <div>
-            <img
-              alt="google cloud platform"
-              src={require('../public/static/gcp.png')}
-            />
+            <img alt="google cloud platform" src={'/static/gcp.png'} />
           </div>
           <div>
-            <img alt="node.js" src={require('../public/static/nodejs.png')} />
+            <img alt="node.js" src={'/static/nodejs.png'} />
           </div>
           <div>
-            <img
-              alt="terraform"
-              src={require('../public/static/terraform.png')}
-            />
+            <img alt="terraform" src={'/static/terraform.png'} />
           </div>
           <div>
-            <img alt="react" src={require('../public/static/react.png')} />
+            <img alt="react" src={'/static/react.png'} />
           </div>
           <div>
-            <img alt="redis" src={require('../public/static/redis.png')} />
+            <img alt="redis" src={'/static/redis.png'} />
           </div>
           <div>
-            <img alt="docker" src={require('../public/static/docker.png')} />
+            <img alt="docker" src={'/static/docker.png'} />
           </div>
           <div>
-            <img alt="nginx" src={require('../public/static/nginx.png')} />
+            <img alt="nginx" src={'/static/nginx.png'} />
           </div>
           <div>
-            <img
-              alt="lets encrypt"
-              src={require('../public/static/letsencrypt.png')}
-            />
+            <img alt="lets encrypt" src={'/static/letsencrypt.png'} />
           </div>
           <div>
-            <img alt="vault" src={require('../public/static/vault.png')} />
+            <img alt="vault" src={'/static/vault.png'} />
           </div>
           <div>
-            <img
-              alt="prometheus"
-              src={require('../public/static/prometheus.png')}
-            />
+            <img alt="prometheus" src={'/static/prometheus.png'} />
           </div>
         </div>
       </div>

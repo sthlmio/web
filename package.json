@@ -36,13 +36,8 @@
     "export": "next build && next export"
   },
   "dependencies": {
-    "@zeit/next-css": "1.0.1",
-    "imagemin-mozjpeg": "9.0.0",
-    "imagemin-optipng": "8.0.0",
-    "imagemin-svgo": "8.0.0",
     "isomorphic-unfetch": "3.1.0",
-    "next": "9.5.5",
-    "next-optimized-images": "2.6.2",
+    "next": "10.0.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-typist": "2.0.5"

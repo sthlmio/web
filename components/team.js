@@ -8,10 +8,7 @@ export function Team() {
           <li>
             <div className="item">
               <div className="item__img">
-                <img
-                  width="200"
-                  src={require('../public/static/fredrik-lack.png')}
-                />
+                <img width="200" src={'/static/fredrik-lack.png'} />
               </div>
               <p>Fredrik Lack</p>
               <Link href="/fredrik-lack">
@@ -22,10 +19,7 @@ export function Team() {
           <li>
             <div className="item">
               <div className="item__img">
-                <img
-                  width="200"
-                  src={require('../public/static/johan-baath.png')}
-                />
+                <img width="200" src={'/static/johan-baath.png'} />
               </div>
               <p>Johan Bååth</p>
               <Link href="/johan-baath">
@@ -36,10 +30,7 @@ export function Team() {
           <li>
             <div className="item">
               <div className="item__img">
-                <img
-                  width="200"
-                  src={require('../public/static/viktor-kalajo.jpg')}
-                />
+                <img width="200" src={'/static/viktor-kalajo.jpg'} />
               </div>
               <p>Viktor Kalajo</p>
               <Link href="/viktor-kalajo">
@@ -50,10 +41,7 @@ export function Team() {
           <li>
             <div className="item">
               <div className="item__img">
-                <img
-                  width="200"
-                  src={require('../public/static/viktor-bergehall.jpg')}
-                />
+                <img width="200" src={'/static/viktor-bergehall.jpg'} />
               </div>
               <p>Viktor Bergehall</p>
               <Link href="/viktor-bergehall">

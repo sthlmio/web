@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - master
+      - feature/rpi
   pull_request:
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          platforms: linux/arm64/v8
+          platforms: linux/amd64,linux/arm64/v8
           push: true
           tags: |
             sthlmio/web:${{github.sha}}

@@ -2,7 +2,7 @@ export function Jumbo() {
   return (
     <section>
       <div>
-        <img src={require('../public/static/logo_small.svg')} />
+        <img src={'/static/logo_small.svg'} />
         <p>
           Developer network helping clients build web apps and infrastructure
           using Cloud Native technologies.
