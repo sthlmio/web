@@ -10,7 +10,7 @@ export default function Error() {
       <section>
         <div className="content">
           <a href="/">
-            <img src={require('../public/static/logo_small.svg')} width="150" />
+            <img src={'/static/logo_small.svg'} width="150" />
           </a>
           <div>
             <h1>404</h1>
