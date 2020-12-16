@@ -1,7 +1,0 @@
-steps:
-  - name: gcr.io/cloud-builders/docker
-    args:
-      ["build", "-t", "eu.gcr.io/$PROJECT_ID/web:${SHORT_SHA}", "."]
-
-  - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "eu.gcr.io/$PROJECT_ID/web:${SHORT_SHA}"]
