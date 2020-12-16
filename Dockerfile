@@ -1,4 +1,4 @@
-FROM node:15.3.0-alpine3.12 AS builder
+FROM node:15.4.0-alpine3.12 AS builder
 
 USER node
 
