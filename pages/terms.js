@@ -58,10 +58,10 @@ export default function Terms() {
           <p className="text">
             We use Google Cloud Platform (Google, Inc) who are based in the USA
             and are participants in the EU-US Privacy Shield Framework. They
-            provide us with compute (Google Kubernetes Engine) and data processing
-            (Google Cloud Functions). They may save request logs and information about
-            data processed on their servers. All data is processed and stored in
-            their EU regions and zones.
+            provide us with data processing in form of Google Cloud Functions.
+            They may save request logs and information about data processed on
+            their servers. All data is processed and stored in their EU regions
+            and zones.
           </p>
           <h2>Your rights</h2>
           <p className="text">
