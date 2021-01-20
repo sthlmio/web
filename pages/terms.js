@@ -54,15 +54,6 @@ export default function Terms() {
             with third parties for marketing purposes. All data is processed and
             stored in their EU region.
           </p>
-          <h3>Google, Inc</h3>
-          <p className="text">
-            We use Google Cloud Platform (Google, Inc) who are based in the USA
-            and are participants in the EU-US Privacy Shield Framework. They
-            provide us with data processing in form of Google Cloud Functions.
-            They may save request logs and information about data processed on
-            their servers. All data is processed and stored in their EU regions
-            and zones.
-          </p>
           <h2>Your rights</h2>
           <p className="text">
             In accordance with European law under the General Data Protection

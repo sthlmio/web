@@ -5,31 +5,31 @@ import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
 
 export class Contact extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       submitting: false,
       submitted: false,
       success: false,
-      error: false
+      error: false,
     }
   }
 
-  reset () {
+  reset() {
     this.setState({
       submitting: false,
       success: false,
-      error: false
+      error: false,
     })
   }
 
-  handleSubmit () {
+  handleSubmit() {
     if (!this.inputTermsNode.checked) {
       this.setState({
         submitted: true,
         error: true,
         success: false,
-        submitting: false
+        submitting: false,
       })
 
       return
@@ -37,67 +37,92 @@ export class Contact extends Component {
 
     this.setState({ submitting: true })
 
-    fetch('https://europe-west1-sthlmio.cloudfunctions.net/mailgun', {
+    fetch('https://faas.sthlm.io/function/faas-web-mail', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         name: this.inputNameNode.value,
         email: this.inputEmailNode.value,
-        message: this.inputMessageNode.value
-      })
-    }).then(res => {
-      if (res.status === 200) {
-        this.setState({
-          submitted: false,
-          error: false,
-          success: true,
-          submitting: false
-        })
+        message: this.inputMessageNode.value,
+      }),
+    }).then(
+      (res) => {
+        if (res.status === 200) {
+          this.setState({
+            submitted: false,
+            error: false,
+            success: true,
+            submitting: false,
+          })
 
-        this.formNode.reset()
-      } else {
+          this.formNode.reset()
+        } else {
+          this.setState({
+            submitted: true,
+            error: true,
+            success: false,
+            submitting: false,
+          })
+        }
+      },
+      () => {
         this.setState({
           submitted: true,
           error: true,
           success: false,
-          submitting: false
+          submitting: false,
         })
       }
-    }, () => {
-      this.setState({
-        submitted: true,
-        error: true,
-        success: false,
-        submitting: false
-      })
-    })
+    )
   }
 
-  renderTitle () {
+  renderTitle() {
     const { submitted, error, success, submitting } = this.state
 
     if (submitting) {
-      return <Typist cursor={{blink: true}} key="sending">Hang on</Typist>
+      return (
+        <Typist cursor={{ blink: true }} key="sending">
+          Hang on
+        </Typist>
+      )
     }
 
     if (success) {
-      return <Typist cursor={{blink: true}} key="success">Thank you</Typist>
+      return (
+        <Typist cursor={{ blink: true }} key="success">
+          Thank you
+        </Typist>
+      )
     }
 
     if (submitted) {
       if (error) {
-        return <Typist cursor={{blink: true}} key="error">Oops, try agin<Typist.Backspace count={2} delay={100} />ain</Typist>
+        return (
+          <Typist cursor={{ blink: true }} key="error">
+            Oops, try agin
+            <Typist.Backspace count={2} delay={100} />
+            ain
+          </Typist>
+        )
       }
 
-      return <Typist cursor={{blink: true}} key="retry">Ok, lets try again</Typist>
+      return (
+        <Typist cursor={{ blink: true }} key="retry">
+          Ok, lets try again
+        </Typist>
+      )
     }
 
-    return <Typist cursor={{blink: true}} key="default">Get in touch</Typist>
+    return (
+      <Typist cursor={{ blink: true }} key="default">
+        Get in touch
+      </Typist>
+    )
   }
 
-  render () {
+  render() {
     const { submitting, error, success } = this.state
     const disableButton = submitting || error || success
 
@@ -106,16 +131,19 @@ export class Contact extends Component {
         <div>
           <h2>{this.renderTitle()}</h2>
           <p>Get in touch so we can have a chat.</p>
-          <form ref={n => (this.formNode = n)} onSubmit={e => {
-            e.preventDefault()
-            this.handleSubmit()
-          }}>
+          <form
+            ref={(n) => (this.formNode = n)}
+            onSubmit={(e) => {
+              e.preventDefault()
+              this.handleSubmit()
+            }}
+          >
             <input
               type="text"
               name="name"
               placeholder="Name"
               autoComplete="off"
-              ref={n => (this.inputNameNode = n)}
+              ref={(n) => (this.inputNameNode = n)}
               onFocus={() => this.reset()}
             />
             <input
@@ -123,7 +151,7 @@ export class Contact extends Component {
               name="email"
               placeholder="E-mail"
               autoComplete="off"
-              ref={n => (this.inputEmailNode = n)}
+              ref={(n) => (this.inputEmailNode = n)}
               onFocus={() => this.reset()}
             />
             <textarea
@@ -131,22 +159,28 @@ export class Contact extends Component {
               rows="3"
               placeholder="Message"
               autoComplete="off"
-              ref={n => (this.inputMessageNode = n)}
+              ref={(n) => (this.inputMessageNode = n)}
               onFocus={() => this.reset()}
             />
-            <label className="checkbox">I agree to the <Link href="/terms"><a target="_blank">terms</a></Link>
+            <label className="checkbox">
+              I agree to the{' '}
+              <Link href="/terms">
+                <a target="_blank">terms</a>
+              </Link>
               <input
                 type="checkbox"
                 name="terms"
-                ref={n => (this.inputTermsNode = n)}
+                ref={(n) => (this.inputTermsNode = n)}
                 onFocus={() => this.reset()}
               />
-              <span className="checkmark"/>
+              <span className="checkmark" />
             </label>
-            <button type="submit" disabled={disableButton}>Send</button>
+            <button type="submit" disabled={disableButton}>
+              Send
+            </button>
           </form>
         </div>
-        { /*language=CSS*/ }
+        {/*language=CSS*/}
         <style jsx>{`
           .checkbox {
             display: block;
@@ -187,7 +221,7 @@ export class Contact extends Component {
           }
 
           .checkmark:after {
-            content: "";
+            content: '';
             position: absolute;
             display: none;
           }
@@ -235,7 +269,7 @@ export class Contact extends Component {
             height: 150px;
             width: calc(100% + 5px);
             transform: rotate(-2deg);
-            content: "";
+            content: '';
             background: ${this.state.error ? '#f44336' : '#3E46CF'};
           }
 
@@ -247,7 +281,8 @@ export class Contact extends Component {
             padding: 20px;
           }
 
-          h2, p {
+          h2,
+          p {
             color: #ffffff;
           }
 
@@ -272,12 +307,13 @@ export class Contact extends Component {
           input:-webkit-autofill,
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus,
-          input:-webkit-autofill:active  {
-            -webkit-box-shadow: 0 0 0 100px ${this.state.error ? '#f44336' : '#3E46CF'} inset !important;
+          input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 100px
+              ${this.state.error ? '#f44336' : '#3E46CF'} inset !important;
             -webkit-text-fill-color: #fff !important;
           }
 
-          button[type="submit"] {
+          button[type='submit'] {
             text-transform: uppercase;
             background: #fff;
             color: #000;
@@ -291,14 +327,14 @@ export class Contact extends Component {
             -webkit-appearance: none;
             -webkit-border-radius: 0px;
           }
-          
-          button[type="submit"]:disabled {
+
+          button[type='submit']:disabled {
             pointer-events: none;
-            opacity: .3;
+            opacity: 0.3;
           }
 
           @media screen and (min-width: 500px) {
-            button[type="submit"] {
+            button[type='submit'] {
               font-size: 22px;
             }
           }
@@ -318,7 +354,7 @@ export class Contact extends Component {
 
           textarea::placeholder,
           input::placeholder {
-            color: ${this.state.error ? '#b71c1c' : '#283193'}
+            color: ${this.state.error ? '#b71c1c' : '#283193'};
           }
         `}</style>
       </section>
