@@ -12,7 +12,7 @@ export default function JohanBaath() {
         <div className="content">
           <InPageHeader />
           <h2>Johan Bååth</h2>
-          <p>Dalagatan 55, 113 31 Stockholm</p>
+          <p>Gavelvägen 10, 181 61 Stockholm</p>
           <small>
             <a href="mailto:info@johanbaath.com">info@johanbaath.com</a>
             <br />
@@ -51,19 +51,7 @@ export default function JohanBaath() {
             <br />
             We secured music licensing from several major music labels such as
             Sony Music and raised over 5MSEK in funding.
-            <br />
-            <br />
-            Want to know more about me?{' '}
-            <a href="mailto:info@johanbaath.com?subject=Let's meet over coffee!">
-              Let's meet over coffee in Stockholm!
-            </a>
           </p>
-
-          <h3>Next dream gig</h3>
-          <p className="text">
-            Serverless, Next.js, TypeScript/Flow, GraphQL, PostgreSQL
-          </p>
-
           <h3>Summary of Qualifications</h3>
           <ul>
             <li>Highly experienced in Node.js.</li>
@@ -71,7 +59,7 @@ export default function JohanBaath() {
               Highly experienced in modern JavaScript, including TypeScript and
               Flow.
             </li>
-            <li>Working professionally with React for 4+ years.</li>
+            <li>Working professionally with React for 5+ years.</li>
             <li>GraphQL and running it in production.</li>
             <li>
               Databases and search indexes such as PostgreSQL, MongoDB,
@@ -86,18 +74,26 @@ export default function JohanBaath() {
               environments.
             </li>
             <li>
-              DevOps: CI/CD, AWS, physical infrastructure, scaling, automation.
+              DevOps: CI/CD, AWS, Google Cloud, physical infrastructure,
+              scaling, automation.
             </li>
           </ul>
 
           <h3>Wants to learn more about</h3>
           <ul>
-            <li>Applied machine learning</li>
             <li>Elixir</li>
             <li>Design and typography</li>
           </ul>
 
           <h3>Latest Projects</h3>
+          <h4>
+            <a href="https://spotify.com/">Spotify AB</a>
+          </h4>
+          <p className="text">
+            The world's most popular audio streaming subscription service.
+            <br />
+            Fullstack Developer, September 2019 - Present
+          </p>
           <h4>
             <a href="https://cabonline.com/">Cabonline Technologies AB</a>
           </h4>
