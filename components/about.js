@@ -115,20 +115,20 @@ export function About() {
           padding: 15px;
           height: 100px;
           transition: background-color 0.2s ease-in-out;
-          width: calc(50% - 30px);
+          max-width: calc(50% - 30px);
         }
 
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 800px) {
           .logos > div > div {
             flex: 1 0 calc(33% - 30px);
-            width: calc(33% - 30px);
+            max-width: calc(33% - 30px);
           }
         }
 
         @media screen and (min-width: 1000px) {
           .logos > div > div {
             flex: 1 0 calc(25% - 30px);
-            width: calc(25% - 30px);
+            max-width: calc(25% - 30px);
           }
         }
 
