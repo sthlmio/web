@@ -37,19 +37,7 @@ export function About() {
             <img alt="redis" src={'/static/redis.png'} />
           </div>
           <div>
-            <img alt="docker" src={'/static/docker.png'} />
-          </div>
-          <div>
-            <img alt="nginx" src={'/static/nginx.png'} />
-          </div>
-          <div>
             <img alt="lets encrypt" src={'/static/letsencrypt.png'} />
-          </div>
-          <div>
-            <img alt="vault" src={'/static/vault.png'} />
-          </div>
-          <div>
-            <img alt="prometheus" src={'/static/prometheus.png'} />
           </div>
         </div>
       </div>
