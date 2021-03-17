@@ -31,7 +31,7 @@ export function About() {
             <img alt="terraform" src={'/static/terraform.png'} />
           </div>
           <div>
-            <img alt="react" src={'/static/react.png'} />
+            <img alt="linkerd" src={'/static/linkerd.png'} />
           </div>
           <div>
             <img alt="redis" src={'/static/redis.png'} />
@@ -149,6 +149,10 @@ export function About() {
           vertical-align: middle;
           max-width: 100%;
           width: 70%;
+        }
+
+        .logos img[alt='linkerd'] {
+          width: 100px;
         }
 
         @media screen and (min-width: 500px) {
