@@ -33,3 +33,5 @@ USER nginx
 STOPSIGNAL SIGQUIT
 
 EXPOSE 8000 8001
+
+CMD ["nginx", "-g", "daemon off;"]
