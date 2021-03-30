@@ -30,4 +30,6 @@ RUN touch /var/run/nginx.pid && \
 
 USER nginx
 
+STOPSIGNAL SIGQUIT
+
 EXPOSE 8000 8001
