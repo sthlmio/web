@@ -70,7 +70,7 @@ export default function FredrikLack() {
             </a>{' '}
             (via Fredrik Lack AB)
           </h4>
-          <p className="text">Developer, May 2020 - Present</p>
+          <p className="text">Developer, May 2020 - May 2021</p>
           <p className="text">
             As a full-stack developer I was part of a team doing mob-programming
             with a lean approach. The team was responsible for several
