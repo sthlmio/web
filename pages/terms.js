@@ -21,12 +21,26 @@ export default function Terms() {
           </p>
           <h2>Your personal data</h2>
           <p className="text">
-            Here at sthlm.io we take your privacy seriously and will only use
-            your personal information to respond to any questions you may have
-            and to provide the products and services you have requested from us.
-            Your personal information will never be shared with third parties
-            for marketing purposes and will not be used by us for marketing
-            purposes without your explicit consent.
+            We take your privacy seriously and will only use your personal
+            information to respond to any questions you may have and to provide
+            the products and services you have requested from us. Your personal
+            information will never be shared with third parties for marketing
+            purposes and will not be used by us for marketing purposes without
+            your explicit consent.
+          </p>
+          <h3>Hosting</h3>
+          <p className="text">
+            This site is hosted on a Raspberry Pi 4 Kubernetes cluster located
+            in Stockholm, Sweden (EU). Request logs are stored for 7 days, and
+            after that they are removed. We also use mTLS (Zero Trust) between
+            our services in the cluster.
+            <br />
+            <br />
+            <i>
+              *Zero Trust means that no user, device, or network traffic is
+              trusted by default, an approach that helps eliminate many security
+              vulnerabilities.
+            </i>
           </p>
           <h2>Data collected</h2>
           <h3>Contact form</h3>
