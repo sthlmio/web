@@ -62,6 +62,35 @@ export default function FredrikLack() {
           <h3>Highlighted Projects</h3>
           <h4>
             <a
+              href="https://doors.live"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Doors.live
+            </a>{' '}
+            (via Fredrik Lack AB)
+          </h4>
+          <p className="text">Backend developer, June 2021 - Nov 2021</p>
+          <p className="text">
+            As a backend developer I was part of a tech team of 12 people. I
+            worked in the team focusing on the core business area, meaning order
+            and payment flow with integrations to Stripe. We maintained two
+            APIs, one for back office users and one client/public facing
+            customer API. The back office api was a database driven API using
+            PostGraphile. Both API's heavily used queues and tasks to perform
+            work.
+          </p>
+          <ul>
+            <li>Redis/Bull Queue</li>
+            <li>Graphile worker</li>
+            <li>PostgreSQL/PostGraphile/GraphQL</li>
+            <li>Node.js, TypeScript, Express, Jest</li>
+            <li>AWS/Amazon ECS</li>
+            <li>Stripe/Fixer.io</li>
+            <li>GitHub/GitHub Actions</li>
+          </ul>
+          <h4>
+            <a
               href="https://svti.svt.se/"
               rel="noopener noreferrer"
               target="_blank"
