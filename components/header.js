@@ -6,14 +6,6 @@ export function Header({ children }) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
-          href="https://fonts.googleapis.com/css?family=Overpass:900"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,700"
-          rel="stylesheet"
-        />
-        <link
           rel="icon"
           type="image/png"
           href={'/static/favicon-32x32.png'}
@@ -22,13 +14,49 @@ export function Header({ children }) {
         <link
           rel="icon"
           type="image/png"
-          href={'../public/static/favicon-16x16.png'}
+          href={'/static/favicon-16x16.png'}
           sizes="16x16"
         />
         {children}
       </Head>
       {/*language=CSS*/}
       <style jsx global>{`
+        @font-face {
+          font-family: 'Overpass';
+          font-style: normal;
+          font-weight: 900;
+          src: local(''),
+               url('/static/fonts/overpass-v7-latin-900.woff2') format('woff2'),
+               url('/static/fonts/overpass-v7-latin-900.woff') format('woff');
+        }
+        
+        @font-face {
+          font-family: 'Overpass Mono';
+          font-style: normal;
+          font-weight: 300;
+          src: local(''),
+               url('/static/fonts/overpass-mono-v10-latin-300.woff2') format('woff2'),
+               url('/static/fonts/overpass-mono-v10-latin-300.woff') format('woff');
+        }
+
+        @font-face {
+          font-family: 'Overpass Mono';
+          font-style: normal;
+          font-weight: 400;
+          src: local(''),
+               url('/static/fonts/overpass-mono-v10-latin-regular.woff2') format('woff2'),
+               url('/static/fonts/overpass-mono-v10-latin-regular.woff') format('woff');
+        }
+
+        @font-face {
+          font-family: 'Overpass Mono';
+          font-style: normal;
+          font-weight: 700;
+          src: local(''),
+               url('/static/fonts/overpass-mono-v10-latin-700.woff2') format('woff2'),
+               url('/static/fonts/overpass-mono-v10-latin-700.woff') format('woff');
+        }
+
         body {
           padding: 0;
           margin: 0;
