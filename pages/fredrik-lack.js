@@ -48,7 +48,7 @@ export default function FredrikLack() {
           <ul>
             <li>Consider myself as a generalist with a DevOps mindset</li>
             <li>Language agnostic and a full stack approach</li>
-            <li>Running containers (Kubernetes) in production for 2+ years</li>
+            <li>Running containers (Kubernetes) in production as an administrator and application developer for 3+ years</li>
             <li>Google Cloud user for 3+ years</li>
             <li>6+ years of production experience with Node.js</li>
           </ul>
