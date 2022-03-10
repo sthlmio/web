@@ -50,12 +50,13 @@ export default function FredrikLack() {
             <li>Language agnostic and a full stack approach</li>
             <li>Running containers (Kubernetes) in production as an administrator and application developer for 3+ years</li>
             <li>Google Cloud user for 3+ years</li>
+            <li>Running bare-metal Kubernetes for 1+ year (arm64)</li>
             <li>6+ years of production experience with Node.js</li>
           </ul>
 
           <h3>Want to learn more about</h3>
           <ul>
-            <li>Kubernetes on bare-metal</li>
+            <li>Kafka</li>
             <li>Go</li>
           </ul>
 
