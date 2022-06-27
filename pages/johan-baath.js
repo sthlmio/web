@@ -33,7 +33,7 @@ export default function JohanBaath() {
             </a>
           </small>
           <p className="text">
-            I’ve been working as a developer professionally for 10+ years and I
+            I've been working as a developer professionally for 10+ years and I
             enjoy developing complete products from the ground up, including the
             full tech stack and design.
             <br />
@@ -49,25 +49,21 @@ export default function JohanBaath() {
             providing reliable hosting for millions of songs.
             <br />
             <br />
-            We secured music licensing from several major music labels such as
-            Sony Music and raised over 5MSEK in funding.
+            We secured music licensing deals from several major music labels
+            such as Sony Music and raised multiple rounds of funding.
           </p>
           <h3>Summary of Qualifications</h3>
           <ul>
             <li>Highly experienced in Node.js.</li>
-            <li>
-              Highly experienced in modern JavaScript, including TypeScript and
-              Flow.
-            </li>
-            <li>Working professionally with React for 5+ years.</li>
+            <li>Highly experienced in JavaScript/TypeScript.</li>
+            <li>Working professionally with React for 7+ years.</li>
             <li>GraphQL and running it in production.</li>
             <li>
               Databases and search indexes such as PostgreSQL, MongoDB,
-              RethinkDB, Elasticsearch, Solr, Redis.
+              Elasticsearch, Solr, Redis.
             </li>
             <li>
-              Several years of experience running large scale apps in
-              production.
+              Running large scale apps with millions of users in production.
             </li>
             <li>
               Running services on Docker, both for development and production
@@ -81,21 +77,34 @@ export default function JohanBaath() {
 
           <h3>Wants to learn more about</h3>
           <ul>
-            <li>Elixir</li>
             <li>Design and typography</li>
           </ul>
 
           <h3>Latest Projects</h3>
           <h4>
-            <a href="https://spotify.com/">Spotify AB</a>
+            <a href="https://spotify.com/">Spotify</a>
           </h4>
           <p className="text">
             The world's most popular audio streaming subscription service.
             <br />
             Fullstack Developer, September 2019 - Present
+            <br />
+            <br />
+            Working with the following teams:
+            <ul>
+              <li>Performance - Ensuring top performance </li>
+              <li>
+                Release - Responsible for tooling around releasing Spotify on
+                all app stores.
+              </li>
+              <li>Foundation - iOS developer experience and tooling.</li>
+              <li>
+                Machine Learning UX - Building tools for Spotify's ML engineers.
+              </li>
+            </ul>
           </p>
           <h4>
-            <a href="https://cabonline.com/">Cabonline Technologies AB</a>
+            <a href="https://cabonline.com/">Cabonline Technologies</a>
           </h4>
           <p className="text">
             The largest taxi network in the Nordics.
@@ -103,7 +112,7 @@ export default function JohanBaath() {
             Lead Frontend, March 2017 - May 2019
           </p>
           <h4>
-            <a href="https://inspireme.se/">Inspireme i Sverige AB</a>
+            <a href="https://inspireme.se/">Inspireme i Sverige</a>
           </h4>
           <p className="text">
             Online courses by leading experts.
@@ -118,7 +127,7 @@ export default function JohanBaath() {
             <br /> Fullstack/DevOps, September 2015 - Jan 2017
           </p>
           <h4>
-            <a href="https://iveo.se/">IVEO AB</a>
+            <a href="https://iveo.se/">IVEO</a>
           </h4>
           <p className="text">
             Digital Agency in Stockholm.
@@ -126,12 +135,12 @@ export default function JohanBaath() {
             CTO/Developer, 2014 - 2015
           </p>
           <h4>
-            <a href="#">Revibe AB</a>
+            <a href="#">Revibe</a>
           </h4>
           <p className="text">
             Electronic music streaming service & DJ tools.
             <br />
-            Fullstack/DevOps/Architect/Co-Founder, 2010 - 2014
+            Fullstack/Co-Founder, 2010 - 2014
           </p>
         </div>
         {/*language=SCSS*/}
