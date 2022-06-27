@@ -92,7 +92,9 @@ export default function JohanBaath() {
             <br />
             Working with the following teams:
             <ul>
-              <li>Performance - Ensuring top performance </li>
+              <li>
+                Performance - Ensuring peak performance for the native apps.
+              </li>
               <li>
                 Release - Responsible for tooling around releasing Spotify on
                 all app stores.
