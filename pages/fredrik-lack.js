@@ -34,9 +34,9 @@ export default function FredrikLack() {
             </a>
           </small>
           <p className="text">
-            Developer with close to 10 years of professional experience, with
+            Developer with more than 10 years of professional experience, with
             the last few years focused more on DevOps and working with the
-            ecosystem around Kubernetes, Google Cloud, Node.js and Go.
+            ecosystem around Kubernetes, Cloud Native, Node.js and Go.
             <br />
             <br />
             In one of my recent assignments I was spearheading the architecture
@@ -48,10 +48,13 @@ export default function FredrikLack() {
           <ul>
             <li>Consider myself as a generalist with a DevOps mindset</li>
             <li>Language agnostic and a full stack approach</li>
-            <li>Running containers (Kubernetes) in production as an administrator and application developer for 3+ years</li>
-            <li>Google Cloud user for 3+ years</li>
+            <li>
+              Running containers (Kubernetes) in production as an administrator
+              and application developer for 4+ years
+            </li>
+            <li>Google Cloud user for 4+ years</li>
             <li>Running bare-metal Kubernetes for 1+ year (arm64)</li>
-            <li>6+ years of production experience with Node.js</li>
+            <li>7+ years of production experience with Node.js</li>
           </ul>
 
           <h3>Want to learn more about</h3>

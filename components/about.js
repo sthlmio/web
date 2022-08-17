@@ -34,7 +34,7 @@ export function About() {
             <img alt="linkerd" src={'/static/linkerd.png'} />
           </div>
           <div>
-            <img alt="redis" src={'/static/redis.png'} />
+            <img alt="raspberry pi" src={'/static/raspberry-pi.png'} />
           </div>
           <div>
             <img alt="lets encrypt" src={'/static/letsencrypt.png'} />
