@@ -11,7 +11,7 @@ export function Team() {
                 <img width="200" src={'/static/fredrik-lack.png'} />
               </div>
               <p>Fredrik Lack</p>
-              <Link href="/fredrik-lack">
+              <Link href="/fredrik-lack" legacyBehavior>
                 <a>Profile</a>
               </Link>
             </div>
@@ -22,7 +22,7 @@ export function Team() {
                 <img width="200" src={'/static/johan-baath.png'} />
               </div>
               <p>Johan Bååth</p>
-              <Link href="/johan-baath">
+              <Link href="/johan-baath" legacyBehavior>
                 <a>Profile</a>
               </Link>
             </div>
@@ -33,7 +33,7 @@ export function Team() {
                 <img width="200" src={'/static/viktor-kalajo.jpg'} />
               </div>
               <p>Viktor Kalajo</p>
-              <Link href="/viktor-kalajo">
+              <Link href="/viktor-kalajo" legacyBehavior>
                 <a>Profile</a>
               </Link>
             </div>
@@ -44,7 +44,7 @@ export function Team() {
                 <img width="200" src={'/static/viktor-bergehall.jpg'} />
               </div>
               <p>Viktor Bergehall</p>
-              <Link href="/viktor-bergehall">
+              <Link href="/viktor-bergehall" legacyBehavior>
                 <a>Profile</a>
               </Link>
             </div>

@@ -164,7 +164,7 @@ export class Contact extends Component {
             />
             <label className="checkbox">
               I agree to the{' '}
-              <Link href="/terms">
+              <Link href="/terms" legacyBehavior>
                 <a target="_blank">terms</a>
               </Link>
               <input
