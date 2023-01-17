@@ -30,10 +30,10 @@ export default function Terms() {
           </p>
           <h3>Hosting</h3>
           <p className="text">
-            This site is hosted on a Raspberry Pi 4 Kubernetes cluster located
-            in Stockholm, Sweden (EU). Request logs are stored for 7 days, and
-            after that they are removed. We also use mTLS (Zero Trust) between
-            our services in the cluster.
+            This site is running on our bare-metal Kubernetes cluster located in
+            Helsinki, Finland. Request logs are stored for 7 days, and after
+            that they are removed. We also use mTLS (Zero Trust) between our
+            services in the cluster.
             <br />
             <br />
             <i>
