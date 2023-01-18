@@ -37,7 +37,7 @@ export class Contact extends Component {
 
     this.setState({ submitting: true })
 
-    fetch('https://faas.sthlm.io/function/faas-web-mail', {
+    fetch('https://webmail.sthlmio.knative.sthlm.io', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
