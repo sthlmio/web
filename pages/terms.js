@@ -28,20 +28,6 @@ export default function Terms() {
             purposes and will not be used by us for marketing purposes without
             your explicit consent.
           </p>
-          <h3>Hosting</h3>
-          <p className="text">
-            This site is running on our bare-metal Kubernetes cluster located in
-            Helsinki, Finland. Request logs are stored for 7 days, and after
-            that they are removed. We also use mTLS (Zero Trust) between our
-            services in the cluster.
-            <br />
-            <br />
-            <i>
-              *Zero Trust means that no user, device, or network traffic is
-              trusted by default, an approach that helps eliminate many security
-              vulnerabilities.
-            </i>
-          </p>
           <h2>Data collected</h2>
           <h3>Contact form</h3>
           <p className="text">
