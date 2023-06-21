@@ -37,7 +37,7 @@ export class Contact extends Component {
 
     this.setState({ submitting: true })
 
-    fetch('https://webmail.sthlmio.knative.sthlm.io', {
+    fetch('https://form.sthlm.io', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
