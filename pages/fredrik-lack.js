@@ -48,19 +48,19 @@ export default function FredrikLack() {
           <ul>
             <li>Consider myself as a generalist with a DevOps mindset</li>
             <li>Language agnostic and a full stack approach</li>
-            <li>
-              Running containers (Kubernetes) in production as an administrator
-              and application developer for 4+ years
-            </li>
-            <li>Google Cloud user for 4+ years</li>
-            <li>Running bare-metal Kubernetes for 1+ year (arm64)</li>
+            <li>Running containers (Kubernetes) in production for 4+ years</li>
             <li>7+ years of production experience with Node.js</li>
+            <li>
+              Running bare metal Kubernetes for 2+ years (Raspberry Pi, arm64)
+            </li>
+            <li>TypeScript/Node.js and Go as goto languages</li>
           </ul>
 
           <h3>Want to learn more about</h3>
           <ul>
+            <li>Kubernetes on bare metal</li>
             <li>Kafka</li>
-            <li>Go</li>
+            <li>Rust</li>
           </ul>
 
           <h3>Highlighted Projects</h3>
@@ -71,8 +71,7 @@ export default function FredrikLack() {
               target="_blank"
             >
               Doors.live
-            </a>{' '}
-            (via Fredrik Lack AB)
+            </a>
           </h4>
           <p className="text">Backend developer, June 2021 - Nov 2021</p>
           <p className="text">
@@ -86,12 +85,9 @@ export default function FredrikLack() {
           </p>
           <ul>
             <li>Redis/Bull Queue</li>
-            <li>Graphile worker</li>
             <li>PostgreSQL/PostGraphile/GraphQL</li>
-            <li>Node.js, TypeScript, Express, Jest</li>
-            <li>AWS/Amazon ECS</li>
-            <li>Stripe/Fixer.io</li>
-            <li>GitHub/GitHub Actions</li>
+            <li>Node.js, TypeScript</li>
+            <li>AWS/Amazon</li>
           </ul>
           <h4>
             <a
@@ -100,8 +96,7 @@ export default function FredrikLack() {
               target="_blank"
             >
               SVT Interaktiv
-            </a>{' '}
-            (via Fredrik Lack AB)
+            </a>
           </h4>
           <p className="text">Developer, May 2020 - May 2021</p>
           <p className="text">
@@ -111,12 +106,11 @@ export default function FredrikLack() {
             built with an event source architecture.
           </p>
           <ul>
-            <li>Mob programming</li>
-            <li>Event sourcing</li>
-            <li>Google Cloud: Cloud SQL, App Engine, Firestore</li>
             <li>On-prem Kubernetes</li>
-            <li>Node.js, React, Express, Jest, Next.js</li>
-            <li>Gitlab</li>
+            <li>Mob programming</li>
+            <li>Event sourcing/CQRS</li>
+            <li>Google Cloud: Cloud SQL, App Engine, Firestore</li>
+            <li>Node.js, Next.js</li>
           </ul>
           <h4>
             <a
@@ -125,8 +119,7 @@ export default function FredrikLack() {
               target="_blank"
             >
               Nordic Leisure Travel Group/Ving
-            </a>{' '}
-            (via Fredrik Lack AB)
+            </a>
           </h4>
           <p className="text">Developer Sep 2019 - Apr 2020</p>
           <p className="text">
@@ -140,9 +133,6 @@ export default function FredrikLack() {
           <ul>
             <li>React, Redux, Node.js</li>
             <li>Azure: Functions, App Service, Key Vault</li>
-            <li>Jenkins/Octopus Deploy/Azure DevOps</li>
-            <li>Multilingual</li>
-            <li>Jest/Cypress for tests</li>
             <li>GraphQL/Apollo</li>
           </ul>
           <h4>
@@ -152,8 +142,7 @@ export default function FredrikLack() {
               target="_blank"
             >
               Egmont Publishing AB
-            </a>{' '}
-            (via Fredrik Lack AB)
+            </a>
           </h4>
           <p className="text">Architect/Lead Developer, May 2018 - Sep 2019</p>
           <p className="text">
@@ -163,8 +152,8 @@ export default function FredrikLack() {
             Cloud Functions and Cloud KMS.
           </p>
           <ul>
-            <li>Kubernetes (GKE), Auto scaling, 12-factor app</li>
-            <li>Terraform, Helm, Prometheus/Grafana, Bitbucket</li>
+            <li>Kubernetes (GKE)</li>
+            <li>Terraform, Helm, Prometheus/Grafana</li>
             <li>Let's Encrypt</li>
             <li>Google Cloud</li>
             <li>PHP7, Node.js, Nginx, Docker, Redis, Elasticsearch</li>
@@ -177,24 +166,9 @@ export default function FredrikLack() {
               target="_blank"
             >
               Lexplore
-            </a>{' '}
-            (via Fredrik Lack AB)
+            </a>
           </h4>
           <p className="text">Developer, May 2017 - May 2018</p>
-          <p className="text">
-            Lexplore is doing rapid reading assessment, powered by eye tracking
-            and artificial intelligence. My role was to develop the portal with
-            all the results of the students for teachers and schools. A very
-            complex React application with a lot of data manipulation and a lot
-            of business logic in the front-end.
-          </p>
-          <ul>
-            <li>Node.js, React</li>
-            <li>Azure App Service</li>
-            <li>Express, Flow, Redux</li>
-            <li>Mocha/Chai for tests</li>
-            <li>Multilingual</li>
-          </ul>
           <h4>
             <a
               href="https://svti.svt.se/"
@@ -206,22 +180,6 @@ export default function FredrikLack() {
             (via Creuna AB)
           </h4>
           <p className="text">Developer, 2015 - 2017</p>
-          <p className="text">
-            Worked in the sports team with the Scrum methodology and developed a
-            brand new sport concept for SVT. My primary role was as a full-stack
-            developer of the universal Node.js/React application with high
-            demands on performance serving a very large amount of users weekly.
-            I learned a lot about Node.js in depth and how to tweak and adjust
-            it to high demands.
-          </p>
-          <ul>
-            <li>Node.js, React, Flux, Express, Redis, MongoDB</li>
-            <li>Heroku</li>
-            <li>Docker development environment</li>
-            <li>Akamai CDN</li>
-            <li>Jenkins test and build pipelines</li>
-            <li>Mocha/Chai for tests</li>
-          </ul>
           <h4>
             <a
               href="https://www.akademibokhandeln.se/"
