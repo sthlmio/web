@@ -42,6 +42,12 @@ export default function Terms() {
             welcome to contact us via alternative means, such as by telephone.
           </p>
           <h2>Services used</h2>
+          <h3>Hetzner</h3>
+          <p className="text">
+            We use Hetzner Online as our hosting provider, we're using dedicated
+            servers mostly in Helsinki, Finland. Hetzner is a big European
+            hosting provider with hundreds of thousands of servers in operation.
+          </p>
           <h3>Mailgun Technologies, Inc</h3>
           <p className="text">
             To improve the reliability of sending email from our website to our
