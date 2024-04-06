@@ -32,7 +32,3 @@ jobs:
             sthlmio/web:1.0.${{ github.run_number }}
             sthlmio/web:${{ github.sha }}
             sthlmio/web:latest
-
-      - name: Call watchtower endpoint
-        run: |
-          curl -H "Authorization: Bearer ${{ secrets.WATCHTOWER_HTTP_API_TOKEN }}" "https://watchtower.sthlm.io/v1/update"
