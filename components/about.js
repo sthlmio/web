@@ -5,8 +5,8 @@ export function About() {
         <h2>What we do</h2>
         <p>
           We are a network of self-employed developers helping clients build web
-          apps and infrastructure for the future, and we like to do it with
-          these technologies and tools. Check out more at our{' '}
+          and infrastructure for the future, and we like to do it with these
+          technologies and tools. Check out more at our{' '}
           <a href="https://github.com/sthlmio" target="_blank">
             GitHub
           </a>{' '}
