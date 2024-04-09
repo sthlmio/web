@@ -48,17 +48,18 @@ export default function FredrikLack() {
           <ul>
             <li>Consider myself as a generalist with a DevOps mindset</li>
             <li>Language agnostic and a full stack approach</li>
-            <li>Running containers (Kubernetes) in production for 4+ years</li>
+            <li>Running containers (Kubernetes) in production for 5+ years</li>
             <li>7+ years of production experience with Node.js</li>
             <li>
-              Running bare metal Kubernetes for 2+ years (Raspberry Pi, arm64)
+              Running bare metal Kubernetes clusters for 3+ years (Hetzner,
+              Raspberry Pi)
             </li>
             <li>TypeScript/Node.js and Go as goto languages</li>
           </ul>
 
           <h3>Want to learn more about</h3>
           <ul>
-            <li>Kubernetes on bare metal</li>
+            <li>Always more Kubernetes :)</li>
             <li>Kafka</li>
             <li>Rust</li>
           </ul>
