@@ -31,7 +31,7 @@ export function About() {
             <img alt="terraform" src={'/static/terraform.png'} />
           </div>
           <div>
-            <img alt="linkerd" src={'/static/linkerd.png'} />
+            <img alt="oss" height="100" src={'/static/oss.svg'} />
           </div>
           <div>
             <img alt="raspberry pi" src={'/static/raspberry-pi.png'} />
@@ -151,7 +151,7 @@ export function About() {
 
         @media screen and (min-width: 1000px) {
           .logos img {
-            width: 50%;
+            width: 55%;
           }
         }
       `}</style>
