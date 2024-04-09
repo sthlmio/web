@@ -34,9 +34,9 @@ export default function FredrikLack() {
             </a>
           </small>
           <p className="text">
-            Developer with more than 11 years of professional experience, with
-            the last few years focused more on DevOps and working with the
-            ecosystem around Kubernetes, Cloud Native, Node.js and Go.
+            Developer with more than 11 years of professional experience. Now
+            focusing a lot on working with the ecosystem around Kubernetes,
+            Cloud Native and OSS.
             <br />
             <br />
             In one of my recent assignments I was spearheading the architecture
