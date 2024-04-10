@@ -4,8 +4,8 @@ export function Jumbo() {
       <div>
         <img src={'/static/logo_small.svg'} />
         <p>
-          Developer network helping clients build web apps and infrastructure
-          using Cloud Native technologies.
+          Developer network helping clients build web and infrastructure using
+          Cloud Native technologies.
         </p>
         <hr />
       </div>
