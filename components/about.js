@@ -22,7 +22,7 @@ export function About() {
             <img alt="kubernetes" src={'/static/kubernetes.png'} />
           </div>
           <div>
-            <img alt="google cloud platform" src={'/static/gcp.png'} />
+            <img alt="hetzner" src={'/static/hetzner.png'} />
           </div>
           <div>
             <img alt="node.js" src={'/static/nodejs.png'} />
