@@ -42,11 +42,10 @@ export default function Terms() {
             welcome to contact us via alternative means, such as by telephone.
           </p>
           <h2>Services used</h2>
-          <h3>Hetzner</h3>
+          <h3>Google Cloud Platform</h3>
           <p className="text">
-            We use Hetzner Online as our hosting provider, we're using dedicated
-            servers mostly in Helsinki, Finland. Hetzner is a big European
-            hosting provider with hundreds of thousands of servers in operation.
+            We use GCP as our main hosting provider, we're using Kubernetes with
+            servers in Hamina, Finland (europe-north1).
           </p>
           <h3>Mailgun Technologies, Inc</h3>
           <p className="text">
