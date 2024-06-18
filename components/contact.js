@@ -253,7 +253,11 @@ export class Contact extends Component {
           section {
             width: 100%;
             padding: 0 0 100px;
-            background: ${this.state.error ? '#f44336' : '#3E46CF'};
+            background: ${this.state.error
+              ? '#f44336'
+              : this.state.success
+              ? '#1CAC78'
+              : '#3E46CF'};
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -270,7 +274,11 @@ export class Contact extends Component {
             width: calc(100% + 5px);
             transform: rotate(-2deg);
             content: '';
-            background: ${this.state.error ? '#f44336' : '#3E46CF'};
+            background: ${this.state.error
+              ? '#f44336'
+              : this.state.success
+              ? '#1CAC78'
+              : '#3E46CF'};
           }
 
           div {
@@ -290,7 +298,11 @@ export class Contact extends Component {
           input {
             width: 100%;
             display: block;
-            background: ${this.state.error ? '#f44336' : '#3E46CF'};
+            background: ${this.state.error
+              ? '#f44336'
+              : this.state.success
+              ? '#1CAC78'
+              : '#3E46CF'};
             border: 0;
             padding: 0;
             text-indent: 0;
@@ -309,7 +321,12 @@ export class Contact extends Component {
           input:-webkit-autofill:focus,
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 100px
-              ${this.state.error ? '#f44336' : '#3E46CF'} inset !important;
+              ${this.state.error
+                ? '#f44336'
+                : this.state.success
+                ? '#1CAC78'
+                : '#3E46CF'}
+              inset !important;
             -webkit-text-fill-color: #fff !important;
           }
 
@@ -354,7 +371,11 @@ export class Contact extends Component {
 
           textarea::placeholder,
           input::placeholder {
-            color: ${this.state.error ? '#b71c1c' : '#283193'};
+            color: ${this.state.error
+              ? '#b71c1c'
+              : this.state.success
+              ? '#116748'
+              : '#283193'};
           }
         `}</style>
       </section>
