@@ -22,7 +22,7 @@ export function About() {
             <img alt="kubernetes" src={'/static/kubernetes.png'} />
           </div>
           <div>
-            <img alt="hetzner" src={'/static/hetzner.png'} />
+            <img alt="kafka" src={'/static/kafka.png'} />
           </div>
           <div>
             <img alt="node.js" src={'/static/nodejs.png'} />
@@ -37,7 +37,7 @@ export function About() {
             <img alt="raspberry pi" src={'/static/raspberry-pi.png'} />
           </div>
           <div>
-            <img alt="lets encrypt" src={'/static/letsencrypt.png'} />
+            <img alt="google cloud platform" src={'/static/gcp.png'} />
           </div>
         </div>
       </div>
