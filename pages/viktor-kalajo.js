@@ -114,8 +114,8 @@ const ViktorKalajo = () => (
           </p>
           <p>
             Additionally, Direktcenter serves as the backup CMS for SVT Nyheter,
-            ensuring seamless continuity when the primary system is down. Built
-            for scale, it can support up to one million concurrent readers,
+            ensuring news delivery when the primary system is down. Built for
+            scale, it can support up to one million concurrent readers,
             delivering live updates within milliseconds.
           </p>
         </Project>
