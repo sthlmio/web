@@ -33,7 +33,7 @@ const ViktorKalajo = () => (
           </li>
           <li>
             Expertise in data storage and processing solutions including
-            PostgreSQL, ElasticSearch, Kafka, and Redis.
+            PostgreSQL, ElasticSearch, Kafka and Redis.
           </li>
           <li>
             Proficient in CI/CD implementation with a focus on automated testing
@@ -72,12 +72,21 @@ const ViktorKalajo = () => (
             collaborating on UX and writing code.
           </p>
           <p>
-            Astrid has around 400 users/editors and serves millions of unique
-            readers with published articles and feeds every week.
+            Astrid powers one of Sweden’s largest news sites, svt.se, as well as
+            the SVT Nyheter and SVT Sport apps. The platform has around 400
+            editors, reaching millions of unique weekly readers with articles
+            and feeds.
           </p>
           <p>
-            Together with a very autonomous team of ~eight people, we built a
-            system that has been widely praised within the organization.
+            One of the major technical challenges was enabling real-time
+            collaboration among editors on articles and feeds. We solved this by
+            implementing an event-driven architecture, which supported seamless
+            and concurrent editing.
+          </p>
+          <p>
+            Working with a highly autonomous team of eight, we built a system
+            that received wide praise throughout the organization for its
+            reliability and usability.
           </p>
         </Project>
         <Project
@@ -98,8 +107,16 @@ const ViktorKalajo = () => (
           ]}
         >
           <p>
-            CMS for creating real-time news streams for articles at{' '}
-            <a href="https://svt.se/">SVT Nyheter</a>.
+            Direktcenter is a versatile CMS designed for creating real-time news
+            streams, chats, and more. It’s widely used within SVT for both News
+            and Play content, supporting live, interactive features that enhance
+            viewer engagement.
+          </p>
+          <p>
+            Additionally, Direktcenter serves as the backup CMS for SVT Nyheter,
+            ensuring seamless continuity when the primary system is down. Built
+            for scale, it can support up to one million concurrent readers,
+            delivering live updates within milliseconds.
           </p>
         </Project>
         <Project
