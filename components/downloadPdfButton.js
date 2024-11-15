@@ -13,7 +13,7 @@ export const DownloadPdfButton = ({ href }) => {
           color: #fff;
           border: 0;
           outline: none;
-          padding: 20px 50px;
+          padding: 20px 40px;
           cursor: pointer;
           font-size: 18px;
           font-family: 'Overpass', sans-serif;
@@ -21,10 +21,21 @@ export const DownloadPdfButton = ({ href }) => {
           -webkit-appearance: none;
           -webkit-border-radius: 0px;
           margin: 20px 0;
+          text-decoration: none;
+
+          &:hover {
+            background: #4c52c1;
+          }
 
           &:hover,
           &:visited {
             color: #fff;
+          }
+        }
+
+        @media print {
+          .downloadPdf {
+            display: none;
           }
         }
       `}</style>

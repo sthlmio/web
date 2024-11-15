@@ -10,7 +10,7 @@ const ViktorKalajo = () => (
     </Header>
     <div className="cv">
       <div className="content">
-        <h1>Viktor Kalajo</h1>
+        <h1 className="name">Viktor Kalajo</h1>
         <p className="title">Senior Full-Stack Software Engineer, Stockholm</p>
         <small className="mail">
           <a href="mailto:viktor.kalajo@gmail.com">viktor.kalajo@gmail.com</a>
@@ -41,7 +41,7 @@ const ViktorKalajo = () => (
             for robust deployment pipelines.
           </li>
         </ul>
-        <h2>Highlighted projects</h2>
+        <h2>Latest projects</h2>
         <Project
           title="SVT Astrid"
           role="Full-stack"
@@ -174,26 +174,14 @@ const ViktorKalajo = () => (
             .
           </p>
         </Project>
-        <Project
-          title="MTG Viasat Set-Top Box interface (via Creuna)"
-          from="Q1 2015"
-          to="Q2 2015"
-          tags={['Angular']}
-          role="Lead front-end developer"
-        />
-        <Project
-          title="Spotify Intranet (via Creuna)"
-          role="Front-end developer"
-          from="Q1 2014"
-          to="Q4 2014"
-          tags={['Angular', 'Python', 'Django']}
-        />
 
-        <h2>Education</h2>
-        <div className="education">
-          <p>
-            <span className="education-time">Q3 2008 - Q4 2013</span>
-          </p>
+        <h2 className="educationHeading">Education</h2>
+        <Project
+          title="KTH Royal Institute of Technology"
+          from="Q3 2008"
+          to="Q4 2013"
+          tags={[]}
+        >
           <p>
             Master of Science in{' '}
             <a href="http://www.csc.kth.se/utbildning/kth/kompetensinriktning/progdesignindek/">
@@ -207,7 +195,7 @@ const ViktorKalajo = () => (
             <a href="http://www.kth.se/en">KTH Royal Institute of Technology</a>
             .
           </p>
-        </div>
+        </Project>
         <div className="downloadPdfWrapper">
           <DownloadPdfButton href="/static/pdf/viktor-kalajo-cv.pdf" />
         </div>
@@ -226,8 +214,6 @@ const ViktorKalajo = () => (
         }
 
         .content {
-          display: flex;
-          flex-direction: column;
           margin: 0 auto;
           width: 1024px;
           max-width: calc(100% - 40px);
@@ -249,12 +235,17 @@ const ViktorKalajo = () => (
           display: block;
         }
 
+        .educationHeading {
+          margin-bottom: 0;
+        }
+
         .education-time {
-          font-size: 0.9em;
-          text-transform: uppercase;
+          font-family: 'Overpass Mono';
+          display: block;
+          font-size: 16px;
           line-height: 1.2em;
-          margin-top: 0.3em;
-          font-weight: 600;
+          margin-top: 0;
+          font-weight: 400;
         }
 
         @media print {
@@ -269,16 +260,16 @@ const ViktorKalajo = () => (
         }
       `}</style>
       <style jsx global>{`
-        h1 {
-          font-size: 36px;
-        }
-
         h2 {
           font-size: 20px;
+          margin-top: 1.5em;
+          margin-bottom: 0.5em;
         }
 
         h3 {
           font-size: 16px;
+          margin-top: 1.5em;
+          margin-bottom: 0.5em;
         }
 
         h4 {
@@ -286,10 +277,18 @@ const ViktorKalajo = () => (
           font-weight: 600;
           text-transform: uppercase;
           margin: 0;
+          margin-top: 20px; /* Smaller space above */
+          margin-bottom: 15px; /* Smaller space below */
+        }
+
+        .name {
+          margin-bottom: 0;
         }
 
         .title {
           font-size: 18px;
+          margin-top: 0;
+          margin-bottom: 0.6em;
         }
 
         li,

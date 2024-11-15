@@ -91,20 +91,20 @@ export default function JohanBaath() {
             <br />
             <br />
             Working with the following teams:
-            <ul>
-              <li>
-                Performance - Ensuring peak performance for the native apps.
-              </li>
-              <li>
-                Release - Responsible for tooling around releasing Spotify on
-                all app stores.
-              </li>
-              <li>Foundation - iOS developer experience and tooling.</li>
-              <li>
-                Machine Learning UX - Building tools for Spotify's ML engineers.
-              </li>
-            </ul>
           </p>
+          <ul>
+            <li>
+              Performance - Ensuring peak performance for the native apps.
+            </li>
+            <li>
+              Release - Responsible for tooling around releasing Spotify on all
+              app stores.
+            </li>
+            <li>Foundation - iOS developer experience and tooling.</li>
+            <li>
+              Machine Learning UX - Building tools for Spotify's ML engineers.
+            </li>
+          </ul>
           <h4>
             <a href="https://cabonline.com/">Cabonline Technologies</a>
           </h4>
