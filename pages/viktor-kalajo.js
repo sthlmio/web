@@ -1,5 +1,6 @@
 import { Header } from '../components/header'
 import { Project } from '../components/project'
+import { DownloadPdfButton } from '../components/downloadPdfButton'
 
 const ViktorKalajo = () => (
   <>
@@ -43,7 +44,7 @@ const ViktorKalajo = () => (
         <h2>Highlighted projects</h2>
         <Project
           title="SVT Astrid"
-          role="Fullstack"
+          role="Full-stack"
           from="Q1 2020"
           to="present"
           tags={[
@@ -80,7 +81,7 @@ const ViktorKalajo = () => (
           <p>
             One of the major technical challenges was enabling real-time
             collaboration among editors on articles and feeds. We solved this by
-            implementing an event-driven architecture, which supported seamless
+            implementing an event-driven architecture, which supports seamless
             and concurrent editing.
           </p>
           <p>
@@ -91,7 +92,7 @@ const ViktorKalajo = () => (
         </Project>
         <Project
           title="SVT Direktcenter"
-          role="Fullstack"
+          role="Full-stack"
           from="Q1 2019"
           to="Q1 2020"
           tags={[
@@ -207,6 +208,9 @@ const ViktorKalajo = () => (
             .
           </p>
         </div>
+        <div className="downloadPdfWrapper">
+          <DownloadPdfButton href="/static/pdf/viktor-kalajo-cv.pdf" />
+        </div>
       </div>
       {/*language=SCSS*/}
       <style jsx>{`
@@ -228,14 +232,6 @@ const ViktorKalajo = () => (
           width: 1024px;
           max-width: calc(100% - 40px);
           padding: 20px;
-        }
-
-        .content div {
-          display: flex;
-          height: 100%;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
         }
 
         a,
@@ -266,6 +262,10 @@ const ViktorKalajo = () => (
             text-decoration: underline;
             font-weight: 600;
           }
+        }
+
+        .downloadPdfWrapper {
+          justify-content: flex-start;
         }
       `}</style>
       <style jsx global>{`
