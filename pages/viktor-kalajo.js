@@ -1,6 +1,6 @@
-import { Header } from '../components/header';
-import { InPageHeader } from '../components/inPageHeader';
-import { Project } from '../components/project';
+import { Header } from '../components/header'
+import { Project } from '../components/project'
+import { DownloadPdfButton } from '../components/downloadPdfButton'
 
 const ViktorKalajo = () => (
   <>
@@ -8,113 +8,150 @@ const ViktorKalajo = () => (
       <title>sthlm.io - Viktor Kalajo</title>
       <link rel="canonical" href="/viktor-kalajo/" />
     </Header>
-    <section>
+    <div className="cv">
       <div className="content">
-        <InPageHeader />
-        <h2>Viktor Kalajo</h2>
-        <p>Elin Wägners gata 25, 129 51 Hägersten</p>
-        <small>
-          <a href="mailto:viktor@sthlm.io">viktor@sthlm.io</a>
+        <h1 className="name">Viktor Kalajo</h1>
+        <p className="title">Senior Full-Stack Software Engineer, Stockholm</p>
+        <small className="mail">
+          <a href="mailto:viktor.kalajo@gmail.com">viktor.kalajo@gmail.com</a>
         </small>
-        <p className="text">
-          I have been working professionally with web development 7+ years. The
-          last couple of years my primary focus has been with technologies and
-          frameworks such as <strong>JavaScript</strong>, <strong>React</strong>
-          , <strong>Node</strong> and <strong>Express</strong>. I'm also
-          well-versed in general front end stuff such as HTML, CSS, build tools,
-          accessibility, SEO and performance.
+        <p>
+          With 12+ years of professional web development experience, I create
+          products that deliver real value to users and stakeholders. I thrive
+          in end-to-end involvement, from defining business goals and user needs
+          to shaping UX, architecture, and writing the code.
         </p>
-        <p className="text">Clients I've worked with include Spotify, SVT and MTG.</p>
-
-        <h3>Next dream gig</h3>
-        <p className="text">
-          Complex web application with lots of interaction and state.
-          Technologies such as React, Node, GraphQL and TypeScript. I`d love to
-          be involved in the full tech stack and also in the design process.
-        </p>
-
-        <h3>Summary of Qualifications</h3>
+        <h2>Summary of Qualifications</h2>
         <ul>
           <li>
-            Highly experienced in modern JavaScript on both server and client
-            side
+            Over 12 years of full-stack web development experience, specializing
+            in TypeScript, React, and Node.js.
           </li>
           <li>
-            5+ years of experience writing large-scale React and Node
-            applications
+            Proven track record in architecting and delivering large-scale
+            applications, successfully leading projects from proof of concept to
+            production.
           </li>
           <li>
-            Databases and search indexes such as MongoDB, ElasticSearch, Redis
-            and PostgreSQL
+            Expertise in data storage and processing solutions including
+            PostgreSQL, ElasticSearch, Kafka and Redis.
           </li>
-          <li>Great general frontend knowledge</li>
           <li>
-            CI/CD, automation and hosting using tools like Heroku, Gitlab
-            pipelines and Jenkins
+            Proficient in CI/CD implementation with a focus on automated testing
+            for robust deployment pipelines.
           </li>
-          <li>Some GraphQL knowledge</li>
         </ul>
-
-        <h3>Wants to learn more about</h3>
-        <ul>
-          <li>GraphQL</li>
-          <li>TypeScript</li>
-        </ul>
-
-        <h3>Highlighted projects</h3>
+        <h2>Latest projects</h2>
         <Project
-          title="SVT Direktcenter"
-          role="Developer and initiator"
-          from="Q1 2019"
+          title="SVT Astrid"
+          role="Full-stack"
+          from="Q1 2020"
           to="present"
           tags={[
-            'Google Firestore',
+            'TypeScript',
             'React',
             'Node',
-            'Express',
-            'Heroku',
-            'Gitlab pipelines'
+            'Event-driven architecture',
+            'Kafka',
+            'ElasticSearch',
+            'PostgreSQL',
+            'Redis',
+            'CQRS',
+            'Gitlab CI/CD',
+            'Real-time collaborative editing',
+            'Monitoring',
+            'Automated testing',
+            'Mob-programming',
+            'Agile',
           ]}
         >
-          <p className="text">
-            CMS for creating real time news streams for articles at{' '}
-            <a href="https://svt.se/">SVT Nyheter</a>.
+          <p>
+            As a core developer of Astrid, the publishing platform for SVT News
+            and Sports, I played a key role in shaping its architecture and
+            driving it from proof of concept to production. My involvement
+            spanned the entire development lifecycle—from defining goals to
+            collaborating on UX and writing code.
+          </p>
+          <p>
+            Astrid powers one of Sweden’s largest news sites, svt.se, as well as
+            the SVT Nyheter and SVT Sport apps. The platform has around 400
+            editors, reaching millions of unique weekly readers with articles
+            and feeds.
+          </p>
+          <p>
+            One of the major technical challenges was enabling real-time
+            collaboration among editors on articles and feeds. We solved this by
+            implementing an event-driven architecture, which supports seamless
+            and concurrent editing.
+          </p>
+          <p>
+            Working with a highly autonomous team of eight, we built a system
+            that received wide praise throughout the organization for its
+            reliability and usability.
+          </p>
+        </Project>
+        <Project
+          title="SVT Direktcenter"
+          role="Full-stack"
+          from="Q1 2019"
+          to="Q1 2020"
+          tags={[
+            'JavaScript',
+            'React',
+            'Node',
+            'PostgreSQL',
+            'Google Firestore',
+            'Express',
+            'Heroku',
+            'Gitlab CI/CD',
+            'Mob-programming',
+          ]}
+        >
+          <p>
+            Direktcenter is a versatile CMS designed for creating real-time news
+            streams, chats, and more. It’s widely used within SVT for both News
+            and Play content, supporting live, interactive features that enhance
+            viewer engagement.
+          </p>
+          <p>
+            Additionally, Direktcenter serves as the backup CMS for SVT Nyheter,
+            ensuring news delivery when the primary system is down. Built for
+            scale, it can support up to one million concurrent readers,
+            delivering live updates within milliseconds.
           </p>
         </Project>
         <Project
           title={<a href="https://svt.se/sport">SVT Sport</a>}
           role="Front-end developer"
           from="Q3 2014"
-          to="present"
+          to="Q1 2019 (periodically)"
           tags={[
             'React',
             'Node',
             'GraphQL',
             'Express',
             'Heroku',
-            'Gitlab pipelines',
+            'Gitlab CI/CD',
             'Webpack',
             'MongoDB',
             'Redis',
-            'Isomorphism',
-            'Universal app',
-            'Akamai'
+            'Universal/SSR',
+            'Akamai',
           ]}
         >
-          <p className="text">
+          <p>
             SVT site for sport news,{' '}
-            <a href="https://svt.se/sport">svt.se/sport</a>. Isomorphic /
-            universal SPA built using <strong>React</strong>,{' '}
-            <strong>Node</strong> and <strong>Express</strong>. High demands on
-            performance and accessibility with ~500k unique visitors per week.
+            <a href="https://svt.se/sport">svt.se/sport</a>.
+            Isomorphic/universal SPA built using React, Node and Express. High
+            demands on performance and accessibility with ~500k unique visitors
+            per week.
           </p>
         </Project>
-
         <Project
           title={
             <>
               <a href="https://www.akademibokhandeln.se">Akademibokhandeln</a>{' '}
-              (via creuna)
+              (via Creuna)
             </>
           }
           role="Lead front-end developer"
@@ -128,60 +165,44 @@ const ViktorKalajo = () => (
             'Heroku',
             'ElasticSearch',
             'Redis',
-            'Docker'
+            'Docker',
           ]}
         >
-          <p className="text">
-            E-commerce site{' '}
-            <a href="https://www.akademibokhandeln.se/">akademibokhandeln.se</a>{' '}
-            for books built using technologies such as{' '}
-            <strong>Django (Python)</strong>, <strong>React</strong> and{' '}
-            <strong>ElasticSearch</strong>. I was the lead front end deveoper
-            during my time on this project, but i also had the opportunity to
-            work on the back end with Django.
+          <p>
+            E-commerce site for one of Sweden´s largest bookstores{' '}
+            <a href="https://www.akademibokhandeln.se/">akademibokhandeln.se</a>
+            .
           </p>
         </Project>
 
+        <h2 className="educationHeading">Education</h2>
         <Project
-          title="Thrive"
-          role="Sole fullstack-developer"
-          from="Q1 2016"
-          to="Q3 2018"
-          tags={[
-            'React',
-            'Redux',
-            'Node',
-            'Express',
-            'Heroku',
-            'MongoDB',
-            'REST'
-          ]}
+          title="KTH Royal Institute of Technology"
+          from="Q3 2008"
+          to="Q4 2013"
+          tags={[]}
         >
-          <p className="text">
-            Survey tool. Single page application built using{' '}
-            <strong>React</strong>, <strong>Redux</strong>,{' '}
-            <strong>Node</strong>, <strong>MongoDB</strong>,{' '}
-            <strong>Heroku</strong> and <strong>CloudFlare</strong>. I was
-            responsible for the entire tech stack in this project.
+          <p>
+            Master of Science in{' '}
+            <a href="http://www.csc.kth.se/utbildning/kth/kompetensinriktning/progdesignindek/">
+              Software Design
+            </a>{' '}
+            and{' '}
+            <a href="http://www.kth.se/utbildning/program/civilingenjor/industriell-ekonomi/civilingenjor-industriell-ekonomi-300-hp-1.4891">
+              Industrial Economics and Management
+            </a>{' '}
+            at{' '}
+            <a href="http://www.kth.se/en">KTH Royal Institute of Technology</a>
+            .
           </p>
         </Project>
-
-        <Project
-          title="Spotify Intranet (Via Creuna)"
-          role="Front-end developer"
-          from="Q1 2014"
-          to="Q4 2014"
-          tags={['Angular', 'Python', 'Django']}
-        >
-          <p className="text">
-            Intranet for Spotify built using Angular & Django. I worked on the
-            front end with Angular in this project.
-          </p>
-        </Project>
+        <div className="downloadPdfWrapper">
+          <DownloadPdfButton href="/static/pdf/viktor-kalajo-cv.pdf" />
+        </div>
       </div>
       {/*language=SCSS*/}
       <style jsx>{`
-        section {
+        .cv {
           width: 100%;
           padding: 0;
           background: #fff;
@@ -193,20 +214,10 @@ const ViktorKalajo = () => (
         }
 
         .content {
-          display: flex;
-          flex-direction: column;
           margin: 0 auto;
           width: 1024px;
           max-width: calc(100% - 40px);
           padding: 20px;
-        }
-
-        .content div {
-          display: flex;
-          height: 100%;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
         }
 
         a,
@@ -219,9 +230,133 @@ const ViktorKalajo = () => (
         a:hover {
           color: #3e46cf;
         }
-      `}</style>
-    </section>
-  </>
-);
 
-export default ViktorKalajo;
+        .content div.education {
+          display: block;
+        }
+
+        .educationHeading {
+          margin-bottom: 0;
+        }
+
+        .education-time {
+          font-family: 'Overpass Mono';
+          display: block;
+          font-size: 16px;
+          line-height: 1.2em;
+          margin-top: 0;
+          font-weight: 400;
+        }
+
+        @media print {
+          .cv .mail a {
+            text-decoration: underline;
+            font-weight: 600;
+          }
+        }
+
+        .downloadPdfWrapper {
+          justify-content: flex-start;
+        }
+      `}</style>
+      <style jsx global>{`
+        h2 {
+          font-size: 20px;
+          margin-top: 1.5em;
+          margin-bottom: 0.5em;
+        }
+
+        h3 {
+          font-size: 16px;
+          margin-top: 1.5em;
+          margin-bottom: 0.5em;
+        }
+
+        h4 {
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin: 0;
+          margin-top: 20px; /* Smaller space above */
+          margin-bottom: 15px; /* Smaller space below */
+        }
+
+        .name {
+          margin-bottom: 0;
+        }
+
+        .title {
+          font-size: 18px;
+          margin-top: 0;
+          margin-bottom: 0.6em;
+        }
+
+        li,
+        small,
+        p {
+          font-size: 16px;
+        }
+
+        @media screen and (min-width: 500px) {
+          .cv {
+            h1 {
+              font-size: 43px;
+            }
+
+            h2 {
+              font-size: 30px;
+            }
+
+            h3 {
+              font-size: 20px;
+            }
+
+            .title {
+              font-size: 22px;
+            }
+
+            li,
+            small,
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+
+        @media print {
+          .cv {
+            h1 {
+              font-size: 36px;
+            }
+
+            h2 {
+              font-size: 22px;
+            }
+
+            h3 {
+              font-size: 16px;
+            }
+
+            .title {
+              font-size: 18px;
+            }
+
+            li,
+            small,
+            p {
+              font-size: 16px;
+            }
+
+            a {
+              text-decoration: none;
+              font-weight: normal;
+              color: #000;
+            }
+          }
+        }
+      `}</style>
+    </div>
+  </>
+)
+
+export default ViktorKalajo

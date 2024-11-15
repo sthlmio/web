@@ -26,17 +26,18 @@ export function Header({ children }) {
           font-style: normal;
           font-weight: 900;
           src: local(''),
-               url('/static/fonts/overpass-v7-latin-900.woff2') format('woff2'),
-               url('/static/fonts/overpass-v7-latin-900.woff') format('woff');
+            url('/static/fonts/overpass-v7-latin-900.woff2') format('woff2'),
+            url('/static/fonts/overpass-v7-latin-900.woff') format('woff');
         }
-        
+
         @font-face {
           font-family: 'Overpass Mono';
           font-style: normal;
           font-weight: 300;
           src: local(''),
-               url('/static/fonts/overpass-mono-v10-latin-300.woff2') format('woff2'),
-               url('/static/fonts/overpass-mono-v10-latin-300.woff') format('woff');
+            url('/static/fonts/overpass-mono-v10-latin-300.woff2')
+              format('woff2'),
+            url('/static/fonts/overpass-mono-v10-latin-300.woff') format('woff');
         }
 
         @font-face {
@@ -44,8 +45,10 @@ export function Header({ children }) {
           font-style: normal;
           font-weight: 400;
           src: local(''),
-               url('/static/fonts/overpass-mono-v10-latin-regular.woff2') format('woff2'),
-               url('/static/fonts/overpass-mono-v10-latin-regular.woff') format('woff');
+            url('/static/fonts/overpass-mono-v10-latin-regular.woff2')
+              format('woff2'),
+            url('/static/fonts/overpass-mono-v10-latin-regular.woff')
+              format('woff');
         }
 
         @font-face {
@@ -53,8 +56,9 @@ export function Header({ children }) {
           font-style: normal;
           font-weight: 700;
           src: local(''),
-               url('/static/fonts/overpass-mono-v10-latin-700.woff2') format('woff2'),
-               url('/static/fonts/overpass-mono-v10-latin-700.woff') format('woff');
+            url('/static/fonts/overpass-mono-v10-latin-700.woff2')
+              format('woff2'),
+            url('/static/fonts/overpass-mono-v10-latin-700.woff') format('woff');
         }
 
         body {
@@ -112,6 +116,11 @@ export function Header({ children }) {
           max-width: 100%;
         }
 
+        ul,
+        ol {
+          padding-inline-start: 20px;
+        }
+
         li {
           font-family: 'Overpass Mono', sans-serif;
         }
@@ -146,6 +155,42 @@ export function Header({ children }) {
 
           h4 {
             font-size: 20px;
+          }
+
+          ul,
+          ol {
+            padding-inline-start: 40px;
+          }
+        }
+
+        @media print {
+          p.text,
+          li {
+            font-size: 12px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+
+          h1 {
+            font-size: 50px;
+          }
+
+          h2 {
+            font-size: 29px;
+          }
+
+          h3 {
+            font-size: 20px;
+          }
+
+          h4 {
+            font-size: 13px;
+          }
+
+          a {
+            text-decoration: none;
           }
         }
       `}</style>

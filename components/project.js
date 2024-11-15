@@ -1,44 +1,55 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Tags } from './tags'
 
 export const Project = ({ from, to, role, title, children, tags }) => (
-  <article>
-    <h4>{title}</h4>
-    <p className="text">
-      {role}, {from} - {to}
-    </p>
+  <article className="project">
+    <h3>
+      {title}
+      <span className="role">
+        {role ? `${role}, ` : ''}
+        {from} - {to}
+      </span>
+    </h3>
     {children}
-    <ul className="tags">
-      {tags.map(tag => (
-        <li key={tag}>{tag}</li>
-      ))}
-    </ul>
+    <Tags tags={tags} />
     {/*language=SCSS*/}
     <style jsx>
       {`
-        .tags {
-          list-style-type: none;
-          padding: 0;
+        .project {
+          display: block;
         }
-        .tags li {
-          float: left;
-          background: #f5f5f5;
-          padding: 5px 10px;
-          margin-right: 10px;
-          margin-bottom: 5px;
-          font-weight: 600;
-          font-size: 14px;
-          text-transform: uppercase;
+
+        .role {
+          font-family: 'Overpass Mono';
+          display: block;
+          font-size: 16px;
+          line-height: 1.2em;
+          margin-top: 0.3em;
+          font-weight: 400;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+
+        @media screen and (min-width: 500px) {
+          h3 {
+            font-size: 20px;
+          }
+          .role {
+            font-size: 18px;
+          }
         }
       `}
     </style>
   </article>
-);
+)
 
 Project.propTypes = {
   from: PropTypes.string,
   to: PropTypes.string,
   role: PropTypes.string,
   title: PropTypes.node,
-  tags: PropTypes.arrayOf(PropTypes.string)
-};
+  tags: PropTypes.arrayOf(PropTypes.string),
+}
