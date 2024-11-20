@@ -1,8 +1,9 @@
-import { Project } from '../components/project';
+import { Project } from '../components/project'
 import { Header } from '../components/header'
 import { InPageHeader } from '../components/inPageHeader'
+import { CvTypography } from '../styles/cvTypography'
 
-export default function ViktorBergehall () {
+export default function ViktorBergehall() {
   return (
     <>
       <Header>
@@ -11,10 +12,14 @@ export default function ViktorBergehall () {
       </Header>
       <section>
         <div className="content">
-          <InPageHeader/>
-          <h2>Viktor Bergehall</h2>
+          <InPageHeader />
+          <h1>Viktor Bergehall</h1>
           <p>Tjurbergsgatan 27A, 118 56 Stockholm</p>
-          <small>+46 704 826 691 / <a href="mailto:viktor.bergehall@sthlm.io">viktor.bergehall@sthlm.io</a>
+          <small>
+            +46 704 826 691 /{' '}
+            <a href="mailto:viktor.bergehall@sthlm.io">
+              viktor.bergehall@sthlm.io
+            </a>
             <br />
             <a
               href="https://www.linkedin.com/in/viktorbergehall/"
@@ -22,48 +27,57 @@ export default function ViktorBergehall () {
               target="_blank"
             >
               LinkedIn
-            </a> /{' '}
+            </a>{' '}
+            /{' '}
             <a
               href="https://github.com/vb"
               rel="noopener noreferrer"
               target="_blank"
             >
               GitHub
-            </a></small>
+            </a>
+          </small>
           <p className="text">
-            I am a freelance developer based in Stockholm, Sweden. My expertise lies within Javascript in general and React.js in particular. I have a background working mostly with frontend development, but also with backend development using Node.js. With over 8 years of working at digital agencies combined with an education ranging from graphic/interaction design to programming I have gained a wide experience of the software development process.
+            I am a freelance developer based in Stockholm, Sweden. My expertise
+            lies within Javascript in general and React.js in particular. I have
+            a background working mostly with frontend development, but also with
+            backend development using Node.js. With over 8 years of working at
+            digital agencies combined with an education ranging from
+            graphic/interaction design to programming I have gained a wide
+            experience of the software development process.
           </p>
 
-          <h3>Next dream gig</h3>
+          <h2>Next dream gig</h2>
           <p className="text">Data visualization, Typescript, GraphQL</p>
 
-          <h3>Summary of Qualifications</h3>
+          <h2>Summary of Qualifications</h2>
           <ul>
-            <li>Several years of experience with modern Javascript of both client and server</li>
+            <li>
+              Several years of experience with modern Javascript of both client
+              and server
+            </li>
             <li>Highly experienced in React.js</li>
             <li>Great general web development knowledge</li>
           </ul>
 
-          <h3>Wants to learn more about</h3>
+          <h2>Wants to learn more about</h2>
           <ul>
             <li>Data visualizations</li>
             <li>ML</li>
           </ul>
 
-          <h3>Latest Projects</h3>
+          <h2>Latest Projects</h2>
           <Project
             title={'Schibsted/Aftonbladet'}
             role="Developer"
             from="Q3 2019"
             to="present"
-            tags={[
-              'Javascript',
-              'React.js',
-              'D3.js'
-            ]}
+            tags={['Javascript', 'React.js', 'D3.js']}
           >
             <p className="text">
-              I'm currently working as a freelance developer at Aftonbladet. My role is to implement rich experiences for feature/long read articles.
+              I'm currently working as a freelance developer at Aftonbladet. My
+              role is to implement rich experiences for feature/long read
+              articles.
             </p>
           </Project>
           <Project
@@ -78,15 +92,18 @@ export default function ViktorBergehall () {
               'Redux',
               'Node.js',
               'Azure',
-              'Oauth'
+              'Oauth',
             ]}
           >
             <p className="text">
-            I was part of a team that worked on Assa Abloys intranet with 40k+ users. I was lead interface developer and among the challenges were to turning ideas to finished features by working closely together with the product owner.
+              I was part of a team that worked on Assa Abloys intranet with 40k+
+              users. I was lead interface developer and among the challenges
+              were to turning ideas to finished features by working closely
+              together with the product owner.
             </p>
           </Project>
         </div>
-        { /*language=SCSS*/}
+        {/*language=SCSS*/}
         <style jsx>{`
           section {
             width: 100%;
@@ -115,18 +132,8 @@ export default function ViktorBergehall () {
             align-items: center;
             justify-content: center;
           }
-
-          a,
-          a:active,
-          a:visited {
-            font-weight: bold;
-            color: #000;
-          }
-
-          a:hover {
-            color: #3E46CF;
-          }
         `}</style>
+        <CvTypography />
       </section>
     </>
   )

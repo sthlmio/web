@@ -62,6 +62,7 @@ export function Header({ children }) {
         }
 
         body {
+          font-family: 'Overpass Mono', sans-serif;
           padding: 0;
           margin: 0;
         }

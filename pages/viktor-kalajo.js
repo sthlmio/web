@@ -1,20 +1,24 @@
 import { Header } from '../components/header'
 import { Project } from '../components/project'
 import { DownloadPdfButton } from '../components/downloadPdfButton'
+import { Lead } from '../components/lead'
+import { CvTypography } from '../styles/cvTypography'
 
-const ViktorKalajo = () => (
-  <>
-    <Header>
-      <title>sthlm.io - Viktor Kalajo</title>
-      <link rel="canonical" href="/viktor-kalajo/" />
-    </Header>
-    <div className="cv">
+const ViktorKalajo = () => {
+  return (
+    <>
+      <Header>
+        <title>sthlm.io - Viktor Kalajo</title>
+        <link rel="canonical" href="/viktor-kalajo/" />
+      </Header>
       <div className="content">
         <h1 className="name">Viktor Kalajo</h1>
-        <p className="title">Senior Full-Stack Software Engineer, Stockholm</p>
-        <small className="mail">
-          <a href="mailto:viktor.kalajo@gmail.com">viktor.kalajo@gmail.com</a>
-        </small>
+        <Lead>Senior Full-Stack Software Engineer, Stockholm</Lead>
+        <p>
+          <a className="mail" href="mailto:viktor.kalajo@gmail.com">
+            viktor.kalajo@gmail.com
+          </a>
+        </p>
         <p>
           With 12+ years of professional web development experience, I create
           products that deliver real value to users and stakeholders. I thrive
@@ -33,15 +37,15 @@ const ViktorKalajo = () => (
             production.
           </li>
           <li>
-            Expertise in data storage and processing solutions including
+            Expertise in data storage and processing solutions, including
             PostgreSQL, ElasticSearch, Kafka and Redis.
           </li>
           <li>
-            Proficient in CI/CD implementation with a focus on automated testing
-            for robust deployment pipelines.
+            Proficient in CI/CD implementation, with a focus on automated
+            testing for robust deployment pipelines.
           </li>
         </ul>
-        <h2>Latest projects</h2>
+        <h2>Highlighted projects</h2>
         <Project
           title="SVT Astrid"
           role="Full-stack"
@@ -73,7 +77,7 @@ const ViktorKalajo = () => (
             collaborating on UX and writing code.
           </p>
           <p>
-            Astrid powers one of Sweden’s largest news sites, svt.se, as well as
+            Astrid powers one of Sweden's largest news sites, svt.se, as well as
             the SVT Nyheter and SVT Sport apps. The platform has around 400
             editors, reaching millions of unique weekly readers with articles
             and feeds.
@@ -149,10 +153,7 @@ const ViktorKalajo = () => (
         </Project>
         <Project
           title={
-            <>
-              <a href="https://www.akademibokhandeln.se">Akademibokhandeln</a>{' '}
-              (via Creuna)
-            </>
+            <a href="https://www.akademibokhandeln.se">Akademibokhandeln</a>
           }
           role="Lead front-end developer"
           from="Q2 2017"
@@ -167,6 +168,7 @@ const ViktorKalajo = () => (
             'Redis',
             'Docker',
           ]}
+          hidden
         >
           <p>
             E-commerce site for one of Sweden´s largest bookstores{' '}
@@ -175,7 +177,118 @@ const ViktorKalajo = () => (
           </p>
         </Project>
 
-        <h2 className="educationHeading">Education</h2>
+        <Project
+          title="Thrive"
+          role="Sole full-stack-developer"
+          from="Q1 2016"
+          to="Q3 2018"
+          tags={[
+            'React',
+            'Redux',
+            'Node',
+            'Express',
+            'Heroku',
+            'MongoDB',
+            'REST',
+          ]}
+        >
+          <p className="text">
+            Survey tool. Single page application built using React, Redux, Node,
+            MongoDB, Heroku and CloudFlare. I was responsible for the entire
+            tech stack in this project.
+          </p>
+        </Project>
+
+        <Project
+          title="Spotify Intranet"
+          role="Front-end developer"
+          from="Q1 2014"
+          to="Q4 2014"
+          tags={['Angular', 'Python', 'Django']}
+          hidden
+        >
+          <p className="text">
+            Intranet for Spotify built using Angular & Django. I worked on the
+            front end with Angular in this project.
+          </p>
+        </Project>
+
+        <h2>Proffessional Experience</h2>
+
+        <Project
+          title="Viktor Kalajo AB"
+          role="Freelancing developer"
+          from="Q2 2018"
+          to="Current"
+          tags={[]}
+        >
+          <p>
+            Most of my second round of freelancing has been on different
+            projects in SVT. They are described in detail under "Highlighted
+            projects".
+          </p>
+        </Project>
+
+        <Project
+          title="Creuna"
+          role="Senior interface developer"
+          from="Q2 2014"
+          to="Q2 2018"
+          tags={[
+            'React.js',
+            'JavaScript',
+            'Python',
+            'Django',
+            'Node',
+            'AngularJS',
+          ]}
+        >
+          <p>
+            At Creuna I had the opportunity to work with well-known companies
+            such as Spotify, MTG, Akademibokhandeln and SVT. My role was
+            primarily as a front-end developer with focus on JavaScript but I
+            also worked on the back-end, especially in projects using Node and
+            Python plus Django.
+          </p>
+        </Project>
+
+        <Project
+          title="Individual company"
+          role="Freelancing developer"
+          from="Q2 2010"
+          to="Q2 2014"
+          tags={[
+            'WordPress',
+            'PHP',
+            'jQuery',
+            'Laravel',
+            'Google Analytics',
+            'Prestashop',
+          ]}
+        >
+          <p>
+            Delivered multiple web applications and websites as the sole
+            developer, including a travel agency website with a booking system,
+            a time reporting tool, an e-commerce site for dress-up clothing, and
+            several WordPress projects. Additionally, I conducted lectures on
+            web analytics.
+          </p>
+        </Project>
+
+        <Project
+          title="Swerob"
+          role="Robotics technician"
+          from="Q2 2007"
+          to="Q4 2008"
+          tags={[]}
+        >
+          <p>
+            Programming and service of industrial (ABB) robots. Part time during
+            High school.
+          </p>
+        </Project>
+
+        <h2>Education</h2>
         <Project
           title="KTH Royal Institute of Technology"
           from="Q3 2008"
@@ -196,167 +309,38 @@ const ViktorKalajo = () => (
             .
           </p>
         </Project>
+
         <div className="downloadPdfWrapper">
-          <DownloadPdfButton href="/static/pdf/viktor-kalajo-cv.pdf" />
+          <DownloadPdfButton href="/static/pdf/viktor-kalajo-cv-2024-11-20.pdf" />
         </div>
+
+        {/*language=SCSS*/}
+        <style jsx>{`
+          .content {
+            margin: 0 auto;
+            max-width: 1024px;
+            padding: 20px;
+          }
+
+          .name {
+            margin-bottom: 0;
+          }
+
+          @media print {
+            .mail a {
+              text-decoration: underline;
+              font-weight: 600;
+            }
+          }
+
+          .downloadPdfWrapper {
+            justify-content: flex-start;
+          }
+        `}</style>
+        <CvTypography />
       </div>
-      {/*language=SCSS*/}
-      <style jsx>{`
-        .cv {
-          width: 100%;
-          padding: 0;
-          background: #fff;
-          z-index: 0;
-          position: relative;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-        }
-
-        .content {
-          margin: 0 auto;
-          width: 1024px;
-          max-width: calc(100% - 40px);
-          padding: 20px;
-        }
-
-        a,
-        a:active,
-        a:visited {
-          font-weight: bold;
-          color: #000;
-        }
-
-        a:hover {
-          color: #3e46cf;
-        }
-
-        .content div.education {
-          display: block;
-        }
-
-        .educationHeading {
-          margin-bottom: 0;
-        }
-
-        .education-time {
-          font-family: 'Overpass Mono';
-          display: block;
-          font-size: 16px;
-          line-height: 1.2em;
-          margin-top: 0;
-          font-weight: 400;
-        }
-
-        @media print {
-          .cv .mail a {
-            text-decoration: underline;
-            font-weight: 600;
-          }
-        }
-
-        .downloadPdfWrapper {
-          justify-content: flex-start;
-        }
-      `}</style>
-      <style jsx global>{`
-        h2 {
-          font-size: 20px;
-          margin-top: 1.5em;
-          margin-bottom: 0.5em;
-        }
-
-        h3 {
-          font-size: 16px;
-          margin-top: 1.5em;
-          margin-bottom: 0.5em;
-        }
-
-        h4 {
-          font-size: 15px;
-          font-weight: 600;
-          text-transform: uppercase;
-          margin: 0;
-          margin-top: 20px; /* Smaller space above */
-          margin-bottom: 15px; /* Smaller space below */
-        }
-
-        .name {
-          margin-bottom: 0;
-        }
-
-        .title {
-          font-size: 18px;
-          margin-top: 0;
-          margin-bottom: 0.6em;
-        }
-
-        li,
-        small,
-        p {
-          font-size: 16px;
-        }
-
-        @media screen and (min-width: 500px) {
-          .cv {
-            h1 {
-              font-size: 43px;
-            }
-
-            h2 {
-              font-size: 30px;
-            }
-
-            h3 {
-              font-size: 20px;
-            }
-
-            .title {
-              font-size: 22px;
-            }
-
-            li,
-            small,
-            p {
-              font-size: 18px;
-            }
-          }
-        }
-
-        @media print {
-          .cv {
-            h1 {
-              font-size: 36px;
-            }
-
-            h2 {
-              font-size: 22px;
-            }
-
-            h3 {
-              font-size: 16px;
-            }
-
-            .title {
-              font-size: 18px;
-            }
-
-            li,
-            small,
-            p {
-              font-size: 16px;
-            }
-
-            a {
-              text-decoration: none;
-              font-weight: normal;
-              color: #000;
-            }
-          }
-        }
-      `}</style>
-    </div>
-  </>
-)
+    </>
+  )
+}
 
 export default ViktorKalajo
