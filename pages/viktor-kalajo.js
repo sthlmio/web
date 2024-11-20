@@ -62,6 +62,8 @@ const ViktorKalajo = () => {
             'Redis',
             'CQRS',
             'Gitlab CI/CD',
+            'Kubernetes',
+            'Docker',
             'Real-time collaborative editing',
             'Monitoring',
             'Automated testing',
@@ -105,6 +107,7 @@ const ViktorKalajo = () => {
             'Node',
             'PostgreSQL',
             'Google Firestore',
+            'Google Cloud Platform (GCP)',
             'Express',
             'Heroku',
             'Gitlab CI/CD',
@@ -183,12 +186,13 @@ const ViktorKalajo = () => {
           from="Q1 2016"
           to="Q3 2018"
           tags={[
-            'React',
-            'Redux',
-            'Node',
-            'Express',
-            'Heroku',
             'MongoDB',
+            'Express',
+            'React',
+            'Node',
+            'MERN stack',
+            'Redux',
+            'Heroku',
             'REST',
           ]}
         >
@@ -256,12 +260,13 @@ const ViktorKalajo = () => {
           title="Individual company"
           role="Freelancing developer"
           from="Q2 2010"
-          to="Q2 2014"
+          to="Q2 2018"
           tags={[
-            'WordPress',
+            'MongoDb',
             'PHP',
-            'jQuery',
             'Laravel',
+            'jQuery',
+            'WordPress',
             'Google Analytics',
             'Prestashop',
           ]}
@@ -269,9 +274,11 @@ const ViktorKalajo = () => {
           <p>
             Delivered multiple web applications and websites as the sole
             developer, including a travel agency website with a booking system,
-            a time reporting tool, an e-commerce site for dress-up clothing, and
-            several WordPress projects. Additionally, I conducted lectures on
-            web analytics.
+            a survey tool, a time reporting system, an e-commerce site for
+            dress-up clothing, and several small-business WordPress websites.
+            Additionally, I conducted lectures on web analytics. I ran these
+            freelance projects in parallell with my university studies and my
+            employment at Creuna.
           </p>
         </Project>
 
