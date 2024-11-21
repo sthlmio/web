@@ -19,7 +19,7 @@ export function Team() {
           <li>
             <div className="item">
               <div className="item__img">
-                <img width="200" src={'/static/johan-baath.jpg'} />
+                <img width="200" src={'/static/johan-baath.png'} />
               </div>
               <p>Johan Bååth</p>
               <Link href="/johan-baath" legacyBehavior>
