@@ -14,7 +14,7 @@ RUN npm ci
 
 COPY --chown=node:node . /home/node/web
 
-RUN npm run export
+RUN npx next build
 
 FROM nginx:1.26-alpine
 COPY --from=builder /home/node/web/out /var/www
