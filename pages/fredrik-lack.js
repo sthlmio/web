@@ -12,7 +12,7 @@ export default function FredrikLack() {
         <div className="content">
           <InPageHeader />
           <h2>Fredrik Lack</h2>
-          <p>Textilgatan 25, 120 30 Stockholm</p>
+          <p>Nåttarövägen 49, 124 51 Bandhagen</p>
           <small>
             +46 733 730 941 /{' '}
             <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a>
@@ -34,37 +34,51 @@ export default function FredrikLack() {
             </a>
           </small>
           <p className="text">
-            Developer with more than 11 years of professional experience. Now
-            focusing a lot on working with the ecosystem around Kubernetes,
-            Cloud Native and OSS.
-            <br />
-            <br />
-            In one of my recent assignments I was spearheading the architecture
-            and development of a brand new cloud native platform running
-            Kubernetes on Google Cloud.
+            Experienced developer (11+ years), passionate about Kubernetes,
+            Cloud Native, and open-source innovation.
           </p>
 
           <h3>Summary of Qualifications</h3>
           <ul>
-            <li>Consider myself as a generalist with a DevOps mindset</li>
-            <li>Language agnostic and a full stack approach</li>
-            <li>Running containers (Kubernetes) in production for 5+ years</li>
-            <li>7+ years of production experience with Node.js</li>
-            <li>
-              Running bare metal Kubernetes clusters for 3+ years (Hetzner,
-              Raspberry Pi)
-            </li>
-            <li>TypeScript/Node.js and Go as goto languages</li>
+            <li>Developer with a strong DevOps mindset</li>
+            <li>Language-agnostic with a full-stack approach</li>
+            <li>5+ years running containers in production with Kubernetes</li>
           </ul>
 
-          <h3>Want to learn more about</h3>
+          <h3>Eager to deepen my knowledge in...</h3>
           <ul>
-            <li>Always more Kubernetes :)</li>
-            <li>Kafka</li>
-            <li>Rust</li>
+            <li>Bare-metal Kubernetes</li>
+            <li>Distributed storage solutions (e.g., Rook-Ceph)</li>
           </ul>
 
           <h3>Highlighted Projects</h3>
+          <h4>
+            <a
+              href="https://svti.svt.se"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              SVT
+            </a>
+          </h4>
+          <p className="text">Backend developer / DevOps, Nov 2021 - Present</p>
+          <p className="text">
+            Since late 2021, I've been part of a team building a cutting-edge
+            CMS from the ground up, powering one of Sweden's largest news
+            platforms (svt.se, SVT Nyheter/Sport apps) with millions of unique
+            visitors per week. Designed for seamless collaborative editing, the
+            system leverages an event-driven architecture with Kafka, along with
+            Postgres, Elasticsearch and Kubernetes. I'm passionate about
+            high-performance backend solutions and distributed architectures. My
+            key responsibilites is mainly around the backend parts and making
+            sure the system is running smoothly on Kubernetes.
+          </p>
+          <ul>
+            <li>Kafka</li>
+            <li>PostgreSQL</li>
+            <li>Elasticsearch</li>
+            <li>Kubernetes</li>
+          </ul>
           <h4>
             <a
               href="https://doors.live"
@@ -92,11 +106,11 @@ export default function FredrikLack() {
           </ul>
           <h4>
             <a
-              href="https://svti.svt.se/"
+              href="https://svti.svt.se"
               rel="noopener noreferrer"
               target="_blank"
             >
-              SVT Interaktiv
+              SVT
             </a>
           </h4>
           <p className="text">Developer, May 2020 - May 2021</p>
