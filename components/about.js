@@ -4,8 +4,8 @@ export function About() {
       <div className="content">
         <h2>About</h2>
         <p>
-          We are a network of self-employed engineers helping clients build services
-          and infrastructure, and we like to do it with these
+          We are a network of self-employed engineers helping clients build
+          services and infrastructure, and we like to do it with these
           technologies and tools. Check out more at our{' '}
           <a href="https://github.com/sthlmio" target="_blank">
             GitHub
@@ -34,7 +34,7 @@ export function About() {
             <img alt="postgresql" src={'/static/postgresql.png'} />
           </div>
           <div>
-            <img alt="raspberry pi" src={'/static/raspberry-pi.png'} />
+            <img alt="hetzner" src={'/static/hetzner.png'} />
           </div>
           <div>
             <img alt="google cloud platform" src={'/static/gcp.png'} />
