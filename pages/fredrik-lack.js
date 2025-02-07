@@ -35,7 +35,7 @@ export default function FredrikLack() {
           </small>
           <p className="text">
             Experienced developer (12+ years) passionate about Kubernetes,
-            distributed systems, and Cloud Native technologies.
+            distributed systems and Cloud Native technologies.
           </p>
 
           <h3>Summary of Qualifications</h3>
