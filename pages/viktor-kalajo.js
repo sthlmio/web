@@ -50,7 +50,7 @@ const ViktorKalajo = () => {
           title="SVT Astrid"
           role="Full-stack"
           from="Q1 2020"
-          to="present"
+          to="Q4 2024"
           tags={[
             'TypeScript',
             'React',
