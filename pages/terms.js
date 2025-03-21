@@ -42,10 +42,13 @@ export default function Terms() {
             welcome to contact us via alternative means, such as by telephone.
           </p>
           <h2>Services used</h2>
-          <h3>Google Cloud Platform</h3>
+          <h3>Hetzner (Hetzner Online GmbH)</h3>
           <p className="text">
-            We use GCP as our main hosting provider, we're using Kubernetes with
-            servers in Hamina, Finland (europe-north1).
+            We use Hetzner as our primary hosting provider, running Kubernetes
+            on bare-metal servers in FSN1 (Falkenstein, Germany). Data in
+            transit is secured with WireGuard, and data at rest is encrypted
+            using LUKS. Security is our top priority, and we firmly believe in
+            storing data within Europe and partnering with European companies.
           </p>
           <h3>Mailgun Technologies, Inc</h3>
           <p className="text">

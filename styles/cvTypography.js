@@ -44,6 +44,15 @@ export const CvTypography = ({ href }) => {
           font-size: 16px;
         }
 
+        p,
+        blockquote,
+        ul,
+        ol,
+        dt {
+          width: auto;
+          max-width: 700px;
+        }
+
         @media screen and (min-width: 500px) {
           h1 {
             font-size: 43px;

@@ -2,10 +2,10 @@ export function About() {
   return (
     <section>
       <div className="content">
-        <h2>What we do</h2>
+        <h2>About</h2>
         <p>
-          We are a network of self-employed developers helping clients build web
-          and infrastructure for the future, and we like to do it with these
+          We are a network of self-employed engineers helping clients build
+          services and infrastructure, and we like to do it with these
           technologies and tools. Check out more at our{' '}
           <a href="https://github.com/sthlmio" target="_blank">
             GitHub
@@ -31,10 +31,10 @@ export function About() {
             <img alt="terraform" src={'/static/terraform.png'} />
           </div>
           <div>
-            <img alt="oss" height="100" src={'/static/oss.svg'} />
+            <img alt="postgresql" src={'/static/postgresql.png'} />
           </div>
           <div>
-            <img alt="raspberry pi" src={'/static/raspberry-pi.png'} />
+            <img alt="hetzner" src={'/static/hetzner.png'} />
           </div>
           <div>
             <img alt="google cloud platform" src={'/static/gcp.png'} />
