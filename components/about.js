@@ -34,10 +34,7 @@ export function About() {
             <img alt="postgresql" src={'/static/postgresql.png'} />
           </div>
           <div>
-            <img alt="hetzner" src={'/static/hetzner.png'} />
-          </div>
-          <div>
-            <img alt="google cloud platform" src={'/static/gcp.png'} />
+            <img alt="glesys" src={'/static/glesys.svg'} />
           </div>
         </div>
       </div>

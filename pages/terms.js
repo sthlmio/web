@@ -42,13 +42,13 @@ export default function Terms() {
             welcome to contact us via alternative means, such as by telephone.
           </p>
           <h2>Services used</h2>
-          <h3>Hetzner (Hetzner Online GmbH)</h3>
+          <h3>GleSYS AB</h3>
           <p className="text">
-            We use Hetzner as our primary hosting provider, running Kubernetes
-            on bare-metal servers in FSN1 (Falkenstein, Germany). Data in
-            transit is secured with WireGuard, and data at rest is encrypted
-            using LUKS. Security is our top priority, and we firmly believe in
-            storing data within Europe and partnering with European companies.
+            We use GleSYS AB as our primary hosting provider, running Kubernetes
+            on KVM servers in STO (Stockholm, Sweden). Data in transit between
+            servers is secured with WireGuard. Security is our top priority, and
+            we firmly believe in storing data within Sweden and partnering with
+            Swedish and European companies.
           </p>
           <h3>Mailgun Technologies, Inc</h3>
           <p className="text">
