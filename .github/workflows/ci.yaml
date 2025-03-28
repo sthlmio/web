@@ -14,21 +14,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Login to DockerHub
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
         id: docker_build
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64
           context: .
           file: ./Dockerfile
           push: true
           tags: |
-            sthlmio/web:1.0.${{ github.run_number }}
-            sthlmio/web:${{ github.sha }}
-            sthlmio/web:latest
+            ghcr.io/sthlmio/web:1.0.${{ github.run_number }}
+            ghcr.io/sthlmio/web:${{ github.sha }}
+            ghcr.io/sthlmio/web:latest
