@@ -37,12 +37,12 @@
   },
   "dependencies": {
     "isomorphic-unfetch": "4.0.2",
-    "next": "15.1.7",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "next": "15.2.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-typist": "2.0.5"
   },
   "devDependencies": {
-    "prettier": "3.5.2"
+    "prettier": "3.5.3"
   }
 }
