@@ -36,6 +36,9 @@ export function About() {
           <div>
             <img alt="glesys" src={'/static/glesys.svg'} />
           </div>
+          <div>
+            <img alt="yubico" src={'/static/yubico.png'} />
+          </div>
         </div>
       </div>
       {/*language=SCSS*/}
