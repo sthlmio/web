@@ -4,8 +4,8 @@ export function Jumbo() {
       <div>
         <img src={'/static/logo_small.svg'} />
         <p>
-          Building secure services and infrastructure with full Swedish data
-          sovereignty
+          Consulting and implementation of secure services and infrastructure
+          with complete Swedish data sovereignty
         </p>
         <hr />
       </div>

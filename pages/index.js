@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <>
       <Header>
-        <title>sthlm.io - Developer network in Stockholm</title>
+        <title>sthlm.io - Building secure services and infrastructure</title>
         <link rel="canonical" href="https://sthlm.io" />
       </Header>
-      <Jumbo/>
-      <About/>
-      <Clients/>
-      <Team/>
-      <Contact/>
+      <Jumbo />
+      <About />
+      <Clients />
+      <Team />
+      <Contact />
     </>
   )
 }
