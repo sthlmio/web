@@ -25,7 +25,7 @@ export function About() {
             <img alt="kafka" src={'/static/kafka.png'} />
           </div>
           <div>
-            <img alt="node.js" src={'/static/nodejs.png'} />
+            <img alt="openstack" src={'/static/openstack.png'} />
           </div>
           <div>
             <img alt="terraform" src={'/static/terraform.png'} />
