@@ -34,7 +34,7 @@ export function About() {
             <img alt="postgresql" src={'/static/postgresql.png'} />
           </div>
           <div>
-            <img alt="glesys" src={'/static/glesys.svg'} />
+            <img alt="glesys" src={'/static/glesys_new.svg'} />
           </div>
           <div>
             <img alt="yubico" src={'/static/yubico.png'} />
