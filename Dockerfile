@@ -1,4 +1,4 @@
-FROM node:22.14.0-alpine AS builder
+FROM node:22.15.1-alpine AS builder
 
 USER node
 
@@ -16,7 +16,7 @@ COPY --chown=node:node . /home/node/web
 
 RUN npx next build
 
-FROM nginx:1.26.3-alpine
+FROM nginx:1.28.0-alpine
 COPY --from=builder /home/node/web/out /var/www
 COPY nginx.conf /etc/nginx/nginx.conf
 
