@@ -42,9 +42,9 @@ export default function Terms() {
             welcome to contact us via alternative means, such as by telephone.
           </p>
           <h2>Services used</h2>
-          <h3>GleSYS AB</h3>
+          <h3>Glesys AB</h3>
           <p className="text">
-            We use GleSYS AB as our primary hosting provider, running Kubernetes
+            We use Glesys AB as our primary hosting provider, running Kubernetes
             on KVM servers in STO (Stockholm, Sweden). Data in transit between
             servers is secured with WireGuard. Security is our top priority, and
             we firmly believe in storing data within Sweden and partnering with
