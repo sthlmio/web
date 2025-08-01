@@ -34,12 +34,13 @@ export default function Terms() {
             When you contact us using our contact form, you will be voluntarily
             providing us with your personal information. The information you
             enter in the contact form is encrypted, as you can see from the
-            padlock icon in the address bar of your browser, and is sent to us
-            by email. While we have implemented encryption to ensure secure
-            transmission of your personal information, Internet-based data
-            transmissions may in principle have security gaps, so absolute
-            protection may not be guaranteed. For this reason, you are always
-            welcome to contact us via alternative means, such as by telephone.
+            padlock icon in the address bar of your browser, and is processed on
+            our servers before being sent to us by email. While we have
+            implemented encryption to ensure secure transmission of your
+            personal information, Internet-based data transmissions may in
+            principle have security gaps, so absolute protection may not be
+            guaranteed. For this reason, you are always welcome to contact us
+            via alternative means, such as by telephone.
           </p>
           <h2>Services used</h2>
           <h3>Glesys AB</h3>
@@ -48,19 +49,8 @@ export default function Terms() {
             on KVM servers in STO (Stockholm, Sweden). Data in transit between
             servers is secured with WireGuard. Security is our top priority, and
             we firmly believe in storing data within Sweden and partnering with
-            Swedish and European companies.
-          </p>
-          <h3>Mailgun Technologies, Inc</h3>
-          <p className="text">
-            To improve the reliability of sending email from our website to our
-            mail server, we use Mailgun Technologies, Inc, who are based in the
-            USA and are participants in the EU-US Privacy Shield Framework.
-            Mailgun will retain all data included in your contact form messages
-            in log files on their server. This data is retained only for the
-            purposes of delivering the email and providing us with information
-            should there be a problem with the delivery. It will not be shared
-            with third parties for marketing purposes. All data is processed and
-            stored in their EU region.
+            Swedish hosting providers. The information provided in the contact
+            form is stored and processed on our servers.
           </p>
           <h2>Your rights</h2>
           <p className="text">

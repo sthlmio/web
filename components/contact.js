@@ -37,19 +37,19 @@ export class Contact extends Component {
 
     this.setState({ submitting: true })
 
-    fetch('https://form.sthlm.io', {
+    fetch('https://api.mail.sthlm.io/v1/iyih/message/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name: this.inputNameNode.value,
-        email: this.inputEmailNode.value,
-        message: this.inputMessageNode.value,
+        subject: 'Contact form submission: sthlm.io',
+        from_address: this.inputEmailNode.value,
+        body_text: `${this.inputMessageNode.value}\n\n${this.inputNameNode.value}`,
       }),
     }).then(
       (res) => {
-        if (res.status === 200) {
+        if ([200, 201].includes(res.status)) {
           this.setState({
             submitted: false,
             error: false,
@@ -74,7 +74,7 @@ export class Contact extends Component {
           success: false,
           submitting: false,
         })
-      }
+      },
     )
   }
 
@@ -256,8 +256,8 @@ export class Contact extends Component {
             background: ${this.state.error
               ? '#f44336'
               : this.state.success
-              ? '#1CAC78'
-              : '#3E46CF'};
+                ? '#1CAC78'
+                : '#3E46CF'};
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -277,8 +277,8 @@ export class Contact extends Component {
             background: ${this.state.error
               ? '#f44336'
               : this.state.success
-              ? '#1CAC78'
-              : '#3E46CF'};
+                ? '#1CAC78'
+                : '#3E46CF'};
           }
 
           div {
@@ -301,8 +301,8 @@ export class Contact extends Component {
             background: ${this.state.error
               ? '#f44336'
               : this.state.success
-              ? '#1CAC78'
-              : '#3E46CF'};
+                ? '#1CAC78'
+                : '#3E46CF'};
             border: 0;
             padding: 0;
             text-indent: 0;
@@ -324,8 +324,8 @@ export class Contact extends Component {
               ${this.state.error
                 ? '#f44336'
                 : this.state.success
-                ? '#1CAC78'
-                : '#3E46CF'}
+                  ? '#1CAC78'
+                  : '#3E46CF'}
               inset !important;
             -webkit-text-fill-color: #fff !important;
           }
@@ -374,8 +374,8 @@ export class Contact extends Component {
             color: ${this.state.error
               ? '#b71c1c'
               : this.state.success
-              ? '#116748'
-              : '#283193'};
+                ? '#116748'
+                : '#283193'};
           }
         `}</style>
       </section>
