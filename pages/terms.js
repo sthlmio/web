@@ -24,9 +24,8 @@ export default function Terms() {
             We take your privacy seriously and will only use your personal
             information to respond to any questions you may have and to provide
             the products and services you have requested from us. Your personal
-            information will never be shared with third parties for marketing
-            purposes and will not be used by us for marketing purposes without
-            your explicit consent.
+            information will never be used by us or shared with third parties
+            for marketing purposes.
           </p>
           <h2>Data collected</h2>
           <h3>Contact form</h3>
