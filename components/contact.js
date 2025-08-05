@@ -165,7 +165,9 @@ export class Contact extends Component {
             <label className="checkbox">
               I agree to the{' '}
               <Link href="/terms" legacyBehavior>
-                <a target="_blank">terms</a>
+                <a target="_blank" className="terms-link">
+                  terms
+                </a>
               </Link>
               <input
                 type="checkbox"
@@ -186,6 +188,7 @@ export class Contact extends Component {
             display: block;
             position: relative;
             padding-left: 35px;
+            margin-top: 2px;
             margin-bottom: 12px;
             cursor: pointer;
             -webkit-user-select: none;
@@ -193,6 +196,7 @@ export class Contact extends Component {
             -ms-user-select: none;
             user-select: none;
             color: #fff;
+            width: fit-content;
           }
 
           .checkbox > input {
@@ -205,15 +209,24 @@ export class Contact extends Component {
 
           .checkmark {
             position: absolute;
-            top: 0;
+            top: -2px;
             left: 0;
             height: 25px;
             width: 25px;
             background-color: #fff;
           }
 
+          .terms-link:hover {
+            color: #ccc;
+          }
+
           .checkbox:hover input ~ .checkmark {
             background-color: #ccc;
+          }
+
+          .checkbox:hover a:hover ~ input ~ .checkmark,
+          .checkbox a:hover ~ input ~ .checkmark {
+            background-color: #fff;
           }
 
           .checkbox input:checked ~ .checkmark {
