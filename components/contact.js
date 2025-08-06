@@ -188,7 +188,7 @@ export class Contact extends Component {
             display: block;
             position: relative;
             padding-left: 35px;
-            margin-top: 2px;
+            margin-top: 3px;
             margin-bottom: 12px;
             cursor: pointer;
             -webkit-user-select: none;
@@ -209,7 +209,7 @@ export class Contact extends Component {
 
           .checkmark {
             position: absolute;
-            top: -2px;
+            top: -3px;
             left: 0;
             height: 25px;
             width: 25px;
