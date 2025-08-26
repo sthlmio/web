@@ -45,11 +45,11 @@ export default function Terms() {
           <h3>Glesys AB</h3>
           <p className="text">
             We use Glesys AB as our primary hosting provider, running Kubernetes
-            on KVM servers in STO (Stockholm, Sweden). Data in transit between
+            on servers in STO (Stockholm, Sweden). Data in transit between
             servers is secured with WireGuard. Security is our top priority, and
             we firmly believe in storing data within Sweden and partnering with
             Swedish hosting providers. The information provided in the contact
-            form is stored and processed on our servers.
+            form is securely stored and processed on our servers.
           </p>
           <h2>Your rights</h2>
           <p className="text">
