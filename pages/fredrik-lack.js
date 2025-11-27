@@ -42,7 +42,7 @@ export default function FredrikLack() {
           <ul>
             <li>Developer with a strong DevOps mindset</li>
             <li>Language-agnostic with a full-stack approach</li>
-            <li>5+ years running containers in production with Kubernetes</li>
+            <li>7+ years running containers in production with Kubernetes</li>
           </ul>
 
           <h3>Eager to deepen my knowledge in...</h3>
