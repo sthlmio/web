@@ -37,7 +37,7 @@ export class Contact extends Component {
 
     this.setState({ submitting: true })
 
-    fetch('https://api.mail.sthlm.io/v1/iyih/message/send', {
+    fetch('https://mail.api.sthlm.io/v1/j3vr/message/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
