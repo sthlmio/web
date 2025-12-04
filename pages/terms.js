@@ -45,11 +45,11 @@ export default function Terms() {
           <h3>Elastx AB</h3>
           <p className="text">
             We use Elastx AB as our primary hosting provider, running Kubernetes
-            on servers in STO (Stockholm, Sweden) over three availability zones
-            (sto1, sto2 and sto3). Security is our top priority, and we firmly
-            believe in storing data within Sweden and partnering with Swedish
-            hosting providers. The information provided in the contact form is
-            securely stored and processed on our servers in Sweden.
+            on OpenStack in STO (Stockholm, Sweden) over three availability
+            zones (sto1, sto2 and sto3). Security is our top priority, and we
+            firmly believe in storing data within Sweden and partnering with
+            Swedish hosting providers. The information provided in the contact
+            form is securely stored and processed on our servers in Sweden.
           </p>
           <h3>Glesys AB</h3>
           <p className="text">
