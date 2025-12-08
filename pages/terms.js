@@ -53,8 +53,7 @@ export default function Terms() {
           </p>
           <h3>Glesys AB</h3>
           <p className="text">
-            We use Glesys AB to host our mail servers in STO (Stockholm,
-            Sweden).
+            We use Glesys AB to host our mail servers in Stockholm, Sweden.
           </p>
           <h2>Your rights</h2>
           <p className="text">
