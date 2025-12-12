@@ -37,9 +37,9 @@
   },
   "dependencies": {
     "isomorphic-unfetch": "4.0.2",
-    "next": "16.0.8",
-    "react": "19.2.1",
-    "react-dom": "19.2.1",
+    "next": "16.0.10",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "react-typist": "2.0.5"
   },
   "devDependencies": {
