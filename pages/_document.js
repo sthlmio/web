@@ -8,7 +8,7 @@ class Doc extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="sv">
         <Head>
           <meta name="format-detection" content="telephone=no" />
         </Head>
