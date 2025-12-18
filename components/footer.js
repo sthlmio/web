@@ -98,6 +98,7 @@ export function Footer() {
         }
 
         .contactItem {
+          color: #444;
           display: inline-flex;
           align-items: center;
         }
