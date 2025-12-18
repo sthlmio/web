@@ -81,8 +81,8 @@ export default function Terms() {
           <p className="text">
             Om du vill utöva någon av dessa rättigheter, kontakta oss via
             kontaktformuläret, e-post{' '}
-            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a> eller via
-            telefon <a href="tel:+46733730941">+46 733 73 09 41</a>.
+            <a href="mailto:gdpr@sthlm.io">gdpr@sthlm.io</a> eller via telefon{' '}
+            <a href="tel:+46733730941">+46 733 73 09 41</a>.
           </p>
         </div>
         {/*language=SCSS*/}
@@ -96,6 +96,7 @@ export default function Terms() {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            margin-bottom: 80px;
           }
 
           .content {
