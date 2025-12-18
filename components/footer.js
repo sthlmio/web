@@ -103,6 +103,12 @@ export function Footer() {
           align-items: center;
         }
 
+        .contactItem:active,
+        .contactItem:visited,
+        .contactItem:focus {
+          color: #444;
+        }
+
         .noLink {
           pointer-events: none;
         }

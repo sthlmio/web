@@ -9,7 +9,9 @@ class Doc extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head/>
+        <Head>
+          <meta name="format-detection" content="telephone=no" />
+        </Head>
         <body>
           <Main />
           <NextScript />

@@ -143,9 +143,7 @@ export function About() {
 
         .group {
           display: flex;
-          align-items: center;
           gap: var(--gap);
-          flex: 0 0 auto;
         }
 
         @keyframes marquee {
