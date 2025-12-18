@@ -10,7 +10,7 @@ export function Footer() {
             <span className="contactItem">
               <a href="tel:0733730941">073-373 09 41</a>
             </span>
-            <span className="contactItem">559127-4302</span>
+            <span className="contactItem noLink">559127-4302</span>
           </span>
           <br />
           <a
@@ -101,6 +101,10 @@ export function Footer() {
           color: #444;
           display: inline-flex;
           align-items: center;
+        }
+
+        .noLink {
+          pointer-events: none;
         }
 
         .contactItem + .contactItem {

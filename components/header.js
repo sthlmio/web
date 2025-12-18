@@ -36,6 +36,7 @@ export function Header({ children }) {
         body,
         html {
           overflow-x: hidden;
+          overflow-x: clip;
         }
 
         ::selection {

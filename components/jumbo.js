@@ -255,8 +255,8 @@ export function Jumbo() {
           .ctaBadge {
             width: 140px;
             height: 140px;
-            right: 14px;
-            bottom: 14px;
+            right: 24px;
+            bottom: 24px;
           }
 
           .ctaText {
