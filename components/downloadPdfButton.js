@@ -16,7 +16,7 @@ export const DownloadPdfButton = ({ href }) => {
           padding: 20px 40px;
           cursor: pointer;
           font-size: 18px;
-          font-family: 'Overpass', sans-serif;
+          font-family: 'Noto Sans', sans-serif;
           font-weight: 300;
           -webkit-appearance: none;
           -webkit-border-radius: 0px;

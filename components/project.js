@@ -24,7 +24,7 @@ export const Project = ({ from, to, role, title, children, tags, hidden }) => {
           }
 
           .role {
-            font-family: 'Overpass Mono';
+            font-family: 'Noto Sans', sans-serif;
             display: block;
             font-size: 16px;
             line-height: 1.2em;

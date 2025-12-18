@@ -1,42 +1,365 @@
 export function Jumbo() {
   return (
     <section>
-      <div>
-        <img src={'/static/logo_small.svg'} />
-        <p>
-          Consulting and implementation of secure services and infrastructure
-          with complete Swedish data sovereignty
-        </p>
-        <hr />
+      <div className="topbar">
+        <div className="topbarInner">
+          <a href="/">
+            <img className="logo" src={'/static/logo_small.svg'} alt="sthlm.io" />
+          </a>
+        </div>
       </div>
+      <div className="main">
+        <div className="content">
+          <h1>Infrastruktur som klarar verkligheten</h1>
+          <p>
+            Vi hjälper er planera, bygga och drifta säkra tjänster och plattformar, med data som stannar under svensk suveränitet.
+          </p>
+          <hr />
+          <div className="features" role="list" aria-label="Fokusområden">
+            <div className="feature" role="listitem">
+              <svg
+                className="icon iconCloud"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7.5 18H18a4 4 0 0 0 .2-8 5.5 5.5 0 0 0-10.7 1.6A3.5 3.5 0 0 0 7.5 18Z"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <div className="featureText">
+                <div className="kicker">Plattform & drift</div>
+                <div className="desc">
+                  Öppna standarder som Kubernetes och
+                  OpenStack.
+                </div>
+              </div>
+            </div>
+
+            <div className="feature" role="listitem">
+              <svg
+                className="icon iconAutomation"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 7h10v6H7V7Z"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M9 5v2M15 5v2M9 13v2M15 13v2M5 9h2M17 9h2"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M7 18h10"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+              <div className="featureText">
+                <div className="kicker">Automation</div>
+                <div className="desc">
+                  IaC och GitOps som minskar ledtider.
+                </div>
+              </div>
+            </div>
+
+            <div className="feature" role="listitem">
+              <svg
+                className="icon iconSecurity"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 3l7 4v6c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4Z"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M9.5 12.5l1.8 1.8L15 10.6"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <div className="featureText">
+                <div className="kicker">Säkerhet</div>
+                <div className="desc">
+                  Hårdning och policyer från nätverk till runtime.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a className="ctaBadge" href="#contact" aria-label="Contact us">
+        <span className="ctaInner">
+          <span className="ctaText">
+            Boka ett möte
+            <br />
+            så tar vi
+            <br />
+            nästa steg!
+          </span>
+        </span>
+      </a>
       {/*language=CSS*/}
       <style jsx>{`
         section {
           width: 100%;
-          height: 100vh;
-          background: #ffffff;
+          min-height: 100vh;
+          background: #3E46CF;
           display: flex;
-          justify-content: center;
           flex-direction: column;
+          box-sizing: border-box;
         }
 
-        img {
-          width: 75%;
-          max-width: 400px;
+        .main {
+          flex: 1 0 auto;
+          display: flex;
+          align-items: center;
+          padding: 30px 0 50px;
         }
 
-        @media screen and (min-width: 700px) {
-          img {
-            width: 100%;
-            max-width: 500px;
-          }
+        h1 {
+          font-size: clamp(44px, 6vw, 80px);
+          line-height: 1.05;
+          color: #fff;
+          margin: 0;
+          text-align: left;
+        }
+        
+        p {
+          font-weight: 400;
+          color: #fff;
+          font-size: clamp(18px, 2.2vw, 28px);
+          width: auto;
+          max-width: 880px;
+          margin: 16px 0 0;
+          text-align: left;
         }
 
-        div {
+        .flagIcon {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 0.12em;
+        }
+
+        .flagIcon svg {
+          width: 1.1em;
+          height: auto;
+          vertical-align: -0.12em;
+        }
+
+        hr {
+          background: #fff;
+          margin: 28px 0 0;
+          height: 3px;
+          width: 100%;
+        }
+        
+        .logo {
+          width: 150px;
+          filter: brightness(0) invert(1);
+        }
+
+        .topbar {
+          flex: 0 0 auto;
+        }
+
+        .topbarInner {
           margin: 0 auto;
           width: 1024px;
           max-width: calc(100% - 40px);
           padding: 20px;
+        }
+
+        .content {
+          margin: 0 auto;
+          width: 1024px;
+          max-width: calc(100% - 40px);
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .ctaBadge {
+          position: absolute;
+          right: clamp(14px, 6vw, 122px);
+          bottom: clamp(14px, 6vw, 122px);
+          width: 190px;
+          height: 190px;
+          border-radius: 999px;
+          background: #33e06b;
+          display: grid;
+          place-items: center;
+          text-decoration: none;
+          box-shadow:
+            0 18px 50px rgba(0, 0, 0, 0.35),
+            0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+          transition:
+            transform 140ms ease,
+            box-shadow 140ms ease;
+          transform: rotate(14deg);
+        }
+
+        .ctaInner {
+          width: 78%;
+          height: 78%;
+          border-radius: 999px;
+          display: grid;
+          place-items: center;
+          margin-top: -10px;
+        }
+
+        .ctaText {
+          color: #0a1a10;
+          font-size: 22px;
+          line-height: 1.05;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: -0.01em;
+          text-wrap: balance;
+        }
+
+        .ctaBadge:hover {
+          transform: rotate(14deg) translateY(-2px) scale(1.02);
+          box-shadow:
+            0 22px 60px rgba(0, 0, 0, 0.4),
+            0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+        }
+
+        .ctaBadge:focus-visible {
+          outline: 3px solid rgba(255, 255, 255, 0.9);
+          outline-offset: 4px;
+        }
+
+        @media screen and (max-width: 700px) {
+          .ctaBadge {
+            width: 140px;
+            height: 140px;
+            right: 14px;
+            bottom: 14px;
+          }
+
+          .ctaText {
+            font-size: 16px;
+          }
+        }
+
+        .features {
+          width: 100%;
+          max-width: 1024px;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+
+        .feature {
+          display: flex;
+          margin-top: 20px;
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 14px;
+          padding: 16px 0;
+          text-align: left;
+        }
+
+        .feature + .feature {
+          border-top: 1px solid rgba(255, 255, 255, 0.22);
+        }
+
+        .icon {
+          width: 32px;
+          height: 32px;
+          color: rgba(255, 255, 255, 0.92);
+          flex: 0 0 auto;
+        }
+
+        .iconCloud {
+          width: 38px;
+          height: 38px;
+        }
+
+        .iconAutomation {
+          width: 36px;
+          height: 36px;
+        }
+
+        .iconSecurity {
+          width: 36px;
+          height: 36px;
+        }
+
+        .kicker {
+          font-size: 14px;
+          line-height: 1.25;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.74);
+        }
+
+        .desc {
+          margin-top: 4px;
+          font-size: 16px;
+          line-height: 1.35;
+          color: #fff;
+          max-width: 360px;
+        }
+
+        @media screen and (min-width: 900px) {
+          .features {
+            margin-top: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+          }
+
+          .feature {
+            padding: 0 28px;
+          }
+
+          .feature + .feature {
+            border-top: none;
+          }
+
+          .feature:first-child {
+            padding-left: 0;
+          }
+
+          .feature:last-child {
+            padding-right: 0;
+          }
+
+          .feature + .feature {
+            border-left: 1px solid rgba(255, 255, 255, 0.22);
+          }
+
+          .desc {
+            font-size: 16px;
+            max-width: none;
+          }
+        }
+
+        @media screen and (max-height: 760px) {
+          .main {
+            align-items: flex-start;
+          }
         }
       `}</style>
     </section>

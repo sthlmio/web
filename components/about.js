@@ -1,40 +1,50 @@
 export function About() {
+  const techLogos = [
+    { alt: 'golang', src: '/static/golang.png' },
+    { alt: 'kubernetes', src: '/static/kubernetes.png' },
+    { alt: 'kafka', src: '/static/kafka.png' },
+    { alt: 'openstack', src: '/static/openstack.png' },
+    { alt: 'opentofu', src: '/static/opentofu.png' },
+    { alt: 'postgresql', src: '/static/postgresql.png' },
+  ]
+
   return (
     <section>
       <div className="content">
-        <h2>About</h2>
+        <h2>Vad vi gör</h2>
         <p>
-          We are a network of self-employed engineers helping clients build
-          services and infrastructure, and we like to do it with these
-          technologies and tools. Check out more at our{' '}
-          <a href="https://github.com/sthlmio" target="_blank">
-            GitHub
-          </a>{' '}
-          organization.
+          Vi hjälper företag och organisationer att bygga, modernisera och
+          drifta tjänster och infrastruktur. Vi jobbar gärna med öppna
+          standarder och svenska hostingbolag.
         </p>
+        <div className="customerBlurb">
+          <p>
+            Vi tar ansvar från arkitektur till produktion. Oavsett om ni bygger
+            nytt, migrerar eller vill få ordning på er leverans och drift
+            hjälper vi er att skapa en stabil grund för utveckling.
+          </p>
+        </div>
       </div>
-      <div className="logos">
-        <div>
-          <div>
-            <img alt="golang" src={'/static/golang.png'} />
-          </div>
-          <div>
-            <img alt="kubernetes" src={'/static/kubernetes.png'} />
-          </div>
-          <div>
-            <img alt="kafka" src={'/static/kafka.png'} />
-          </div>
-          <div>
-            <img alt="openstack" src={'/static/openstack.png'} />
-          </div>
-          <div>
-            <img alt="terraform" src={'/static/terraform.png'} />
-          </div>
-          <div>
-            <img alt="postgresql" src={'/static/postgresql.png'} />
-          </div>
-          <div>
-            <img alt="yubico" src={'/static/yubico.png'} />
+      <div className="content logos">
+        <div className="logos__heading">
+          <p>Teknik vi ofta levererar med</p>
+        </div>
+        <div className="marquee" aria-label="Teknik vi ofta levererar med">
+          <div className="track">
+            <div className="group">
+              {techLogos.map((logo) => (
+                <div className="logoItem" key={logo.alt}>
+                  <img alt={logo.alt} src={logo.src} />
+                </div>
+              ))}
+            </div>
+            <div className="group" aria-hidden="true">
+              {techLogos.map((logo) => (
+                <div className="logoItem" key={`${logo.alt}-dup`}>
+                  <img alt="" src={logo.src} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -42,31 +52,13 @@ export function About() {
       <style jsx>{`
         section {
           width: 100%;
-          padding: 0;
           background: #f5f5f5;
           z-index: 0;
           position: relative;
           display: flex;
           justify-content: center;
           flex-direction: column;
-        }
-
-        section::before {
-          position: absolute;
-          z-index: -1;
-          right: 0;
-          left: -5px;
-          top: -100px;
-          height: 150px;
-          width: calc(100% + 5px);
-          transform: rotate(2deg);
-          content: '';
-          background: rgb(241, 241, 241);
-          background: linear-gradient(
-            180deg,
-            rgba(241, 241, 241, 1) 0%,
-            rgba(245, 245, 245, 1) 100%
-          );
+          padding: 60px 0 100px;
         }
 
         a,
@@ -84,6 +76,15 @@ export function About() {
           margin-top: 0;
         }
 
+        p {
+          font-weight: 400;
+        }
+
+        .customerBlurb {
+          margin-top: 18px;
+          max-width: 880px;
+        }
+
         .content {
           margin: 0 auto;
           width: 1024px;
@@ -92,64 +93,99 @@ export function About() {
         }
 
         .logos {
-          padding: 0 0 200px;
-        }
-
-        .logos > div {
           margin: 0 auto;
-          width: 1200px;
-          max-width: calc(100% - 40px);
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
+          padding-top: 50px;
         }
 
-        .logos > div > div {
+        .logos__heading {
+          padding: 0 0 10px;
+        }
+
+        .logos__heading p {
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          color: rgba(0, 0, 0, 0.6);
+          margin: 0;
+        }
+
+        .marquee {
+          --gap: 48px;
+          --seam-offset: 24px;
+          width: 100%;
+          margin-top: 10px;
+          overflow: hidden;
+          position: relative;
+          padding: 8px 0 0;
+          mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 12%,
+            black 88%,
+            transparent
+          );
+        }
+
+        .track {
           display: flex;
-          flex: 1 0 calc(50% - 30px);
-          justify-content: center;
           align-items: center;
-          padding: 15px;
-          height: 100px;
-          transition: background-color 0.2s ease-in-out;
-          max-width: calc(50% - 30px);
+          width: max-content;
+          gap: var(--gap);
+          animation: marquee 28s linear infinite;
+          will-change: transform;
+          transform: translate3d(0, 0, 0);
         }
 
-        @media screen and (min-width: 800px) {
-          .logos > div > div {
-            flex: 1 0 calc(33% - 30px);
-            max-width: calc(33% - 30px);
+        .marquee:hover .track,
+        .marquee:focus-within .track {
+          animation-play-state: paused;
+        }
+
+        .group {
+          display: flex;
+          align-items: center;
+          gap: var(--gap);
+          flex: 0 0 auto;
+        }
+
+        @keyframes marquee {
+          from {
+            transform: translate3d(0, 0, 0);
+          }
+          to {
+            transform: translate3d(calc(-50% - var(--seam-offset)), 0, 0);
           }
         }
 
-        @media screen and (min-width: 1000px) {
-          .logos > div > div {
-            flex: 1 0 calc(25% - 30px);
-            max-width: calc(25% - 30px);
+        @media screen and (max-width: 600px) {
+          .marquee {
+            --gap: 32px;
+            --seam-offset: 16px;
           }
-        }
-
-        .logos img {
-          filter: grayscale(100%);
-          vertical-align: middle;
-          max-width: 100%;
-          width: 70%;
-        }
-
-        .logos img[alt='linkerd'] {
-          width: 100px;
         }
 
         @media screen and (min-width: 500px) {
-          .logos img {
-            width: 50%;
+          section {
+            padding: 120px 0 140px;
           }
         }
 
-        @media screen and (min-width: 1000px) {
-          .logos img {
-            width: 55%;
+        @media (prefers-reduced-motion: reduce) {
+          .track {
+            animation: none;
           }
+        }
+
+        .logoItem {
+          flex: 0 0 auto;
+        }
+
+        .logoItem img {
+          filter: grayscale(100%) saturate(0) contrast(0.5) brightness(0.75);
+          vertical-align: middle;
+          height: 52px;
+          width: auto;
+          opacity: 0.28;
         }
       `}</style>
     </section>

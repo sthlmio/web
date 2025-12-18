@@ -12,7 +12,35 @@ export class Contact extends Component {
       submitted: false,
       success: false,
       error: false,
+      enableTyping: false,
     }
+  }
+
+  componentDidMount() {
+    if (typeof window === 'undefined') return
+
+    if (!('IntersectionObserver' in window)) {
+      this.setState({ enableTyping: true })
+      return
+    }
+
+    this.intersectionObserver = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries
+        if (!entry?.isIntersecting) return
+        this.setState({ enableTyping: true })
+        this.intersectionObserver?.disconnect()
+        this.intersectionObserver = null
+      },
+      { threshold: 0.5 },
+    )
+
+    if (this.sectionNode) this.intersectionObserver.observe(this.sectionNode)
+  }
+
+  componentWillUnmount() {
+    this.intersectionObserver?.disconnect()
+    this.intersectionObserver = null
   }
 
   reset() {
@@ -21,6 +49,16 @@ export class Contact extends Component {
       success: false,
       error: false,
     })
+  }
+
+  renderTyped(text, key) {
+    if (!this.state.enableTyping) return ''
+    return (
+      <Typist cursor={{ blink: true }} key={key}>
+        <Typist.Delay ms={500} />
+        {text}
+      </Typist>
+    )
   }
 
   handleSubmit() {
@@ -82,55 +120,75 @@ export class Contact extends Component {
     const { submitted, error, success, submitting } = this.state
 
     if (submitting) {
-      return (
-        <Typist cursor={{ blink: true }} key="sending">
-          Hang on
-        </Typist>
-      )
+      return this.renderTyped('Skickar…', 'sending')
     }
 
     if (success) {
-      return (
-        <Typist cursor={{ blink: true }} key="success">
-          Thank you
-        </Typist>
-      )
+      return this.renderTyped('Tack!', 'success')
     }
 
     if (submitted) {
       if (error) {
-        return (
-          <Typist cursor={{ blink: true }} key="error">
-            Oops, try agin
-            <Typist.Backspace count={2} delay={100} />
-            ain
-          </Typist>
-        )
+        return this.renderTyped('Hoppsan, försök igen', 'error')
       }
 
-      return (
-        <Typist cursor={{ blink: true }} key="retry">
-          Ok, lets try again
-        </Typist>
-      )
+      return this.renderTyped('Okej, vi försöker igen', 'retry')
     }
 
-    return (
-      <Typist cursor={{ blink: true }} key="default">
-        Get in touch
-      </Typist>
-    )
+    return this.renderTyped('Hej!', 'default')
   }
 
   render() {
     const { submitting, error, success } = this.state
     const disableButton = submitting || error || success
+    const sectionBg = error ? '#f44336' : success ? '#33e06b' : '#3E46CF'
+    const fieldBg = error ? '#d32f2f' : success ? '#26b95a' : '#283193'
+    const placeholderColor = error ? '#b71c1c' : success ? '#1b8a42' : '#1f2570'
 
     return (
-      <section>
+      <section id="contact" ref={(n) => (this.sectionNode = n)}>
         <div>
-          <h2>{this.renderTitle()}</h2>
-          <p>Get in touch so we can have a chat.</p>
+          <div className="titleRow">
+            <svg
+              className="handSvg"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M7.2 12V6.3a1.6 1.6 0 0 1 3.2 0V12"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <path
+                d="M10.4 12V5.6a1.6 1.6 0 0 1 3.2 0V12"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <path
+                d="M13.6 12V6.2a1.5 1.5 0 0 1 3 0V13"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <path
+                d="M16.6 13.2l.8-1a1.4 1.4 0 0 1 2.5.9V15a6.5 6.5 0 0 1-6.5 6.5h-.4A6.5 6.5 0 0 1 6.5 15v-1.3c0-.8.6-1.4 1.4-1.4.4 0 .7.1 1 .3l2.2 1.5"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            <h2>{this.renderTitle()}</h2>
+          </div>
+          <p>
+            Hör av dig så tar vi en snabb koll och ser om vi är rätt partner för
+            er.
+          </p>
           <form
             ref={(n) => (this.formNode = n)}
             onSubmit={(e) => {
@@ -141,7 +199,7 @@ export class Contact extends Component {
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Namn"
               autoComplete="off"
               ref={(n) => (this.inputNameNode = n)}
               onFocus={() => this.reset()}
@@ -149,7 +207,7 @@ export class Contact extends Component {
             <input
               type="text"
               name="email"
-              placeholder="E-mail"
+              placeholder="E-post"
               autoComplete="off"
               ref={(n) => (this.inputEmailNode = n)}
               onFocus={() => this.reset()}
@@ -157,16 +215,16 @@ export class Contact extends Component {
             <textarea
               name="message"
               rows="3"
-              placeholder="Message"
+              placeholder="Meddelande"
               autoComplete="off"
               ref={(n) => (this.inputMessageNode = n)}
               onFocus={() => this.reset()}
             />
             <label className="checkbox">
-              I agree to the{' '}
+              Jag godkänner{' '}
               <Link href="/terms" legacyBehavior>
                 <a target="_blank" className="terms-link">
-                  terms
+                  villkoren
                 </a>
               </Link>
               <input
@@ -178,7 +236,10 @@ export class Contact extends Component {
               <span className="checkmark" />
             </label>
             <button type="submit" disabled={disableButton}>
-              Send
+              Skicka{' '}
+              <span className="buttonCaret" aria-hidden="true">
+                ›
+              </span>
             </button>
           </form>
         </div>
@@ -209,7 +270,6 @@ export class Contact extends Component {
 
           .checkmark {
             position: absolute;
-            top: -3px;
             left: 0;
             height: 25px;
             width: 25px;
@@ -217,7 +277,7 @@ export class Contact extends Component {
           }
 
           .terms-link:hover {
-            color: #ccc;
+            color: #fff;
           }
 
           .checkbox:hover input ~ .checkmark {
@@ -230,7 +290,7 @@ export class Contact extends Component {
           }
 
           .checkbox input:checked ~ .checkmark {
-            background-color: ${this.state.error ? '#b71c1c' : '#283193'};
+            background-color: ${fieldBg};
           }
 
           .checkmark:after {
@@ -255,6 +315,14 @@ export class Contact extends Component {
             transform: rotate(45deg);
           }
 
+          a {
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+
           a,
           a:hover,
           a:visited,
@@ -265,33 +333,12 @@ export class Contact extends Component {
 
           section {
             width: 100%;
-            padding: 0 0 100px;
-            background: ${this.state.error
-              ? '#f44336'
-              : this.state.success
-                ? '#1CAC78'
-                : '#3E46CF'};
+            background: ${sectionBg};
             display: flex;
             justify-content: center;
             flex-direction: column;
             position: relative;
-          }
-
-          section::before {
-            position: absolute;
-            z-index: 0;
-            left: -2px;
-            right: -5px;
-            top: -100px;
-            height: 150px;
-            width: calc(100% + 5px);
-            transform: rotate(-2deg);
-            content: '';
-            background: ${this.state.error
-              ? '#f44336'
-              : this.state.success
-                ? '#1CAC78'
-                : '#3E46CF'};
+            padding: 60px 0 100px;
           }
 
           div {
@@ -299,7 +346,10 @@ export class Contact extends Component {
             margin: 0 auto;
             width: 1024px;
             max-width: calc(100% - 40px);
-            padding: 20px;
+          }
+
+          h2 {
+            margin-top: 0;
           }
 
           h2,
@@ -307,39 +357,81 @@ export class Contact extends Component {
             color: #ffffff;
           }
 
+          p {
+            font-weight: 400;
+          }
+
+          .titleRow {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+
+          .handSvg {
+            width: clamp(32px, 4.2vw, 56px);
+            height: clamp(32px, 4.2vw, 56px);
+            color: rgba(255, 255, 255, 0.95);
+            flex: 0 0 auto;
+            transform: rotate(-14deg);
+            transform-origin: 55% 55%;
+          }
+
+          @media (prefers-reduced-motion: no-preference) {
+            .handSvg {
+              animation: handWave 2.8s ease-in-out infinite;
+            }
+          }
+
+          @media screen and (min-width: 500px) {
+            section {
+              padding: 120px 0 140px;
+            }
+          }
+
+          @keyframes handWave {
+            0%,
+            60%,
+            100% {
+              transform: rotate(-14deg);
+            }
+            10% {
+              transform: rotate(-6deg);
+            }
+            20% {
+              transform: rotate(-16deg);
+            }
+            30% {
+              transform: rotate(-8deg);
+            }
+            40% {
+              transform: rotate(-14deg);
+            }
+          }
+
           textarea,
           input {
-            width: 100%;
+            width: calc(100% - 20px);
             display: block;
-            background: ${this.state.error
-              ? '#f44336'
-              : this.state.success
-                ? '#1CAC78'
-                : '#3E46CF'};
+            background: ${fieldBg};
             border: 0;
-            padding: 0;
+            border-radius: 7px;
+            padding: 10px;
             text-indent: 0;
-            font-family: 'Overpass Mono', sans-serif;
-            font-weight: 300;
+            font-family: 'Noto Sans', sans-serif;
             -webkit-appearance: none;
-            -webkit-border-radius: 0px;
-            font-size: 28px;
+            font-size: 20px;
             resize: none;
             color: #fff;
             margin-bottom: 20px;
+            font-weight: 400;
           }
 
           input:-webkit-autofill,
           input:-webkit-autofill:hover,
           input:-webkit-autofill:focus,
           input:-webkit-autofill:active {
-            -webkit-box-shadow: 0 0 0 100px
-              ${this.state.error
-                ? '#f44336'
-                : this.state.success
-                  ? '#1CAC78'
-                  : '#3E46CF'}
-              inset !important;
+            -webkit-box-shadow: 0 0 0 100px ${fieldBg} inset !important;
             -webkit-text-fill-color: #fff !important;
           }
 
@@ -348,14 +440,25 @@ export class Contact extends Component {
             background: #fff;
             color: #000;
             border: 0;
+            border-radius: 7px;
             outline: none;
+            margin-top: 10px;
             padding: 20px 50px;
             cursor: pointer;
             font-size: 18px;
-            font-family: 'Overpass', sans-serif;
-            font-weight: 300;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 800;
             -webkit-appearance: none;
-            -webkit-border-radius: 0px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          }
+
+          .buttonCaret {
+            font-size: 30px;
+            line-height: 1;
+            margin-top: -0.15em;
           }
 
           button[type='submit']:disabled {
@@ -372,7 +475,7 @@ export class Contact extends Component {
           @media screen and (min-width: 500px) {
             textarea,
             input {
-              font-size: 34px;
+              font-size: 28px;
             }
           }
 
@@ -384,11 +487,8 @@ export class Contact extends Component {
 
           textarea::placeholder,
           input::placeholder {
-            color: ${this.state.error
-              ? '#b71c1c'
-              : this.state.success
-                ? '#116748'
-                : '#283193'};
+            font-weight: 400;
+            color: ${placeholderColor};
           }
         `}</style>
       </section>

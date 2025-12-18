@@ -17,52 +17,18 @@ export function Header({ children }) {
           href={'/static/favicon-16x16.png'}
           sizes="16x16"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
         {children}
       </Head>
       {/*language=CSS*/}
       <style jsx global>{`
-        @font-face {
-          font-family: 'Overpass';
-          font-style: normal;
-          font-weight: 900;
-          src: local(''),
-            url('/static/fonts/overpass-v7-latin-900.woff2') format('woff2'),
-            url('/static/fonts/overpass-v7-latin-900.woff') format('woff');
-        }
-
-        @font-face {
-          font-family: 'Overpass Mono';
-          font-style: normal;
-          font-weight: 300;
-          src: local(''),
-            url('/static/fonts/overpass-mono-v10-latin-300.woff2')
-              format('woff2'),
-            url('/static/fonts/overpass-mono-v10-latin-300.woff') format('woff');
-        }
-
-        @font-face {
-          font-family: 'Overpass Mono';
-          font-style: normal;
-          font-weight: 400;
-          src: local(''),
-            url('/static/fonts/overpass-mono-v10-latin-regular.woff2')
-              format('woff2'),
-            url('/static/fonts/overpass-mono-v10-latin-regular.woff')
-              format('woff');
-        }
-
-        @font-face {
-          font-family: 'Overpass Mono';
-          font-style: normal;
-          font-weight: 700;
-          src: local(''),
-            url('/static/fonts/overpass-mono-v10-latin-700.woff2')
-              format('woff2'),
-            url('/static/fonts/overpass-mono-v10-latin-700.woff') format('woff');
-        }
-
         body {
-          font-family: 'Overpass Mono', sans-serif;
+          font-family: 'Noto Sans', sans-serif;
           padding: 0;
           margin: 0;
         }
@@ -70,6 +36,16 @@ export function Header({ children }) {
         body,
         html {
           overflow-x: hidden;
+        }
+
+        ::selection {
+          background: #0a1a10;
+          color: #fff;
+        }
+
+        ::-moz-selection {
+          background: #0a1a10;
+          color: #fff;
         }
 
         hr {
@@ -86,7 +62,7 @@ export function Header({ children }) {
         h3,
         h4,
         h5 {
-          font-family: 'Overpass', sans-serif;
+          font-family: 'Noto Sans', sans-serif;
           margin-bottom: 0;
         }
 
@@ -95,7 +71,9 @@ export function Header({ children }) {
         }
 
         h2 {
-          font-size: 36px;
+          font-size: clamp(32px, 4.2vw, 56px);
+          line-height: 1.08;
+          letter-spacing: -0.02em;
         }
 
         h3 {
@@ -110,7 +88,7 @@ export function Header({ children }) {
         blockquote,
         label,
         small {
-          font-family: 'Overpass Mono', sans-serif;
+          font-family: 'Noto Sans', sans-serif;
           font-weight: 300;
           font-size: 18px;
           width: 800px;
@@ -123,7 +101,7 @@ export function Header({ children }) {
         }
 
         li {
-          font-family: 'Overpass Mono', sans-serif;
+          font-family: 'Noto Sans', sans-serif;
         }
 
         p.text,
@@ -144,10 +122,6 @@ export function Header({ children }) {
 
           h1 {
             font-size: 76px;
-          }
-
-          h2 {
-            font-size: 43px;
           }
 
           h3 {

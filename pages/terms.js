@@ -1,90 +1,88 @@
 import { Header } from '../components/header'
 import { InPageHeader } from '../components/inPageHeader'
+import { Footer } from '../components/footer'
 
 export default function Terms() {
   return (
     <>
       <Header>
-        <title>sthlm.io - Terms</title>
+        <title>sthlm.io – Villkor</title>
         <link rel="canonical" href="/terms/" />
       </Header>
       <section>
         <div className="content">
           <InPageHeader />
-          <h2>Our details</h2>
+          <h2>Våra uppgifter</h2>
           <p className="text">
-            The data controller in respect of our website is Fredrik Lack AB,
-            registered in Stockholm, Sweden, company number 559127-4302. To
-            contact the data controller, please use our contact form, e-mail{' '}
-            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a> or by phone{' '}
-            <a href="tel:+46733730941">+46 733 73 09 41</a>.
+            Personuppgiftsansvarig för vår webbplats är Fredrik Lack AB,
+            registrerat i Stockholm, organisationsnummer 559127-4302. För att
+            kontakta den personuppgiftsansvarige, använd vårt kontaktformulär,
+            e-post <a href="mailto:gdpr@sthlm.io">gdpr@sthlm.io</a> eller via
+            telefon <a href="tel:+46733730941">+46 733 73 09 41</a>.
           </p>
-          <h2>Your personal data</h2>
+          <h2>Dina personuppgifter</h2>
           <p className="text">
-            We take your privacy seriously and will only use your personal
-            information to respond to any questions you may have and to provide
-            the products and services you have requested from us. Your personal
-            information will never be used by us or shared with third parties
-            for marketing purposes.
+            Vi tar din integritet på allvar och använder endast dina
+            personuppgifter för att besvara frågor och för att tillhandahålla de
+            tjänster du efterfrågat. Dina personuppgifter används aldrig för
+            marknadsföringsändamål och delas inte med tredje part för
+            marknadsföring.
           </p>
-          <h2>Data collected</h2>
-          <h3>Contact form</h3>
+          <h2>Insamlade uppgifter</h2>
+          <h3>Kontaktformulär</h3>
           <p className="text">
-            When you contact us using our contact form, you will be voluntarily
-            providing us with your personal information. The information you
-            enter in the contact form is encrypted, as you can see from the
-            padlock icon in the address bar of your browser, and is processed on
-            our servers before being sent to us by email. While we have
-            implemented encryption to ensure secure transmission of your
-            personal information, Internet-based data transmissions may in
-            principle have security gaps, so absolute protection may not be
-            guaranteed. For this reason, you are always welcome to contact us
-            via alternative means, such as by telephone.
+            När du kontaktar oss via vårt kontaktformulär lämnar du frivilligt
+            personuppgifter. Informationen du anger i formuläret krypteras,
+            vilket du kan se via hänglåsikonen i webbläsarens adressfält, och
+            behandlas på våra servrar innan den skickas till oss via e-post.
+            Även om vi använder kryptering för säker överföring kan
+            internetbaserade överföringar i princip ha säkerhetsbrister, vilket
+            innebär att ett absolut skydd inte kan garanteras. Därför är du
+            alltid välkommen att kontakta oss via alternativa kanaler, till
+            exempel via telefon.
           </p>
-          <h2>Services used</h2>
+          <h2>Tjänster vi använder</h2>
           <h3>Elastx AB</h3>
           <p className="text">
-            We use Elastx AB as our primary hosting provider, running Kubernetes
-            on OpenStack in Stockholm, Sweden over three availability zones
-            (sto1, sto2 and sto3). Security is our top priority, and we firmly
-            believe in storing data within Sweden and partnering with Swedish
-            hosting providers. The information provided in the contact form is
-            securely stored and processed on our servers in Sweden.
+            Vi använder Elastx AB som vår primära hosting-leverantör och kör
+            Kubernetes på OpenStack i Stockholm över tre tillgänglighetszoner
+            (sto1, sto2 och sto3). Säkerhet är högsta prioritet, och vi tror
+            starkt på att lagra data inom Sverige och att samarbeta med svenska
+            hosting-leverantörer. Informationen du lämnar i kontaktformuläret
+            lagras och behandlas säkert på våra servrar i Sverige.
           </p>
           <h3>Glesys AB</h3>
           <p className="text">
-            We use Glesys AB to host our mail servers in Stockholm, Sweden.
+            Vi använder Glesys AB för att drifta våra e-postservrar i Stockholm.
           </p>
-          <h2>Your rights</h2>
+          <h2>Dina rättigheter</h2>
           <p className="text">
-            In accordance with European law under the General Data Protection
-            Regulation (GDPR), you have numerous rights in regards to the
-            personal data we hold about you, including:
+            Enligt dataskyddsförordningen (GDPR) har du flera rättigheter
+            avseende de personuppgifter vi behandlar om dig, bland annat:
           </p>
           <ul>
             <li>
-              Right to confirmation – you have the right to know if we hold
-              personal data that concerns you
+              Rätt till bekräftelse – du har rätt att få veta om vi behandlar
+              personuppgifter som rör dig
             </li>
             <li>
-              Right to access – you have the right to view and to obtain a copy
-              of any personal data we hold that concerns you
+              Rätt till tillgång – du har rätt att få tillgång till och få en
+              kopia av de personuppgifter vi behandlar om dig
             </li>
             <li>
-              Right to rectification&nbsp;– you have the right to the correction
-              of any inaccuracies within the personal data we hold that concerns
-              you
+              Rätt till rättelse&nbsp;– du har rätt att få felaktiga uppgifter
+              rättade
             </li>
             <li>
-              Right to erasure – you have the right to have your personal data
-              removed from our systems
+              Rätt till radering – du har rätt att få dina personuppgifter
+              raderade
             </li>
           </ul>
           <p className="text">
-            Should you wish to exercise any of these rights, please contact us
-            using the contact form, e-mail{' '}
-            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a> or by phone{' '}
-            <a href="tel:+46733730941">+46 733 73 09 41</a>.
+            Om du vill utöva någon av dessa rättigheter, kontakta oss via
+            kontaktformuläret, e-post{' '}
+            <a href="mailto:fredrik@sthlm.io">fredrik@sthlm.io</a> eller via
+            telefon <a href="tel:+46733730941">+46 733 73 09 41</a>.
           </p>
         </div>
         {/*language=SCSS*/}
@@ -117,18 +115,24 @@ export default function Terms() {
             justify-content: center;
           }
 
+          a {
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: underline;
+            color: #3e46cf;
+          }
+
           a,
           a:active,
           a:visited {
             font-weight: bold;
             color: #000;
           }
-
-          a:hover {
-            color: #3e46cf;
-          }
         `}</style>
       </section>
+      <Footer />
     </>
   )
 }

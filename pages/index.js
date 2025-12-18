@@ -3,20 +3,20 @@ import { Header } from '../components/header'
 import { About } from '../components/about'
 import { Contact } from '../components/contact'
 import { Clients } from '../components/clients'
-import { Team } from '../components/team'
+import { Footer } from '../components/footer'
 
 export default function Home() {
   return (
     <>
       <Header>
-        <title>sthlm.io - Building secure services and infrastructure</title>
+        <title>sthlm.io – Säkra tjänster och infrastruktur</title>
         <link rel="canonical" href="https://sthlm.io" />
       </Header>
       <Jumbo />
       <About />
       <Clients />
-      <Team />
       <Contact />
+      <Footer />
     </>
   )
 }
