@@ -1,6 +1,7 @@
 export function About() {
   const techLogos = [
     { alt: 'golang', src: '/static/golang.png' },
+    { alt: 'nodejs', src: '/static/nodejs.png' },
     { alt: 'kubernetes', src: '/static/kubernetes.png' },
     { alt: 'kafka', src: '/static/kafka.png' },
     { alt: 'openstack', src: '/static/openstack.png' },
