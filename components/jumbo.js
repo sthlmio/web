@@ -49,23 +49,19 @@ export function Jumbo() {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <path
-                  d="M7 7h10v6H7V7Z"
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="3"
                   stroke="currentColor"
                   strokeWidth="2"
-                  strokeLinejoin="round"
                 />
                 <path
-                  d="M9 5v2M15 5v2M9 13v2M15 13v2M5 9h2M17 9h2"
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82 1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
                   stroke="currentColor"
                   strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M7 18h10"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
                 />
               </svg>
               <div className="featureText">
@@ -299,8 +295,8 @@ export function Jumbo() {
         }
 
         .iconAutomation {
-          width: 36px;
-          height: 36px;
+          width: 34px;
+          height: 34px;
         }
 
         .iconSecurity {
