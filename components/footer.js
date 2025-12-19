@@ -38,7 +38,7 @@ export function Footer() {
       <style jsx>{`
         footer {
           width: 100%;
-          background: #000;
+          background: #151515;
           display: flex;
           justify-content: center;
           flex-direction: column;
