@@ -12,7 +12,7 @@ export function Jumbo() {
         <div className="content">
           <h1>Infrastruktur för den nya vardagen</h1>
           <p>
-            Vi hjälper er att planera, bygga och drifta säkra tjänster och plattformar med svensk datasuveränitet.
+            Vi hjälper er att planera, bygga och drifta säkra och tillgängliga tjänster och plattformar med svensk datasuveränitet.
           </p>
           <hr />
           <div className="features" role="list" aria-label="Fokusområden">

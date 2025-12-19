@@ -6,7 +6,7 @@ export function Header({ children }) {
       <Head>
         <meta
           name="description"
-          content="Vi hjälper er att planera, bygga och drifta säkra tjänster och plattformar med svensk datasuveränitet."
+          content="Vi hjälper er att planera, bygga och drifta säkra och tillgängliga tjänster och plattformar med svensk datasuveränitet."
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
