@@ -473,6 +473,10 @@ export class Contact extends Component {
             align-items: center;
             justify-content: center;
             gap: 10px;
+
+            &:hover {
+              background-color: #ccc;
+            }
           }
 
           .buttonCaret {
