@@ -1,12 +1,22 @@
 export function About() {
   const techLogos = [
-    { alt: 'golang', src: '/static/golang.png' },
-    { alt: 'nodejs', src: '/static/nodejs.png' },
-    { alt: 'kubernetes', src: '/static/kubernetes.png' },
-    { alt: 'kafka', src: '/static/kafka.png' },
-    { alt: 'openstack', src: '/static/openstack.png' },
-    { alt: 'opentofu', src: '/static/opentofu.png' },
-    { alt: 'postgresql', src: '/static/postgresql.png' },
+    { alt: 'golang', src: '/static/golang.png', width: 122, height: 52 },
+    { alt: 'nodejs', src: '/static/nodejs.png', width: 151, height: 52 },
+    {
+      alt: 'kubernetes',
+      src: '/static/kubernetes.png',
+      width: 241,
+      height: 52,
+    },
+    { alt: 'kafka', src: '/static/kafka.png', width: 114, height: 52 },
+    { alt: 'openstack', src: '/static/openstack.png', width: 108, height: 52 },
+    { alt: 'opentofu', src: '/static/opentofu.png', width: 190, height: 52 },
+    {
+      alt: 'postgresql',
+      src: '/static/postgresql.png',
+      width: 138,
+      height: 52,
+    },
   ]
 
   return (
@@ -35,14 +45,24 @@ export function About() {
             <div className="group">
               {techLogos.map((logo) => (
                 <div className="logoItem" key={logo.alt}>
-                  <img alt={logo.alt} src={logo.src} />
+                  <img
+                    alt={logo.alt}
+                    src={logo.src}
+                    width={logo.width}
+                    height={logo.height}
+                  />
                 </div>
               ))}
             </div>
             <div className="group" aria-hidden="true">
               {techLogos.map((logo) => (
                 <div className="logoItem" key={`${logo.alt}-dup`}>
-                  <img alt="" src={logo.src} />
+                  <img
+                    alt=""
+                    src={logo.src}
+                    width={logo.width}
+                    height={logo.height}
+                  />
                 </div>
               ))}
             </div>
