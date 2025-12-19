@@ -4,6 +4,7 @@ export function Clients() {
     { src: '/static/doors.svg', alt: 'Doors' },
     { src: '/static/logo-ving.svg', alt: 'Ving' },
     { src: '/static/idun-logo-black.png', alt: 'Idun' },
+    { src: '/static/egmont.svg', alt: 'Story House Egmont' },
   ]
 
   return (
