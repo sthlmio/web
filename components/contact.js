@@ -196,26 +196,35 @@ export class Contact extends Component {
               this.handleSubmit()
             }}
           >
+            <label htmlFor="name" className="label">
+              Namn
+            </label>
             <input
               type="text"
+              id="name"
               name="name"
-              placeholder="Namn"
               autoComplete="off"
               ref={(n) => (this.inputNameNode = n)}
               onFocus={() => this.reset()}
             />
+            <label htmlFor="email" className="label">
+              E-mail
+            </label>
             <input
               type="text"
+              id="email"
               name="email"
-              placeholder="E-post"
               autoComplete="off"
               ref={(n) => (this.inputEmailNode = n)}
               onFocus={() => this.reset()}
             />
+            <label htmlFor="message" className="label">
+              Meddelande
+            </label>
             <textarea
+              id="message"
               name="message"
-              rows="3"
-              placeholder="Meddelande"
+              rows="5"
               autoComplete="off"
               ref={(n) => (this.inputMessageNode = n)}
               onFocus={() => this.reset()}
@@ -258,6 +267,16 @@ export class Contact extends Component {
             user-select: none;
             color: #fff;
             width: fit-content;
+          }
+
+          .label {
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #efefef;
+            margin-left: 5px;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.08em;
           }
 
           .checkbox > input {
@@ -421,7 +440,7 @@ export class Contact extends Component {
             text-indent: 0;
             font-family: 'Noto Sans', sans-serif;
             -webkit-appearance: none;
-            font-size: 20px;
+            font-size: 18px;
             resize: none;
             color: #fff;
             margin-bottom: 20px;
@@ -476,7 +495,7 @@ export class Contact extends Component {
           @media screen and (min-width: 500px) {
             textarea,
             input {
-              font-size: 28px;
+              font-size: 22px;
             }
           }
 
