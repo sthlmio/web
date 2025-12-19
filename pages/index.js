@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header>
-        <title>sthlm.io – Säkra tjänster och infrastruktur</title>
+        <title>sthlm.io – Infrastruktur som klarar verkligheten</title>
         <link rel="canonical" href="https://sthlm.io" />
       </Header>
       <Jumbo />
