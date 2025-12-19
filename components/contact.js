@@ -274,6 +274,7 @@ export class Contact extends Component {
             height: 25px;
             width: 25px;
             background-color: #fff;
+            border-radius: 7px;
           }
 
           .terms-link:hover {
