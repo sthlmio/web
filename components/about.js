@@ -38,7 +38,7 @@ export function About() {
       </div>
       <div className="content logos">
         <div className="logos__heading">
-          <p>Teknik vi ofta levererar med</p>
+          <p>Teknik vi har stor erfarenhet av</p>
         </div>
         <div className="marquee" aria-label="Teknik vi ofta levererar med">
           <div className="track">
