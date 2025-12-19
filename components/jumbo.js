@@ -10,7 +10,7 @@ export function Jumbo() {
       </div>
       <div className="main">
         <div className="content">
-          <h1>Infrastruktur som klarar verkligheten</h1>
+          <h1>Infrastruktur som klarar nya vardagen</h1>
           <p>
             Vi hjälper er att planera, bygga och drifta säkra tjänster och plattformar med svensk datasuveränitet.
           </p>
