@@ -67,7 +67,7 @@ export function Jumbo() {
               <div className="featureText">
                 <div className="kicker">Automation</div>
                 <div className="desc">
-                  IaC och GitOps som minskar ledtider.
+                  IaC och GitOps för kontrollerade förändringar.
                 </div>
               </div>
             </div>
