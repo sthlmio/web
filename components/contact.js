@@ -480,7 +480,7 @@ export class Contact extends Component {
           }
 
           .buttonCaret {
-            font-size: 30px;
+            font-size: 20px;
             line-height: 1;
             margin-top: -0.15em;
           }
@@ -488,12 +488,6 @@ export class Contact extends Component {
           button[type='submit']:disabled {
             pointer-events: none;
             opacity: 0.3;
-          }
-
-          @media screen and (min-width: 500px) {
-            button[type='submit'] {
-              font-size: 22px;
-            }
           }
 
           @media screen and (min-width: 500px) {
