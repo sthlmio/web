@@ -14,7 +14,7 @@ export function Clients() {
         <p className="intro">
           Ett urval av kunder vi jobbat med genom åren. Vi hjälper team att
           bygga, modernisera och drifta tjänster och infrastruktur – från
-          strategi och arkitektur till implementation och produktion.
+          strategi och arkitektur till drift och förvaltning.
         </p>
         <div className="logoGrid" aria-label="Kundlogotyper">
           {logos.map((logo) => (
