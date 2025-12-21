@@ -24,13 +24,15 @@ export function Jumbo() {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <path
-                  d="M7.5 18H18a4 4 0 0 0 .2-8 5.5 5.5 0 0 0-10.7 1.6A3.5 3.5 0 0 0 7.5 18Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+                <g transform="translate(-2 0)">
+                  <path
+                    d="M7.5 18H18a4 4 0 0 0 .2-8 5.5 5.5 0 0 0-10.7 1.6A3.5 3.5 0 0 0 7.5 18Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </g>
               </svg>
               <div className="featureText">
                 <div className="kicker">Plattform & drift</div>
@@ -80,19 +82,21 @@ export function Jumbo() {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <path
-                  d="M12 3l7 4v6c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M9.5 12.5l1.8 1.8L15 10.6"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+                <g transform="translate(12 0) scale(1.12 1) translate(-12 0)">
+                  <path
+                    d="M12 3l7 4v6c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M9.5 12.5l1.8 1.8L15 10.6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </g>
               </svg>
               <div className="featureText">
                 <div className="kicker">Säkerhet</div>
