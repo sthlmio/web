@@ -141,9 +141,8 @@ export class Contact extends Component {
   render() {
     const { submitting, error, success } = this.state
     const disableButton = submitting || error || success
-    const sectionBg = error ? '#f44336' : success ? '#33e06b' : '#3E46CF'
-    const fieldBg = error ? '#d32f2f' : success ? '#26b95a' : '#283193'
-    const placeholderColor = error ? '#b71c1c' : success ? '#1b8a42' : '#1f2570'
+    const sectionBg = error ? '#f44336' : success ? '#26b95a' : '#3E46CF'
+    const fieldBg = error ? '#d32f2f' : success ? '#1b8a42' : '#283193'
 
     return (
       <section id="contact" ref={(n) => (this.sectionNode = n)}>
@@ -501,12 +500,6 @@ export class Contact extends Component {
           input:focus {
             color: #ffffff;
             outline: none;
-          }
-
-          textarea::placeholder,
-          input::placeholder {
-            font-weight: 400;
-            color: ${placeholderColor};
           }
         `}</style>
       </section>
