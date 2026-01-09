@@ -24,17 +24,17 @@ export function About() {
       <div className="content">
         <h2>Vad vi gör</h2>
         <p>
-          Vi hjälper företag och organisationer att bygga, modernisera och
-          drifta tjänster och infrastruktur. Vi jobbar gärna med öppna
-          standarder och svenska hostingbolag.
+          Vi hjälper företag och organisationer att utveckla, modernisera och
+          förvalta tjänster och infrastruktur.
+          <br />
+          <br />
+          Med rådgivning, tekniskt ledarskap och genomförande tar vi ansvar från
+          arkitektur till produktion och långsiktig drift.
+          <br />
+          <br />
+          Vi skapar en robust och hållbar grund för fortsatt utveckling, med
+          öppna standarder och svenska hosting- och plattformspartners.
         </p>
-        <div className="customerBlurb">
-          <p>
-            Vi tar ansvar från arkitektur till produktion. Oavsett om ni bygger
-            nytt, migrerar eller vill få ordning på er leverans och drift
-            hjälper vi er att skapa en stabil grund för utveckling.
-          </p>
-        </div>
       </div>
       <div className="content logos">
         <div className="logos__heading">
@@ -99,11 +99,6 @@ export function About() {
 
         p {
           font-weight: 400;
-        }
-
-        .customerBlurb {
-          margin-top: 18px;
-          max-width: 880px;
         }
 
         .content {
