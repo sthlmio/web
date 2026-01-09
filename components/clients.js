@@ -12,9 +12,10 @@ export function Clients() {
       <div className="clients">
         <h2>Kunder</h2>
         <p className="intro">
-          Ett urval av kunder vi jobbat med genom åren. Vi hjälper team att
-          bygga, modernisera och drifta tjänster och infrastruktur – från
-          strategi och arkitektur till drift och förvaltning.
+          Ett urval av kunder vi samarbetat med genom åren. Vi har stöttat deras
+          team i att bygga, modernisera och drifta tjänster och infrastruktur –
+          från strategiska vägval och arkitektur till stabil drift och
+          förvaltning.
         </p>
         <div className="logoGrid" aria-label="Kundlogotyper">
           {logos.map((logo) => (
