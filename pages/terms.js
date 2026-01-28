@@ -55,6 +55,12 @@ export default function Terms() {
           <p className="text">
             Vi använder Glesys AB för att drifta våra e-postservrar i Stockholm.
           </p>
+          <h3>Berget AI</h3>
+          <p className="text">
+            För AI-inferens använder vi gärna Berget AI som är en helt svensk
+            tjänst med öppna modeller där ingen data lämnar Sverige, precis så
+            som vi gillar det.
+          </p>
           <h2>Dina rättigheter</h2>
           <p className="text">
             Enligt dataskyddsförordningen (GDPR) har du flera rättigheter
