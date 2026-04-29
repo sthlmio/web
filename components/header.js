@@ -24,7 +24,7 @@ export function Header({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
         {children}
@@ -32,15 +32,28 @@ export function Header({ children }) {
       {/*language=CSS*/}
       <style jsx global>{`
         body {
-          font-family: 'Noto Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           padding: 0;
           margin: 0;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
         }
 
         body,
         html {
           overflow-x: hidden;
           overflow-x: clip;
+        }
+
+        body > #__next {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+        }
+
+        footer {
+          margin-top: auto;
         }
 
         ::selection {
@@ -67,7 +80,7 @@ export function Header({ children }) {
         h3,
         h4,
         h5 {
-          font-family: 'Noto Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           margin-bottom: 0;
         }
 
@@ -93,9 +106,10 @@ export function Header({ children }) {
         blockquote,
         label,
         small {
-          font-family: 'Noto Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-weight: 300;
           font-size: 18px;
+          line-height: 1.55;
           width: 800px;
           max-width: 100%;
         }
@@ -106,7 +120,8 @@ export function Header({ children }) {
         }
 
         li {
-          font-family: 'Noto Sans', sans-serif;
+          font-family: 'Inter', sans-serif;
+          line-height: 1.55;
         }
 
         p.text,

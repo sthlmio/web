@@ -12,37 +12,28 @@
     "email": "fredrik@sthlm.io",
     "url": "https://sthlm.io"
   },
-  "contributors": [
-    {
-      "name": "Viktor Kalajo",
-      "email": "viktor@sthlm.io",
-      "url": "https://sthlm.io"
-    },
-    {
-      "name": "Johan Bååth",
-      "email": "johan@sthlm.io",
-      "url": "https://sthlm.io"
-    },
-    {
-      "name": "Viktor Bergehall",
-      "email": "viktor.bergehall@sthlm.io",
-      "url": "https://sthlm.io"
-    }
-  ],
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "prebuild": "node scripts/generate-og-images.js",
+    "generate-og-images": "node scripts/generate-og-images.js"
   },
   "dependencies": {
+    "gray-matter": "4.0.3",
+    "highlight.js": "11.11.1",
     "isomorphic-unfetch": "4.0.2",
-    "next": "16.1.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "js-yaml": "4.1.1",
+    "marked": "18.0.2",
+    "marked-highlight": "2.2.4",
+    "next": "16.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
     "react-typist": "2.0.5"
   },
   "devDependencies": {
-    "prettier": "3.8.1"
+    "prettier": "3.8.3",
+    "sharp": "0.34.5"
   }
 }

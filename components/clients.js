@@ -29,7 +29,7 @@ export function Clients() {
       <style jsx>{`
         section {
           width: 100%;
-          background: #fff;
+          background: #f5f5f5;
           z-index: 0;
           position: relative;
           display: flex;
@@ -83,6 +83,7 @@ export function Clients() {
           align-items: center;
           justify-content: center;
           padding: 10px 0;
+          background: #fff;
           border: solid 3px #efefef;
           border-radius: 7px;
           height: 50px;

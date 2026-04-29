@@ -1,13 +1,9 @@
+import { Nav } from './nav'
+
 export function Jumbo() {
   return (
     <section>
-      <div className="topbar">
-        <div className="topbarInner">
-          <a href="/">
-            <img className="logo" src={'/static/logo_small.svg'} alt="sthlm.io" />
-          </a>
-        </div>
-      </div>
+      <Nav variant="transparent" current="home" />
       <div className="main">
         <div className="content">
           <h1>Infrastruktur för den nya vardagen</h1>
@@ -128,6 +124,7 @@ export function Jumbo() {
           display: flex;
           flex-direction: column;
           box-sizing: border-box;
+          position: relative;
         }
 
         .main {

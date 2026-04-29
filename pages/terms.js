@@ -114,12 +114,60 @@ export default function Terms() {
             padding: 20px;
           }
 
-          .content div {
+          .content > div {
             display: flex;
             height: 100%;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+          }
+
+          .content :global(h2) {
+            font-size: clamp(22px, 2.6vw, 26px);
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            font-weight: 700;
+            margin: 40px 0 12px;
+            color: #0a0a0a;
+          }
+
+          .content :global(h3) {
+            font-size: clamp(20px, 2.6vw, 24px);
+            line-height: 1.3;
+            font-weight: 600;
+            margin: 32px 0 10px;
+            color: #0a0a0a;
+          }
+
+          .content :global(p),
+          .content :global(p.text) {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.75;
+            margin: 0 0 22px;
+            width: auto;
+            max-width: 800px;
+            color: #1a1a1a;
+          }
+
+          .content :global(ul),
+          .content :global(ol) {
+            font-size: 18px;
+            line-height: 1.75;
+            margin: 0 0 22px;
+            padding-inline-start: 24px;
+            max-width: 800px;
+          }
+
+          .content :global(li) {
+            font-weight: 300;
+            line-height: 1.6;
+            margin-bottom: 8px;
+          }
+
+          .content :global(li strong),
+          .content :global(li b) {
+            font-weight: 600;
           }
 
           a {

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
+import { PillButton } from './pillButton'
 
 export class Contact extends Component {
   constructor(props) {
@@ -243,12 +244,10 @@ export class Contact extends Component {
               />
               <span className="checkmark" />
             </label>
-            <button type="submit" disabled={disableButton}>
-              Skicka{' '}
-              <span className="buttonCaret" aria-hidden="true">
-                ›
-              </span>
-            </button>
+            <br />
+            <PillButton type="submit" disabled={disableButton}>
+              Skicka
+            </PillButton>
           </form>
         </div>
         {/*language=CSS*/}
@@ -437,7 +436,7 @@ export class Contact extends Component {
             border-radius: 7px;
             padding: 10px;
             text-indent: 0;
-            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Inter', sans-serif;
             -webkit-appearance: none;
             font-size: 18px;
             resize: none;
@@ -452,41 +451,6 @@ export class Contact extends Component {
           input:-webkit-autofill:active {
             -webkit-box-shadow: 0 0 0 100px ${fieldBg} inset !important;
             -webkit-text-fill-color: #fff !important;
-          }
-
-          button[type='submit'] {
-            text-transform: uppercase;
-            background: #fff;
-            color: #000;
-            border: 0;
-            border-radius: 7px;
-            outline: none;
-            margin-top: 10px;
-            padding: 20px 50px;
-            cursor: pointer;
-            font-size: 18px;
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 800;
-            -webkit-appearance: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-
-            &:hover {
-              background-color: #ccc;
-            }
-          }
-
-          .buttonCaret {
-            font-size: 20px;
-            line-height: 1;
-            margin-top: -0.15em;
-          }
-
-          button[type='submit']:disabled {
-            pointer-events: none;
-            opacity: 0.3;
           }
 
           @media screen and (min-width: 500px) {

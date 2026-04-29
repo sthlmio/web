@@ -16,7 +16,7 @@ COPY --chown=node:node . /home/node/web
 
 RUN npx next build
 
-FROM nginx:1.28.0-alpine
+FROM nginx:1.30.0-alpine
 COPY --from=builder /home/node/web/out /var/www
 COPY nginx.conf /etc/nginx/nginx.conf
 
