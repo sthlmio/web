@@ -17,8 +17,9 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "prebuild": "node scripts/generate-og-images.js",
-    "generate-og-images": "node scripts/generate-og-images.js"
+    "prebuild": "node scripts/generate-og-images.js && node scripts/generate-rss.js",
+    "generate-og-images": "node scripts/generate-og-images.js",
+    "generate-rss": "node scripts/generate-rss.js"
   },
   "dependencies": {
     "gray-matter": "4.0.3",

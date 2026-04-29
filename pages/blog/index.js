@@ -19,9 +19,15 @@ export default function BlogIndex({ posts }) {
   return (
     <>
       <Header>
-        <title>sthlm.io – Blogg</title>
+        <title>sthlm.io – Infrastruktur för den nya vardagen – Blogg</title>
         <meta name="description" content={description} />
         <link rel="canonical" href="https://sthlm.io/blog" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="sthlm.io – Infrastruktur för den nya vardagen"
+          href="https://sthlm.io/blog/rss"
+        />
 
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="sthlm.io" />
@@ -47,9 +53,7 @@ export default function BlogIndex({ posts }) {
                 <BlogCard post={post} />
               </li>
             ))}
-            {posts.length === 0 && (
-              <li className="empty">Inga inlägg ännu.</li>
-            )}
+            {posts.length === 0 && <li className="empty">Inga inlägg ännu.</li>}
           </ul>
         </div>
         {/*language=SCSS*/}

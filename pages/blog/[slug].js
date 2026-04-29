@@ -70,6 +70,12 @@ export default function BlogPost({ post }) {
         <title>{`sthlm.io – ${post.title}`}</title>
         <meta name="description" content={post.excerpt} />
         <link rel="canonical" href={url} />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="sthlm.io – Blogg"
+          href="https://sthlm.io/blog/rss"
+        />
 
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="sthlm.io" />
