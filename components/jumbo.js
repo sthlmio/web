@@ -131,12 +131,12 @@ export function Jumbo() {
           flex: 1 0 auto;
           display: flex;
           align-items: center;
-          padding: 30px 0 50px;
+          padding: clamp(80px, 10vh, 100px) 0 50px;
         }
 
         h1 {
-          font-size: clamp(44px, 6vw, 80px);
-          line-height: 1.05;
+          font-size: clamp(30px, 8vw, 80px);
+          line-height: 1.1;
           color: #fff;
           margin: 0;
           text-align: left;
@@ -353,11 +353,6 @@ export function Jumbo() {
           }
         }
 
-        @media screen and (max-height: 760px) {
-          .main {
-            align-items: flex-start;
-          }
-        }
       `}</style>
     </section>
   )
