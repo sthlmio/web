@@ -183,15 +183,15 @@ export function Jumbo() {
         .topbarInner {
           margin: 0 auto;
           width: 1024px;
-          max-width: calc(100% - 40px);
-          padding: 20px;
+          max-width: calc(100% - clamp(28px, 6vw, 40px));
+          padding: 20px 0;
         }
 
         .content {
           margin: 0 auto;
           width: 1024px;
-          max-width: calc(100% - 40px);
-          padding: 20px;
+          max-width: calc(100% - clamp(28px, 6vw, 40px));
+          padding: 20px 0;
           display: flex;
           flex-direction: column;
           align-items: flex-start;

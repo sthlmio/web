@@ -68,8 +68,8 @@ export default function BlogIndex({ posts }) {
             flex-direction: column;
             margin: 0 auto;
             width: 1024px;
-            max-width: calc(100% - 40px);
-            padding: 20px;
+            max-width: calc(100% - clamp(28px, 6vw, 40px));
+            padding: 20px 0;
           }
 
           .grid {

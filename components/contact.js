@@ -1,5 +1,4 @@
 import { Component } from 'react'
-import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
@@ -231,11 +230,9 @@ export class Contact extends Component {
             />
             <label className="checkbox">
               Jag godkänner{' '}
-              <Link href="/terms" legacyBehavior>
-                <a target="_blank" className="terms-link">
-                  villkoren
-                </a>
-              </Link>
+              <a href="/terms" target="_blank" className="terms-link">
+                villkoren
+              </a>
               <input
                 type="checkbox"
                 name="terms"
@@ -363,7 +360,7 @@ export class Contact extends Component {
             z-index: 1;
             margin: 0 auto;
             width: 1024px;
-            max-width: calc(100% - 40px);
+            max-width: calc(100% - clamp(28px, 6vw, 40px));
           }
 
           h2 {

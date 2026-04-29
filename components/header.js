@@ -21,12 +21,6 @@ export function Header({ children }) {
           href={'/static/favicon-16x16.png'}
           sizes="16x16"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
         {children}
       </Head>
       {/*language=CSS*/}
