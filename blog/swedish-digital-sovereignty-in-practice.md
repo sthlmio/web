@@ -56,7 +56,7 @@ handlar om att granska sin stack en bit i taget.
 
 ## AI-anropet – den nya stora variabeln
 
-För några år sen handlade datasuveränitet mest om databasen. Idag är det
+För några år sen handlade digital suveränitet mest om databasen. Idag är det
 AI-anropen som flyttar mest data ut ur landet. Varje prompt till en
 amerikansk leverantör kan innehålla kunddata, källkod, interna dokument
 eller affärshemligheter.

@@ -18,7 +18,7 @@ export async function getStaticProps() {
 export default function Home({ latestPosts }) {
   const title = 'sthlm.io – Infrastruktur för den nya vardagen'
   const description =
-    'Vi hjälper er att planera, bygga och drifta säkra och tillgängliga tjänster och plattformar med svensk datasuveränitet.'
+    'Vi hjälper er att planera, bygga och drifta säkra och tillgängliga tjänster och plattformar med svensk digital suveränitet.'
 
   return (
     <>
@@ -32,14 +32,20 @@ export default function Home({ latestPosts }) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content="https://sthlm.io" />
-        <meta property="og:image" content="https://sthlm.io/static/og-default.png" />
+        <meta
+          property="og:image"
+          content="https://sthlm.io/static/og-default.png"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="675" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="https://sthlm.io/static/og-default.png" />
+        <meta
+          name="twitter:image"
+          content="https://sthlm.io/static/og-default.png"
+        />
       </Header>
       <Jumbo />
       <About />
