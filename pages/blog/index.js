@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { Header } from '../../components/header'
 import { Nav } from '../../components/nav'
 import { Footer } from '../../components/footer'
 import { BlogCard } from '../../components/blogCard'
+import { PillButton } from '../../components/pillButton'
 import { getAllPosts } from '../../lib/blog'
+
+const RSS_URL = 'https://sthlm.io/blog/rss'
 
 export async function getStaticProps() {
   return { props: { posts: getAllPosts() } }
@@ -15,6 +19,15 @@ export default function BlogIndex({ posts }) {
   const ogImage = latestImage
     ? `https://sthlm.io${latestImage.replace(/\.svg$/, '.png')}`
     : null
+
+  const [copied, setCopied] = useState(false)
+  async function copyRss() {
+    try {
+      await navigator.clipboard.writeText(RSS_URL)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1600)
+    } catch {}
+  }
 
   return (
     <>
@@ -47,6 +60,16 @@ export default function BlogIndex({ posts }) {
       <Nav current="blog" />
       <section>
         <div className="content">
+          <div className="topBar">
+            <PillButton
+              size="small"
+              arrow="none"
+              onClick={copyRss}
+              ariaLabel="Kopiera RSS-feedens URL"
+            >
+              {copied ? 'Kopierat!' : 'Kopiera RSS'}
+            </PillButton>
+          </div>
           <ul className="grid">
             {posts.map((post) => (
               <li key={post.slug} className="cell">
@@ -76,10 +99,16 @@ export default function BlogIndex({ posts }) {
             padding: 20px 0;
           }
 
+          .topBar {
+            display: flex;
+            justify-content: flex-start;
+            margin: 24px 0;
+          }
+
           .grid {
             list-style: none;
             padding: 0;
-            margin: 32px 0 0;
+            margin: 24px 0 0;
             display: grid;
             gap: 36px;
             grid-template-columns: 1fr;
