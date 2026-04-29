@@ -8,13 +8,11 @@ WORKDIR /home/node/web
 
 COPY --chown=node:node package.json package-lock.json /home/node/web/
 
-ENV NODE_ENV=production
-
 RUN npm ci
 
 COPY --chown=node:node . /home/node/web
 
-RUN npx next build
+RUN npm run build
 
 FROM nginx:1.30.0-alpine
 COPY --from=builder /home/node/web/out /var/www
