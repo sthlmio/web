@@ -1,5 +1,5 @@
 import { Header } from '../components/header'
-import { InPageHeader } from '../components/inPageHeader'
+import { Nav } from '../components/nav'
 import { Footer } from '../components/footer'
 
 export default function Terms() {
@@ -9,9 +9,9 @@ export default function Terms() {
         <title>sthlm.io – Villkor</title>
         <link rel="canonical" href="/terms/" />
       </Header>
+      <Nav />
       <section>
         <div className="content">
-          <InPageHeader />
           <h2>Våra uppgifter</h2>
           <p className="text">
             Personuppgiftsansvarig för vår webbplats är Fredrik Lack AB,
