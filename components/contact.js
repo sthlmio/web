@@ -147,43 +147,7 @@ export class Contact extends Component {
     return (
       <section id="contact" ref={(n) => (this.sectionNode = n)}>
         <div>
-          <div className="titleRow">
-            <svg
-              className="handSvg"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M7.2 12V6.3a1.6 1.6 0 0 1 3.2 0V12"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M10.4 12V5.6a1.6 1.6 0 0 1 3.2 0V12"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M13.6 12V6.2a1.5 1.5 0 0 1 3 0V13"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M16.6 13.2l.8-1a1.4 1.4 0 0 1 2.5.9V15a6.5 6.5 0 0 1-6.5 6.5h-.4A6.5 6.5 0 0 1 6.5 15v-1.3c0-.8.6-1.4 1.4-1.4.4 0 .7.1 1 .3l2.2 1.5"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <h2>{this.renderTitle()}</h2>
-          </div>
+          <h2>{this.renderTitle()}</h2>
           <p>
             Hör av dig så tar vi en snabb koll och ser om vi är rätt partner för
             er.
@@ -376,51 +340,9 @@ export class Contact extends Component {
             font-weight: 400;
           }
 
-          .titleRow {
-            margin: 0;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-          }
-
-          .handSvg {
-            width: clamp(32px, 4.2vw, 56px);
-            height: clamp(32px, 4.2vw, 56px);
-            color: rgba(255, 255, 255, 0.95);
-            flex: 0 0 auto;
-            transform: rotate(-14deg);
-            transform-origin: 55% 55%;
-          }
-
-          @media (prefers-reduced-motion: no-preference) {
-            .handSvg {
-              animation: handWave 2.8s ease-in-out infinite;
-            }
-          }
-
           @media screen and (min-width: 500px) {
             section {
               padding: 120px 0 140px;
-            }
-          }
-
-          @keyframes handWave {
-            0%,
-            60%,
-            100% {
-              transform: rotate(-14deg);
-            }
-            10% {
-              transform: rotate(-6deg);
-            }
-            20% {
-              transform: rotate(-16deg);
-            }
-            30% {
-              transform: rotate(-8deg);
-            }
-            40% {
-              transform: rotate(-14deg);
             }
           }
 
