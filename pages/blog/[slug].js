@@ -4,7 +4,8 @@ import { Nav } from '../../components/nav'
 import { Footer } from '../../components/footer'
 import { PillButton } from '../../components/pillButton'
 import { BlogCta } from '../../components/blogCta'
-import { getPost, getPostSlugs } from '../../lib/blog'
+import { PostNav } from '../../components/postNav'
+import { getAllPosts, getPost, getPostSlugs } from '../../lib/blog'
 import { formatDate } from '../../lib/formatDate'
 
 export async function getStaticPaths() {
@@ -16,10 +17,16 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const post = getPost(params.slug)
-  return { props: { post } }
+  const all = getAllPosts()
+  const idx = all.findIndex((p) => p.slug === params.slug)
+  const pick = (p) =>
+    p ? { slug: p.slug, title: p.title, image: p.image, imageAlt: p.imageAlt } : null
+  const newer = idx > 0 ? pick(all[idx - 1]) : null
+  const older = idx >= 0 && idx < all.length - 1 ? pick(all[idx + 1]) : null
+  return { props: { post, newer, older } }
 }
 
-export default function BlogPost({ post }) {
+export default function BlogPost({ post, newer, older }) {
   const proseRef = useRef(null)
 
   useEffect(() => {
@@ -134,6 +141,12 @@ export default function BlogPost({ post }) {
               className="prose"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
+            <PostNav older={older} newer={newer} />
+            <div className="backBottom">
+              <PillButton href="/blog/" size="small" arrow="left">
+                Alla inlägg
+              </PillButton>
+            </div>
           </article>
         </div>
         {/*language=SCSS*/}
@@ -144,7 +157,7 @@ export default function BlogPost({ post }) {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
           }
 
           .content {
@@ -164,6 +177,11 @@ export default function BlogPost({ post }) {
 
           .back {
             margin: 24px 0;
+          }
+
+          .backBottom {
+            margin: 40px 0 0;
+            max-width: 800px;
           }
 
           .postHeader {
