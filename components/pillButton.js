@@ -18,12 +18,13 @@ export function PillButton({
         'aria-label': ariaLabel,
       }
 
+  const arrowSize = size === 'small' ? 14 : size === 'large' ? 22 : 18
   const arrowSvg = arrow === 'none' ? null : (
     <svg
       className="pillArrow"
       viewBox="0 0 24 24"
-      width={size === 'small' ? 14 : 18}
-      height={size === 'small' ? 14 : 18}
+      width={arrowSize}
+      height={arrowSize}
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
@@ -49,8 +50,8 @@ export function PillButton({
     <Tag
       {...tagProps}
       className={`pillBtn ${size === 'small' ? 'small' : ''} ${
-        arrow === 'left' ? 'arrowLeft' : ''
-      }`}
+        size === 'large' ? 'large' : ''
+      } ${arrow === 'left' ? 'arrowLeft' : ''}`}
     >
       {arrow === 'left' && arrowSvg}
       <span>{children}</span>
@@ -73,7 +74,8 @@ export function PillButton({
           border: 0;
           cursor: pointer;
           -webkit-appearance: none;
-          box-shadow: 0 0 0 0 #33e06b;
+          transform: translateY(-5px);
+          box-shadow: 0 5px 0 0 #33e06b;
           transition:
             transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
             box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -85,27 +87,37 @@ export function PillButton({
           padding: 7px 16px;
           font-size: 13px;
           font-weight: 600;
+          transform: translateY(-3px);
+          box-shadow: 0 3px 0 0 #33e06b;
+        }
+
+        .pillBtn.large {
+          gap: 14px;
+          padding: 18px 36px;
+          font-size: 20px;
+          transform: translateY(-7px);
+          box-shadow: 0 7px 0 0 #33e06b;
         }
 
         .pillBtn:hover {
           background: #0a1a10;
-          transform: translateY(-5px);
-          box-shadow: 0 5px 0 0 #33e06b;
+          transform: translateY(0);
+          box-shadow: 0 0 0 0 #33e06b;
         }
 
         .pillBtn.small:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 3px 0 0 #33e06b;
+          transform: translateY(0);
+          box-shadow: 0 0 0 0 #33e06b;
+        }
+
+        .pillBtn.large:hover {
+          transform: translateY(0);
+          box-shadow: 0 0 0 0 #33e06b;
         }
 
         .pillBtn:active {
-          transform: translateY(-3px);
-          box-shadow: 0 3px 0 0 #33e06b;
-        }
-
-        .pillBtn.small:active {
-          transform: translateY(-2px);
-          box-shadow: 0 2px 0 0 #33e06b;
+          transform: translateY(0);
+          box-shadow: 0 0 0 0 #33e06b;
         }
 
         .pillBtn:disabled {

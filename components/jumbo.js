@@ -1,4 +1,5 @@
 import { Nav } from './nav'
+import { PillButton } from './pillButton'
 
 export function Jumbo() {
   return (
@@ -102,19 +103,13 @@ export function Jumbo() {
               </div>
             </div>
           </div>
+          <div className="ctaWrap">
+            <PillButton href="#contact" size="large" ariaLabel="Boka ett möte">
+              Boka ett möte
+            </PillButton>
+          </div>
         </div>
       </div>
-      <a className="ctaBadge" href="#contact" aria-label="Contact us">
-        <span className="ctaInner">
-          <span className="ctaText">
-            Boka ett möte
-            <br />
-            så tar vi
-            <br />
-            nästa steg!
-          </span>
-        </span>
-      </a>
       {/*language=CSS*/}
       <style jsx>{`
         section {
@@ -197,67 +192,16 @@ export function Jumbo() {
           align-items: flex-start;
         }
 
-        .ctaBadge {
-          position: absolute;
-          right: clamp(14px, 6vw, 122px);
-          bottom: clamp(14px, 6vw, 122px);
-          width: 190px;
-          height: 190px;
-          border-radius: 999px;
-          background: #33e06b;
-          display: grid;
-          place-items: center;
-          text-decoration: none;
-          box-shadow:
-            0 18px 50px rgba(0, 0, 0, 0.35),
-            0 0 0 1px rgba(0, 0, 0, 0.1) inset;
-          transition:
-            transform 140ms ease,
-            box-shadow 140ms ease;
-          transform: rotate(14deg);
+        .ctaWrap {
+          margin-top: 32px;
         }
 
-        .ctaInner {
-          width: 78%;
-          height: 78%;
-          border-radius: 999px;
-          display: grid;
-          place-items: center;
-          margin-top: -10px;
-        }
-
-        .ctaText {
-          color: #0a1a10;
-          font-size: 22px;
-          line-height: 1.05;
-          font-weight: 700;
-          text-align: center;
-          letter-spacing: -0.01em;
-          text-wrap: balance;
-        }
-
-        .ctaBadge:hover {
-          transform: rotate(14deg) translateY(-2px) scale(1.02);
-          box-shadow:
-            0 22px 60px rgba(0, 0, 0, 0.4),
-            0 0 0 1px rgba(0, 0, 0, 0.1) inset;
-        }
-
-        .ctaBadge:focus-visible {
-          outline: 3px solid rgba(255, 255, 255, 0.9);
-          outline-offset: 4px;
-        }
-
-        @media screen and (max-width: 700px) {
-          .ctaBadge {
-            width: 140px;
-            height: 140px;
-            right: 24px;
-            bottom: 24px;
-          }
-
-          .ctaText {
-            font-size: 16px;
+        @media screen and (min-width: 900px) {
+          .ctaWrap {
+            position: absolute;
+            margin-top: 0;
+            right: clamp(14px, 6vw, 122px);
+            bottom: clamp(14px, 6vw, 122px);
           }
         }
 
