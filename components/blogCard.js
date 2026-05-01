@@ -61,6 +61,15 @@ export function BlogCard({ post }) {
           flex-shrink: 0;
         }
 
+        @media screen and (max-width: 599px) {
+          .thumb {
+            width: calc(100% + clamp(28px, 6vw, 40px));
+            margin-left: calc(-1 * clamp(14px, 3vw, 20px));
+            margin-right: calc(-1 * clamp(14px, 3vw, 20px));
+            border-radius: 0;
+          }
+        }
+
         .thumb img {
           width: 100%;
           height: 100%;
@@ -82,10 +91,10 @@ export function BlogCard({ post }) {
         }
 
         .title {
-          font-size: 24px;
+          font-size: clamp(32px, 4.2vw, 38px);
           font-weight: 700;
-          line-height: 1.2;
-          letter-spacing: -0.015em;
+          line-height: 1.08;
+          letter-spacing: -0.02em;
           margin: 0 0 14px;
           color: #0a0a0a;
           overflow-wrap: anywhere;

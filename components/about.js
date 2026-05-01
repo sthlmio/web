@@ -79,7 +79,7 @@ export function About() {
           display: flex;
           justify-content: center;
           flex-direction: column;
-          padding: 60px 0 100px;
+          padding: 40px 0 60px;
         }
 
         a,
@@ -178,7 +178,13 @@ export function About() {
           }
         }
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 600px) {
+          section {
+            padding: 70px 0 90px;
+          }
+        }
+
+        @media screen and (min-width: 900px) {
           section {
             padding: 120px 0 140px;
           }

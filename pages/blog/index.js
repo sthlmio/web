@@ -114,7 +114,7 @@ export default function BlogIndex({ posts }) {
             grid-template-columns: 1fr;
           }
 
-          @media screen and (min-width: 760px) {
+          @media screen and (min-width: 600px) {
             .grid {
               grid-template-columns: repeat(2, minmax(0, 1fr));
             }

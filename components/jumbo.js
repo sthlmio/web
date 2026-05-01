@@ -126,7 +126,13 @@ export function Jumbo() {
           flex: 1 0 auto;
           display: flex;
           align-items: center;
-          padding: clamp(80px, 10vh, 100px) 0 50px;
+          padding: 140px 0 50px;
+        }
+
+        @media screen and (min-width: 900px) {
+          .main {
+            padding: clamp(80px, 10vh, 100px) 0 50px;
+          }
         }
 
         h1 {

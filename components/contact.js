@@ -317,7 +317,7 @@ export class Contact extends Component {
             justify-content: center;
             flex-direction: column;
             position: relative;
-            padding: 60px 0 100px;
+            padding: 40px 0 60px;
           }
 
           div {
@@ -341,7 +341,13 @@ export class Contact extends Component {
             font-weight: 400;
           }
 
-          @media screen and (min-width: 500px) {
+          @media screen and (min-width: 600px) {
+            section {
+              padding: 70px 0 90px;
+            }
+          }
+
+          @media screen and (min-width: 900px) {
             section {
               padding: 120px 0 140px;
             }
