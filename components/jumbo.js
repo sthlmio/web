@@ -130,11 +130,18 @@ export function Jumbo() {
         }
 
         h1 {
-          font-size: clamp(30px, 8vw, 80px);
-          line-height: 1.1;
+          font-size: clamp(48px, 13vw, 80px);
+          line-height: 1.05;
           color: #fff;
           margin: 0;
           text-align: left;
+        }
+
+        @media screen and (min-width: 900px) {
+          h1 {
+            font-size: clamp(60px, 8vw, 80px);
+            line-height: 1.1;
+          }
         }
         
         p {
