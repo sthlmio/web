@@ -32,7 +32,7 @@ export class Contact extends Component {
         this.intersectionObserver?.disconnect()
         this.intersectionObserver = null
       },
-      { threshold: 0.5 },
+      { threshold: 0.15 },
     )
 
     if (this.sectionNode) this.intersectionObserver.observe(this.sectionNode)
@@ -329,6 +329,7 @@ export class Contact extends Component {
 
           h2 {
             margin-top: 0;
+            min-height: 1.2em;
           }
 
           h2,
