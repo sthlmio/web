@@ -72,7 +72,7 @@ export function BlogPreview({ posts }) {
           }
 
           .cell :global(.title) {
-            font-size: 24px;
+            font-size: 28px;
             line-height: 1.2;
             letter-spacing: -0.015em;
           }
