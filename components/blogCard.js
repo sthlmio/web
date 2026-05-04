@@ -1,4 +1,4 @@
-import { formatDate } from '../lib/formatDate'
+import { Byline } from './byline'
 
 export function BlogCard({ post }) {
   return (
@@ -9,22 +9,7 @@ export function BlogCard({ post }) {
         </div>
         <div className="body">
           <h3 className="title">{post.title}</h3>
-          <div className="meta">
-            {post.authorImage && (
-              <img
-                className="avatar"
-                src={post.authorImage}
-                alt=""
-                loading="lazy"
-              />
-            )}
-            <div className="metaText">
-              {post.author && <span className="author">{post.author}</span>}
-              <time className="date" dateTime={post.dateTime}>
-                {formatDate(post.date)}
-              </time>
-            </div>
-          </div>
+          <Byline post={post} size="small" />
           {post.excerpt && <p className="excerpt">{post.excerpt}</p>}
         </div>
       </a>
@@ -99,39 +84,6 @@ export function BlogCard({ post }) {
           color: #0a0a0a;
           overflow-wrap: anywhere;
           transition: color 0.2s ease;
-        }
-
-        .meta {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          margin-bottom: 14px;
-        }
-
-        .avatar {
-          width: 32px;
-          height: 32px;
-          border-radius: 50%;
-          object-fit: cover;
-          flex-shrink: 0;
-        }
-
-        .metaText {
-          display: flex;
-          flex-direction: column;
-          line-height: 1.3;
-          min-width: 0;
-        }
-
-        .author {
-          font-size: 14px;
-          font-weight: 500;
-          color: #1a1a1a;
-        }
-
-        .date {
-          font-size: 13px;
-          color: #6b6b6b;
         }
 
         .excerpt {

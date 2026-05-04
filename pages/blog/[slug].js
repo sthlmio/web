@@ -5,8 +5,8 @@ import { Footer } from '../../components/footer'
 import { PillButton } from '../../components/pillButton'
 import { BlogCta } from '../../components/blogCta'
 import { PostNav } from '../../components/postNav'
+import { Byline } from '../../components/byline'
 import { getAllPosts, getPost, getPostSlugs } from '../../lib/blog'
-import { formatDate } from '../../lib/formatDate'
 
 export async function getStaticPaths() {
   return {
@@ -115,23 +115,7 @@ export default function BlogPost({ post, newer, older }) {
             <header className="postHeader">
               <h1>{post.title}</h1>
               {post.excerpt && <p className="lead">{post.excerpt}</p>}
-              <div className="byline">
-                {post.authorImage && (
-                  <img
-                    className="avatar"
-                    src={post.authorImage}
-                    alt=""
-                  />
-                )}
-                <div className="bylineText">
-                  {post.author && <span className="author">{post.author}</span>}
-                  <span className="meta">
-                    <time dateTime={post.dateTime}>{formatDate(post.date)}</time>
-                    <span className="dot" aria-hidden="true">·</span>
-                    <span>{post.readMinutes} min läsning</span>
-                  </span>
-                </div>
-              </div>
+              <Byline post={post} size="large" />
             </header>
             <figure className="hero">
               <img src={post.image} alt={post.imageAlt} />
@@ -206,45 +190,6 @@ export default function BlogPost({ post, newer, older }) {
             margin: 0 0 28px;
             width: auto;
             max-width: none;
-          }
-
-          .byline {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-top: 28px;
-          }
-
-          .avatar {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            object-fit: cover;
-            flex-shrink: 0;
-          }
-
-          .bylineText {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.35;
-          }
-
-          .author {
-            font-size: 15px;
-            font-weight: 600;
-            color: #1a1a1a;
-          }
-
-          .meta {
-            font-size: 14px;
-            color: #6b6b6b;
-            display: inline-flex;
-            gap: 6px;
-            align-items: baseline;
-          }
-
-          .dot {
-            color: #c0c0c0;
           }
 
           .hero {
