@@ -7,7 +7,7 @@ image: /static/blog-kubernetes-on-openstack.svg
 imageAlt: Kubernetes och OpenStack-loggor sida vid sida
 ---
 
-Hyperscalers är ofta default‑valet för modern molndrift idag, men vi tycker att kombinationen Kubernetes på OpenStack är ett bättre alternativ. Här går vi igenom
+Hyperscalers dominerar diskussionen om modern molndrift idag, men vi tycker att kombinationen Kubernetes på OpenStack är ett bättre alternativ. Här går vi igenom
 vad teknologierna är, vilka alternativ som finns och varför vi ofta landar i just den lösningen.
 
 ## Vad är OpenStack?
