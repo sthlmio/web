@@ -16,7 +16,7 @@ export function BlogPreview({ posts }) {
         </ul>
 
         <div className="more">
-          <PillButton href="/blog/">Fler inlägg</PillButton>
+          <PillButton href="/blog">Fler inlägg</PillButton>
         </div>
       </div>
 

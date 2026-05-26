@@ -3,7 +3,7 @@ import { Byline } from './byline'
 export function BlogCard({ post }) {
   return (
     <article className="card">
-      <a className="cardLink" href={`/blog/${post.slug}/`}>
+      <a className="cardLink" href={`/blog/${post.slug}`}>
         <div className="thumb">
           <img src={post.image} alt={post.imageAlt} loading="lazy" />
         </div>

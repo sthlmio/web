@@ -4,7 +4,7 @@ export function PostNav({ older, newer }) {
   return (
     <nav className="postNav" aria-label="Fler inlägg">
       {older ? (
-        <a href={`/blog/${older.slug}/`} className="card older">
+        <a href={`/blog/${older.slug}`} className="card older">
           <span className="arrow" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="19" y1="12" x2="5" y2="12" />
@@ -23,7 +23,7 @@ export function PostNav({ older, newer }) {
         <span className="card placeholder" aria-hidden="true" />
       )}
       {newer ? (
-        <a href={`/blog/${newer.slug}/`} className="card newer">
+        <a href={`/blog/${newer.slug}`} className="card newer">
           <span className="text">
             <span className="label">Nyare inlägg</span>
             <span className="title">{newer.title}</span>

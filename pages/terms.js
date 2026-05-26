@@ -7,7 +7,7 @@ export default function Terms() {
     <>
       <Header>
         <title>sthlm.io – Villkor</title>
-        <link rel="canonical" href="/terms/" />
+        <link rel="canonical" href="https://sthlm.io/terms" />
       </Header>
       <Nav />
       <section>

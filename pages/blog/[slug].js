@@ -107,7 +107,7 @@ export default function BlogPost({ post, newer, older }) {
       <section>
         <div className="content">
           <div className="back">
-            <PillButton href="/blog/" size="small" arrow="left">
+            <PillButton href="/blog" size="small" arrow="left">
               Alla inlägg
             </PillButton>
           </div>
@@ -127,7 +127,7 @@ export default function BlogPost({ post, newer, older }) {
             />
             <PostNav older={older} newer={newer} />
             <div className="backBottom">
-              <PillButton href="/blog/" size="small" arrow="left">
+              <PillButton href="/blog" size="small" arrow="left">
                 Alla inlägg
               </PillButton>
             </div>
