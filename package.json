@@ -17,9 +17,10 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "prebuild": "node scripts/generate-og-images.js && node scripts/generate-rss.js",
+    "prebuild": "node scripts/generate-og-images.js && node scripts/generate-rss.js && node scripts/generate-sitemap.js",
     "generate-og-images": "node scripts/generate-og-images.js",
-    "generate-rss": "node scripts/generate-rss.js"
+    "generate-rss": "node scripts/generate-rss.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "gray-matter": "4.0.3",
