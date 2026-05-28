@@ -3,7 +3,7 @@ title: Agentisk kodning med OpenCode och Pi
 date: 2026-05-28T21:30:00+02:00
 author: Fredrik Lack
 excerpt: Agentisk kodning har blivit det nya sättet att arbeta – men det finns alternativ till Claude Code och Codex som är de två som får anses vara de absolut bästa i dag enligt oss.
-image: /static/blog-sovereign-agentic-ai-coding.svg
+image: /static/blog-agentic-coding-with-opencode-and-pi.svg
 imageAlt: OpenCode och Pi – två öppna agentiska kodklienter
 ---
 
