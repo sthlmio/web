@@ -240,7 +240,7 @@ export default function BlogPost({ post, newer, older }) {
           }
 
           .prose h2 {
-            font-size: clamp(22px, 2.6vw, 26px);
+            font-size: clamp(26px, 3vw, 32px);
             line-height: 1.25;
             letter-spacing: -0.01em;
             font-weight: 700;
@@ -249,7 +249,7 @@ export default function BlogPost({ post, newer, older }) {
           }
 
           .prose h3 {
-            font-size: clamp(20px, 2.6vw, 24px);
+            font-size: clamp(18px, 1.8vw, 20px);
             line-height: 1.3;
             font-weight: 600;
             margin: 32px 0 10px;
@@ -303,8 +303,23 @@ export default function BlogPost({ post, newer, older }) {
             color: #6b7280;
           }
 
+          .prose .codeMeta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+          }
+
+          .prose .codeTitle {
+            color: #6b7280;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
           .prose .codeLang {
             user-select: none;
+            flex-shrink: 0;
           }
 
           .prose .copyBtn {
