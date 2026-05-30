@@ -1,5 +1,5 @@
 ---
-title: Kubernetes på OpenStack — det starka alternativet till hyperscalers
+title: Kubernetes på OpenStack - det starka alternativet till hyperscalers
 date: 2026-04-29T22:26:00+02:00
 excerpt: Hyperscalers känns tryggt - men är de det? Här är varför vi väljer Kubernetes på OpenStack, helt i svensk regi.
 author: Fredrik Lack
