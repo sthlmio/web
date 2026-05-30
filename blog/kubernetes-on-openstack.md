@@ -1,7 +1,7 @@
 ---
 title: Kubernetes på OpenStack — det starka alternativet till hyperscalers
 date: 2026-04-29T22:26:00+02:00
-excerpt: Hyperscalers känns tryggt — men är de det? Här är varför vi väljer Kubernetes på OpenStack, helt i svensk regi.
+excerpt: Hyperscalers känns tryggt - men är de det? Här är varför vi väljer Kubernetes på OpenStack, helt i svensk regi.
 author: Fredrik Lack
 image: /static/blog-kubernetes-on-openstack.svg
 imageAlt: Kubernetes och OpenStack-loggor sida vid sida
@@ -18,13 +18,13 @@ Vi driftar inte OpenStack själva. Vi samarbetar med en svensk OpenStack‑partn
 
 OpenStack är uppbyggt av modulära komponenter, där de viktigaste är:
 
-- **Nova** – beräkning och virtuella maskiner
-- **Neutron** – nätverk, routing och brandväggar
-- **Cinder** – blocklagring (persistent diskar)
-- **Swift** – objektlagring (motsvarande S3)
-- **Keystone** – identitet och åtkomst
-- **Barbican** – hantering av nycklar, certifikat och hemligheter
-- **Glance** – hantering av maskinavbildningar
+- **Nova** - beräkning och virtuella maskiner
+- **Neutron** - nätverk, routing och brandväggar
+- **Cinder** - blocklagring (persistent diskar)
+- **Swift** - objektlagring (motsvarande S3)
+- **Keystone** - identitet och åtkomst
+- **Barbican** - hantering av nycklar, certifikat och hemligheter
+- **Glance** - hantering av maskinavbildningar
 
 Resultatet är en plattform där vi kan provisionera virtuella maskiner, nätverk och lagring via API (OpenTofu/Terraform), på infrastruktur som ägs och drivs i Sverige.
 
@@ -34,11 +34,11 @@ Resultatet är en plattform där vi kan provisionera virtuella maskiner, nätver
 
 I praktiken hanterar Kubernetes:
 
-- **Utrullning och uppgraderingar** – rolling updates, rollbacks och blue/green‑mönster
-- **Skalning** – både horisontellt (fler poddar) och vertikalt (mer resurser)
-- **Självläkning** – startar om kraschade containrar och flyttar arbetslaster vid nodfel
-- **Tjänsteupptäckt och lastbalansering** – inbyggd DNS och service‑abstraktion
-- **Hemligheter och konfiguration** – separerat från applikationskoden
+- **Utrullning och uppgraderingar** - rolling updates, rollbacks och blue/green‑mönster
+- **Skalning** - både horisontellt (fler poddar) och vertikalt (mer resurser)
+- **Självläkning** - startar om kraschade containrar och flyttar arbetslaster vid nodfel
+- **Tjänsteupptäckt och lastbalansering** - inbyggd DNS och service‑abstraktion
+- **Hemligheter och konfiguration** - separerat från applikationskoden
 
 Kubernetes är en abstraktion *ovanpå* infrastrukturen. I grunden fungerar samma manifest oavsett om klustret kör i ett publikt moln, på lokala servrar eller i ett OpenStack‑baserat privat moln. I praktiken förekommer avvikelser, och justeringar kan behöva göras vid en flytt. Det rör typiskt infrastrukturen runt klustret: storage classes, ingress‑controllers, lastbalanserare och autentisering ser olika ut från moln till moln.
 
@@ -92,14 +92,14 @@ Till det kommer den politiska oförutsägbarheten. Skiftande administrationer i 
 
 Det är inte heller bara en fråga för tungt reglerade branscher. Allt fler företag och utvecklare bryr sig om var deras data lagras, vem som kan komma åt den och under vilka spelregler. Det kan handla om kunddata, källkod, interna dokument eller en sund princip om att svenska företags information ska ligga i Sverige. Med Kubernetes på en svensk OpenStack‑plattform försvinner den exponeringen.
 
-### Mogna operatorer – även stateful workloads hör hemma i Kubernetes
+### Mogna operatorer - även stateful workloads hör hemma i Kubernetes
 
 Ett vanligt motargument förr var att Kubernetes "bara" passar för stateless applikationer, och att databaser och annan stateful data hörde hemma i hyperscalers managerade tjänster (RDS, Cloud SQL, Cosmos DB). Så ser det inte ut längre. Operator‑mönstret har mognat de senaste åren och idag finns produktionsklara operatorer för i princip allt vi brukar behöva:
 
-- **PostgreSQL** – [CloudNativePG](https://cloudnative-pg.io/) och [Zalandos Postgres Operator](https://github.com/zalando/postgres-operator) hanterar HA, failover, backup och point‑in‑time‑recovery deklarativt.
-- **MySQL/MariaDB** – Percona och Oracle har egna operatorer som ger samma typ av automatisering.
-- **Redis, Kafka, RabbitMQ** – officiella eller väletablerade operatorer som tar hand om klustring och rolling upgrades.
-- **MongoDB, Elasticsearch/OpenSearch, ClickHouse** – samma sak, drift som kod.
+- **PostgreSQL** - [CloudNativePG](https://cloudnative-pg.io/) och [Zalandos Postgres Operator](https://github.com/zalando/postgres-operator) hanterar HA, failover, backup och point‑in‑time‑recovery deklarativt.
+- **MySQL/MariaDB** - Percona och Oracle har egna operatorer som ger samma typ av automatisering.
+- **Redis, Kafka, RabbitMQ** - officiella eller väletablerade operatorer som tar hand om klustring och rolling upgrades.
+- **MongoDB, Elasticsearch/OpenSearch, ClickHouse** - samma sak, drift som kod.
 
 Tillsammans med Kubernetes [`PersistentVolumeClaim`](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) och OpenStacks Cinder för persistenta volymer får man en databasdrift som håller måttet jämfört med hyperscalers managerade motsvarigheter, inom svensk jurisdiktion och utan timpremie. Man slipper också situationen där applikationen kör i Kubernetes men databasen är låst till en specifik molnleverantör.
 
@@ -112,9 +112,9 @@ Verksamheter som vill ha molnets flexibilitet och Kubernetes ekosystem, men samt
 
 Att köra Kubernetes på OpenStack kräver fortfarande en del av teamet. Vi delar upp ansvaret i tre delar där man kan välja hur mycket man själv vill och kan ta på sig:
 
-- **Applikationslagret** – Containeriserade applikationer
-- **Plattformslagret** – Kubernetes‑klustret (livscykel, uppgraderingar), OpenStack API:er ([Cloud Provider OpenStack](https://github.com/kubernetes/cloud-provider-openstack)), Operatorer (databaser, meddelandeköer osv)
-- **IaaS‑lagret** – Hårdvara, hypervisor och OpenStack‑komponenterna (sköts av vår svenska partner).
+- **Applikationslagret** - Containeriserade applikationer
+- **Plattformslagret** - Kubernetes‑klustret (livscykel, uppgraderingar), OpenStack API:er ([Cloud Provider OpenStack](https://github.com/kubernetes/cloud-provider-openstack)), Operatorer (databaser, meddelandeköer osv)
+- **IaaS‑lagret** - Hårdvara, hypervisor och OpenStack‑komponenterna (sköts av vår svenska partner).
 
 <figure class="layerStack">
   <img src="/static/blog-kubernetes-on-openstack-layers.svg" alt="Lagrad arkitektur: IaaS-lagret hos svensk OpenStack-partner längst ner, plattformslagret med Kubernetes och OpenStack-integrationer i mitten, och applikationslagret med Go, Node.js och Rust längst upp." />
