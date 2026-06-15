@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "engines": {
-    "node": ">=15.5.0"
+    "node": ">=24.16.0"
   },
   "author": {
     "name": "Fredrik Lack",
@@ -26,16 +26,15 @@
     "gray-matter": "4.0.3",
     "highlight.js": "11.11.1",
     "isomorphic-unfetch": "4.0.2",
-    "js-yaml": "4.1.1",
-    "marked": "18.0.4",
-    "marked-highlight": "2.2.4",
-    "next": "16.2.6",
-    "react": "19.2.6",
-    "react-dom": "19.2.6",
+    "js-yaml": "4.2.0",
+    "marked": "18.0.5",
+    "next": "16.2.9",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "react-typist": "2.0.5"
   },
   "devDependencies": {
-    "prettier": "3.8.3",
-    "sharp": "0.34.5"
+    "prettier": "3.8.4",
+    "sharp": "0.35.1"
   }
 }

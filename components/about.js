@@ -22,18 +22,19 @@ export function About() {
   return (
     <section>
       <div className="content">
-        <h2>Vad vi gör</h2>
+        <h2>Vårt erbjudande</h2>
         <p>
-          Vi hjälper företag och organisationer att utveckla, modernisera och
-          förvalta tjänster och infrastruktur.
+          Du får en teknisk partner som tar ansvar för hela resan - från
+          strategi och arkitektur till produktion och långsiktig drift.
           <br />
           <br />
-          Med rådgivning, tekniskt ledarskap och genomförande tar vi ansvar från
-          arkitektur till produktion och långsiktig drift.
+          Vi ser till att dina tjänster blir moderna, skalbara och enkla att
+          vidareutveckla, med öppna standarder och svenska hostingpartners som
+          grund.
           <br />
           <br />
-          Vi skapar en robust och hållbar grund för fortsatt utveckling, med
-          öppna standarder och svenska hosting- och plattformspartners.
+          Oavsett om du behöver rådgivning, tekniskt ledarskap eller hjälp med
+          genomförandet, finns vi med som partner där du behöver oss.
         </p>
       </div>
       <div className="content logos">
