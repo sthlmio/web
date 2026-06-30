@@ -34,7 +34,7 @@
     "react-typist": "2.0.5"
   },
   "devDependencies": {
-    "prettier": "3.9.3",
+    "prettier": "3.9.4",
     "sharp": "0.35.2"
   }
 }
