@@ -543,6 +543,94 @@ export default function BlogPost({ post, newer, older }) {
             height: auto;
             border-radius: 0;
           }
+
+          .prose .tableWrapper {
+            width: 100%;
+            overflow-x: auto;
+            margin: 0 0 22px;
+          }
+
+          .prose table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-size: 15px;
+            line-height: 1.5;
+          }
+
+          .prose table th,
+          .prose table td {
+            padding: 8px 12px;
+            border: 1px solid #e2e4e9;
+            text-align: left;
+          }
+
+          .prose table th {
+            background: #f6f7f9;
+            padding: 14px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #555;
+            white-space: nowrap;
+          }
+
+          @media screen and (max-width: 768px) {
+            .prose table th {
+              padding: 10px 12px;
+              font-size: 13px;
+            }
+          }
+
+          @media screen and (max-width: 600px) {
+            .prose table th {
+              padding: 8px 10px;
+              font-size: 12px;
+            }
+
+            .prose table td {
+              padding: 8px 10px;
+              font-size: 14px;
+            }
+          }
+
+          .prose table tbody tr:hover td {
+            background: #fafbfc;
+          }
+
+          .prose table td strong {
+            font-weight: 600;
+          }
+
+          .prose sup {
+            font-size: 0.75em;
+            line-height: 0;
+          }
+
+          .prose sup a {
+            text-decoration: none;
+          }
+
+          .prose .footnotes {
+            padding-inline-start: 22px;
+            font-size: 14px;
+            color: #555;
+          }
+
+          .prose .footnotes li {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+          }
+
+          .prose .footnotes li:last-child {
+            margin-bottom: 0;
+          }
+
+          .prose .footnotes a {
+            word-break: break-word;
+          }
         `}</style>
       </section>
       <BlogCta />
