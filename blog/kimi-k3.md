@@ -55,7 +55,7 @@ instruktioner i systemprompten eller i `AGENTS.md` hjälper så klart till här.
 
 ## Gränsen har flyttats igen
 
-Det proprietära lagret har inte försvunnit helt. Fable 5 och GPT-5.6 Sol är
+De proprietära modellerna har såklart inte försvunnit helt för oss. Fable 5 och GPT-5.6 Sol är
 fortfarande vassare. Men det är inte längre dit vi
 går som standard ens för det tyngsta jobbet, och skillnaden är tillräckligt
 liten för att det sällan ska vara värt att skicka koden utanför landet.
