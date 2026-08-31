@@ -35,6 +35,6 @@
   },
   "devDependencies": {
     "prettier": "3.9.6",
-    "sharp": "0.35.3"
+    "sharp": "0.35.4"
   }
 }
