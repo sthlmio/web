@@ -44,16 +44,11 @@ export default function Terms() {
           <h2>Tjänster vi använder</h2>
           <h3>Elastx AB</h3>
           <p className="text">
-            Vi använder Elastx AB som vår primära hosting-leverantör och kör
-            Kubernetes på OpenStack i Stockholm över tre tillgänglighetszoner
-            (sto1, sto2 och sto3). Säkerhet är högsta prioritet, och vi tror
-            starkt på att lagra data inom Sverige och att samarbeta med svenska
-            hosting-leverantörer. Informationen du lämnar i kontaktformuläret
-            lagras och behandlas säkert på våra servrar i Sverige.
+            Vi använder Elastx AB för att drifta våra servrar i Stockholm.
           </p>
           <h3>Glesys AB</h3>
           <p className="text">
-            Vi använder Glesys AB för att drifta våra e-postservrar i Stockholm.
+            Vi använder Glesys AB för att drifta våra servrar i Stockholm.
           </p>
           <h3>Berget AI</h3>
           <p className="text">
