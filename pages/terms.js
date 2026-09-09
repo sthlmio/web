@@ -44,13 +44,13 @@ export default function Terms() {
           <h2>Tjänster vi använder</h2>
           <h3>Elastx AB</h3>
           <p className="text">
-            Vi använder Elastx AB för att drifta våra servrar i Stockholm.
+            Vi använder gärna Elastx AB för att drifta våra servrar i Stockholm.
           </p>
           <h3>Glesys AB</h3>
           <p className="text">
-            Vi använder Glesys AB för att drifta våra servrar i Stockholm.
+            Vi använder gärna Glesys AB för att drifta våra servrar i Stockholm.
           </p>
-          <h3>Berget AI</h3>
+          <h3>Berget AI AB</h3>
           <p className="text">
             För AI-inferens använder vi gärna Berget AI som är en helt svensk
             tjänst med öppna modeller där ingen data lämnar Sverige, precis så
