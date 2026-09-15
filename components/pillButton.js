@@ -103,6 +103,9 @@ export function PillButton({
           background: #0a1a10;
           transform: translateY(0);
           box-shadow: 0 0 0 0 #33e06b;
+          transition:
+            transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1),
+            box-shadow 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
         }
 
         .pillBtn.small:hover {
