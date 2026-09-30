@@ -1,7 +1,5 @@
 import { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
-import Typist from 'react-typist'
-import 'react-typist/dist/Typist.css'
 import { PillButton } from './pillButton'
 
 export class Contact extends Component {
@@ -12,35 +10,7 @@ export class Contact extends Component {
       submitted: false,
       success: false,
       error: false,
-      enableTyping: false,
     }
-  }
-
-  componentDidMount() {
-    if (typeof window === 'undefined') return
-
-    if (!('IntersectionObserver' in window)) {
-      this.setState({ enableTyping: true })
-      return
-    }
-
-    this.intersectionObserver = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries
-        if (!entry?.isIntersecting) return
-        this.setState({ enableTyping: true })
-        this.intersectionObserver?.disconnect()
-        this.intersectionObserver = null
-      },
-      { threshold: 0.15 },
-    )
-
-    if (this.sectionNode) this.intersectionObserver.observe(this.sectionNode)
-  }
-
-  componentWillUnmount() {
-    this.intersectionObserver?.disconnect()
-    this.intersectionObserver = null
   }
 
   reset() {
@@ -49,16 +19,6 @@ export class Contact extends Component {
       success: false,
       error: false,
     })
-  }
-
-  renderTyped(text, key) {
-    if (!this.state.enableTyping) return ''
-    return (
-      <Typist cursor={{ blink: true }} key={key}>
-        <Typist.Delay ms={500} />
-        {text}
-      </Typist>
-    )
   }
 
   handleSubmit() {
@@ -120,22 +80,22 @@ export class Contact extends Component {
     const { submitted, error, success, submitting } = this.state
 
     if (submitting) {
-      return this.renderTyped('Skickar…', 'sending')
+      return 'Skickar…'
     }
 
     if (success) {
-      return this.renderTyped('Tack!', 'success')
+      return 'Tack!'
+    }
+
+    if (submitted && error) {
+      return 'Hoppsan, försök igen'
     }
 
     if (submitted) {
-      if (error) {
-        return this.renderTyped('Hoppsan, försök igen', 'error')
-      }
-
-      return this.renderTyped('Okej, vi försöker igen', 'retry')
+      return 'Okej, vi försöker igen'
     }
 
-    return this.renderTyped('Hej!', 'default')
+    return 'Hej!'
   }
 
   render() {
