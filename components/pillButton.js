@@ -67,7 +67,7 @@ export function PillButton({
           border-radius: 999px;
           background: #0a1a10;
           color: #fff;
-          font-family: 'Inter', sans-serif;
+          font-family: inherit;
           font-weight: 600;
           font-size: 16px;
           text-decoration: none;

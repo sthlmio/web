@@ -322,7 +322,7 @@ export class Contact extends Component {
             border-radius: 7px;
             padding: 10px;
             text-indent: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: inherit;
             -webkit-appearance: none;
             font-size: 18px;
             resize: none;

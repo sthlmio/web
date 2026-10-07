@@ -26,7 +26,6 @@ export function Header({ children }) {
       {/*language=CSS*/}
       <style jsx global>{`
         body {
-          font-family: 'Inter', sans-serif;
           padding: 0;
           margin: 0;
           min-height: 100vh;
@@ -74,7 +73,6 @@ export function Header({ children }) {
         h3,
         h4,
         h5 {
-          font-family: 'Inter', sans-serif;
           margin-bottom: 0;
         }
 
@@ -100,7 +98,6 @@ export function Header({ children }) {
         blockquote,
         label,
         small {
-          font-family: 'Inter', sans-serif;
           font-weight: 300;
           font-size: 18px;
           line-height: 1.55;
@@ -114,7 +111,6 @@ export function Header({ children }) {
         }
 
         li {
-          font-family: 'Inter', sans-serif;
           line-height: 1.55;
         }
 
